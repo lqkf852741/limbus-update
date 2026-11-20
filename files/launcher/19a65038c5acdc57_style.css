@@ -1,0 +1,1068 @@
+/* ==========================================================================
+   LIMBUS 启动器
+   两屏结构：主菜单一屏，子页面一屏，靠过场切换
+   ========================================================================== */
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+:root {
+  --bg:     #03060a;
+  --ink:    #dce9f2;
+  --dim:    #55697a;
+  --faint:  #2b3a45;
+  --accent: #3fd0f2;
+  --line:   rgba(63, 208, 242, .16);
+  --font:   Consolas, "Cascadia Mono", "JetBrains Mono", monospace;
+  --ease:   cubic-bezier(.22, .61, .36, 1);
+}
+
+html, body {
+  width: 100%; height: 100%;
+  overflow: hidden;
+  background: var(--bg);
+  color: var(--ink);
+  font-family: var(--font);
+  -webkit-font-smoothing: antialiased;
+  user-select: none;
+}
+
+/* ==========================================================================
+   画布
+   ========================================================================== */
+#gl {
+  position: fixed; inset: 0;
+  width: 100%; height: 100%;
+  display: block; z-index: 0;
+}
+
+#glitch {
+  position: fixed; inset: 0;
+  width: 100%; height: 100%;
+  z-index: 60;
+  pointer-events: none;
+  opacity: 0;
+  mix-blend-mode: screen;
+}
+
+#flash {
+  position: fixed; inset: 0;
+  z-index: 70;
+  background: #cbeaff;
+  opacity: 0;
+  pointer-events: none;
+}
+
+/* ==========================================================================
+   加载层
+   ========================================================================== */
+#boot {
+  position: fixed; inset: 0;
+  z-index: 40;
+  display: flex; align-items: center; justify-content: center;
+  transition: opacity 1s var(--ease), filter 1s var(--ease);
+}
+
+#boot.out { opacity: 0; filter: blur(18px) brightness(2.6); }
+
+.boot-inner { width: 360px; }
+
+.boot-brand { font-size: 15px; letter-spacing: .62em; }
+.boot-sub { margin-top: 9px; font-size: 10px; letter-spacing: .44em; color: var(--faint); }
+
+.boot-log {
+  margin-top: 46px;
+  height: 190px;
+  font-size: 11px;
+  line-height: 25px;
+  color: var(--dim);
+  overflow: hidden;
+}
+
+.boot-log .ln {
+  opacity: 0;
+  transform: translateY(5px);
+  animation: lnIn .3s var(--ease) forwards;
+}
+
+.boot-log .ln b { color: var(--accent); font-weight: 400; }
+@keyframes lnIn { to { opacity: 1; transform: none; } }
+
+.boot-bar {
+  margin-top: 24px; height: 1px;
+  background: var(--faint); overflow: hidden;
+}
+
+.boot-bar i {
+  display: block; height: 100%; width: 0;
+  background: linear-gradient(90deg, var(--accent), #b6f2ff);
+  transition: width .3s linear;
+}
+
+.boot-pct {
+  margin-top: 11px;
+  font-size: 10px;
+  letter-spacing: .3em;
+  color: var(--faint);
+  text-align: right;
+}
+
+/* ==========================================================================
+   主界面
+   ========================================================================== */
+#app {
+  position: fixed; inset: 0;
+  z-index: 10;
+  opacity: 1;
+  transition: opacity 1.1s var(--ease);
+
+  /* 整个界面放进一个透视空间，屏与屏之间的切换是"飞过去"，
+     不是淡出淡入。视角放在画面中心偏上一点。 */
+  perspective: 1400px;
+  perspective-origin: 50% 48%;
+}
+
+#app.hidden { opacity: 0; pointer-events: none; }
+
+#mark {
+  position: absolute;
+  top: 24px; right: 46px;
+  z-index: 30;
+}
+
+/* ==========================================================================
+   屏：主菜单和子页面都是整屏，同一时刻只露一个
+   ========================================================================== */
+.screen {
+  position: absolute;
+  inset: 0;
+  display: none;
+  transform-style: preserve-3d;
+  backface-visibility: hidden;
+  will-change: transform, opacity, filter;
+}
+
+.screen.is-on { display: block; }
+
+/* 进入 / 离开时的动效，由 JS 加 class 触发 */
+.screen.enter {
+  animation: scrIn .55s var(--ease) both;
+}
+
+.screen.leaving {
+  animation: scrOut .3s var(--ease) both;
+}
+
+/* 退场时压暗一点，配合背景镜头拉开 */
+@keyframes scrOut {
+  from { opacity: 1; transform: none;      filter: none; }
+  to   { opacity: 0; transform: translateY(-14px); filter: blur(4px); }
+}
+
+@keyframes scrIn {
+  from { opacity: 0; transform: scale(1.04); filter: blur(10px); }
+  to   { opacity: 1; transform: none;        filter: none; }
+}
+
+@keyframes scrOut {
+  from { opacity: 1; transform: none;        filter: none; }
+  to   { opacity: 0; transform: scale(.97);  filter: blur(6px); }
+}
+
+/* ==========================================================================
+   主菜单
+   ========================================================================== */
+#menu {
+  display: none;
+  padding: 0 0 0 92px;
+  /* 主菜单用一张静态图当背景。左半边是纯黑，正好承载菜单文字，
+     右半边是角色，作为视觉主体。静态图没有任何渲染开销。 */
+  background: #000 url(menu-bg.jpg) center center / cover no-repeat;
+}
+
+#menu.is-on { display: flex; flex-direction: column; justify-content: center; }
+
+#m-head { margin-bottom: 64px; }
+
+#m-brand {
+  font-size: 13px;
+  letter-spacing: .52em;
+  color: var(--ink);
+  font-weight: 700;
+}
+
+#m-sub {
+  margin-top: 12px;
+  font-size: 10px;
+  letter-spacing: .44em;
+  color: var(--faint);
+}
+
+/* 菜单项：大字号，一行说明 */
+#m-list {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.m-i {
+  position: relative;
+  display: block;
+  width: max-content;
+  padding: 12px 0;
+  border: 0;
+  outline: none;
+  background: none;
+  font: inherit;
+  text-align: left;
+  cursor: pointer;
+  color: #cfd8e0;              /* 黑底上用浅灰，悬停才到纯白 */
+  text-shadow: 0 2px 18px rgba(0, 0, 0, .9);
+  transition: color .4s var(--ease);
+}
+
+.m-i b {
+  display: block;
+  font-size: 40px;
+  font-weight: 300;
+  line-height: 1.18;
+  letter-spacing: .12em;
+  transition: letter-spacing .55s var(--ease);
+}
+
+.m-i i {
+  display: block;
+  margin-top: 6px;
+  font-style: normal;
+  font-size: 11px;
+  letter-spacing: .22em;
+  color: #7c8a96;
+  transition: color .4s var(--ease);
+}
+
+/* 左侧竖条：悬停或聚焦时亮起 */
+.m-i::before {
+  content: "";
+  position: absolute;
+  left: -26px; top: 20%;
+  width: 2px; height: 58%;
+  background: var(--accent);
+  transform: scaleY(0);
+  transform-origin: top;
+  transition: transform .45s var(--ease);
+  box-shadow: 0 0 14px rgba(63, 208, 242, .85);
+}
+
+.m-i:hover { color: var(--ink); }
+.m-i:hover b { letter-spacing: .17em; }
+.m-i:hover i { color: var(--dim); }
+.m-i:hover::before { transform: scaleY(1); }
+
+#m-foot {
+  position: absolute;
+  left: 92px; bottom: 30px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-size: 10px;
+  letter-spacing: .22em;
+  color: var(--faint);
+}
+
+.dot { width: 3px; height: 3px; background: var(--faint); border-radius: 50%; }
+
+/* ==========================================================================
+   子页面
+   ========================================================================== */
+.sub { padding: 0; overflow: hidden; }
+
+/* 返回 */
+.back {
+  position: absolute;
+  top: 30px; left: 52px;
+  padding: 6px 0;
+  border: 0;
+  outline: none;
+  background: none;
+  font: inherit;
+  font-size: 11px;
+  letter-spacing: .24em;
+  color: var(--dim);
+  cursor: pointer;
+  transition: color .35s var(--ease), letter-spacing .35s var(--ease);
+}
+
+.back:hover { color: var(--accent); letter-spacing: .3em; }
+
+/* 内容从左边一列排下来 */
+.sub-body {
+  position: absolute;
+  left: 92px; right: 92px;
+  top: 50%;
+  transform: translateY(-50%);
+  max-height: 72%;
+  overflow: hidden;
+}
+
+.sub-title {
+  font-size: 52px;
+  line-height: 1.06;
+  font-weight: 300;
+  letter-spacing: .05em;
+  color: var(--ink);
+  text-shadow: 0 0 46px rgba(63, 208, 242, .18);
+}
+
+.sub-desc {
+  margin-top: 16px;
+  font-size: 11px;
+  letter-spacing: .24em;
+  color: var(--dim);
+}
+
+/* ==========================================================================
+   组件
+   ========================================================================== */
+.block {
+  margin-top: 38px;
+  width: 100%;
+  max-width: 620px;
+}
+
+.b-head {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid var(--line);
+  font-size: 10px;
+  letter-spacing: .26em;
+  color: var(--faint);
+}
+
+.b-act {
+  margin-left: auto;
+  color: var(--dim);
+  cursor: pointer;
+  letter-spacing: .18em;
+  transition: color .3s var(--ease);
+}
+
+.b-act:hover { color: var(--accent); }
+
+.s-row {
+  display: flex;
+  align-items: center;
+  height: 44px;
+  border-bottom: 1px solid rgba(43, 58, 69, .45);
+  font-size: 12px;
+}
+
+.s-k { width: 120px; color: var(--dim); letter-spacing: .16em; }
+.s-p { width: 70px; color: var(--faint); font-size: 11px; }
+.s-v { margin-left: auto; letter-spacing: .14em; font-size: 11px; }
+.s-v.on  { color: #2fd08a; }
+.s-v.dim { color: var(--faint); }
+
+.para {
+  margin-top: 16px;
+  max-width: 580px;
+  font-size: 12px;
+  line-height: 1.95;
+  letter-spacing: .04em;
+  color: var(--dim);
+}
+
+/* 按钮 */
+.act {
+  position: relative;
+  display: inline-block;
+  width: max-content;
+  margin-top: 40px;
+  padding: 13px 30px;
+  border: 0;
+  outline: none;
+  box-shadow: none;
+  -webkit-appearance: none;
+  appearance: none;
+  background: transparent;
+  font: inherit;
+  font-size: 13px;
+  letter-spacing: .4em;
+  color: var(--accent);
+  cursor: pointer;
+  transition: color .35s var(--ease), letter-spacing .45s var(--ease);
+}
+
+.act::before {
+  content: "";
+  position: absolute; inset: 0;
+  background: rgba(63, 208, 242, .07);
+  opacity: 0; visibility: hidden;
+  transition: opacity .4s var(--ease), visibility .4s;
+}
+
+.act::after {
+  content: "";
+  position: absolute; inset: 0;
+  opacity: 0; visibility: hidden;
+  transition: opacity .4s var(--ease), visibility .4s;
+  background:
+    linear-gradient(var(--line), var(--line)) left top / 12px 1px no-repeat,
+    linear-gradient(var(--line), var(--line)) left top / 1px 12px no-repeat,
+    linear-gradient(var(--line), var(--line)) right top / 12px 1px no-repeat,
+    linear-gradient(var(--line), var(--line)) right top / 1px 12px no-repeat,
+    linear-gradient(var(--line), var(--line)) left bottom / 12px 1px no-repeat,
+    linear-gradient(var(--line), var(--line)) left bottom / 1px 12px no-repeat,
+    linear-gradient(var(--line), var(--line)) right bottom / 12px 1px no-repeat,
+    linear-gradient(var(--line), var(--line)) right bottom / 1px 12px no-repeat;
+}
+
+.act:hover { color: #dcf7ff; letter-spacing: .5em; }
+.act:hover::before { opacity: 1; visibility: visible; }
+.act:hover::after { opacity: 1; visibility: visible; }
+.act:active { transform: translateY(1px); }
+
+.act-main {
+  font-size: 15px;
+  letter-spacing: .46em;
+  padding: 15px 34px;
+}
+
+/* 模组列表 */
+.row {
+  display: flex; align-items: center; gap: 18px;
+  height: 50px;
+  border-bottom: 1px solid rgba(43, 58, 69, .45);
+  font-size: 13px;
+  transition: background .3s var(--ease);
+}
+
+.row:hover { background: rgba(63, 208, 242, .05); }
+
+.r-id { width: 26px; color: var(--faint); font-size: 11px; }
+.r-name { flex: 1; letter-spacing: .05em; }
+.r-ver { color: var(--dim); font-size: 11px; letter-spacing: .1em; }
+
+.r-sw {
+  width: 26px; height: 2px;
+  background: var(--faint);
+  position: relative;
+  transition: background .35s var(--ease);
+}
+
+.r-sw::after {
+  content: "";
+  position: absolute; top: -3px; left: 0;
+  width: 8px; height: 8px;
+  background: var(--dim);
+  transition: left .35s var(--ease), background .35s var(--ease);
+}
+
+.r-sw.is-on { background: rgba(63, 208, 242, .45); }
+.r-sw.is-on::after { left: 18px; background: var(--accent); }
+
+/* 设置行 */
+.c-row {
+  display: flex; align-items: center;
+  height: 46px;
+  border-bottom: 1px solid rgba(43, 58, 69, .45);
+  font-size: 12px;
+}
+
+.c-k { width: 110px; color: var(--dim); letter-spacing: .2em; }
+.c-v { flex: 1; color: var(--ink); letter-spacing: .05em; }
+
+.c-act {
+  padding-left: 20px;
+  color: var(--dim);
+  font-size: 11px;
+  letter-spacing: .18em;
+  cursor: pointer;
+  transition: color .3s var(--ease);
+}
+
+.c-act:hover { color: var(--accent); }
+.c-act.dim { color: var(--faint); cursor: default; }
+/* ==========================================================================
+   转场：每屏一套自己的运动方式，不是同一段动画换参数
+   ========================================================================== */
+
+/* ---- 通用退场：向纵深飞走，前冲式 ---- */
+.screen.leaving {
+  animation: flyOut .42s cubic-bezier(.4, 0, .9, .5) both;
+}
+
+@keyframes flyOut {
+  from { opacity: 1; transform: translateZ(0) scale(1); filter: none; }
+  to   { opacity: 0; transform: translateZ(-1100px) scale(1.28); filter: blur(10px); }
+}
+
+/* ---- 开始游戏：从很深的远处直冲脸前 ---- */
+.screen[data-page="start"].enter {
+  animation: flyForward 1s cubic-bezier(.16, .84, .28, 1) both;
+}
+
+@keyframes flyForward {
+  from { opacity: 0; transform: translateZ(-1600px); filter: blur(18px) brightness(.6); }
+  60%  { opacity: 1; }
+  to   { opacity: 1; transform: translateZ(0); filter: none; }
+}
+
+/* ---- 模组管理：从右侧横着擦进来，带一点绕 Y 轴的转角 ---- */
+.screen[data-page="mods"].enter {
+  animation: slideSide .92s cubic-bezier(.22, .74, .24, 1) both;
+}
+
+@keyframes slideSide {
+  from { opacity: 0; transform: translate3d(560px, 0, -820px) rotateY(-22deg); filter: blur(12px); }
+  55%  { opacity: 1; }
+  to   { opacity: 1; transform: translate3d(0, 0, 0) rotateY(0); filter: none; }
+}
+
+/* ---- 人格对战：从上方俯冲下来，绕 X 轴翻转 ---- */
+.screen[data-page="arena"].enter {
+  animation: dropDown 1s cubic-bezier(.18, .8, .26, 1) both;
+}
+
+@keyframes dropDown {
+  from { opacity: 0; transform: translate3d(0, -420px, -980px) rotateX(24deg); filter: blur(14px); }
+  55%  { opacity: 1; }
+  to   { opacity: 1; transform: translate3d(0, 0, 0) rotateX(0); filter: none; }
+}
+
+/* ---- 设置：从下方缓慢升起，几乎没有旋转，最克制 ---- */
+.screen[data-page="conf"].enter {
+  animation: riseUp .95s cubic-bezier(.2, .76, .28, 1) both;
+}
+
+@keyframes riseUp {
+  from { opacity: 0; transform: translate3d(0, 300px, -640px); filter: blur(10px); }
+  60%  { opacity: 1; }
+  to   { opacity: 1; transform: translate3d(0, 0, 0); filter: none; }
+}
+
+/* ---- 回主菜单：从深处被推出来 ---- */
+#menu.enter {
+  animation: menuBack .95s cubic-bezier(.18, .78, .26, 1) both;
+}
+
+@keyframes menuBack {
+  from { opacity: 0; transform: translateZ(-1200px) scale(.86); filter: blur(16px); }
+  55%  { opacity: 1; }
+  to   { opacity: 1; transform: translateZ(0) scale(1); filter: none; }
+}
+/* ==========================================================================
+   无边框窗口：拖动区 + 窗口按钮
+   ========================================================================== */
+#dragbar {
+  position: fixed;
+  top: 0; left: 0; right: 0;
+  height: 42px;
+  z-index: 50;
+  -webkit-app-region: drag;
+}
+
+#winbtns {
+  position: fixed;
+  top: 18px; right: 22px;
+  z-index: 55;
+  display: flex;
+  gap: 4px;
+}
+
+#winbtns button {
+  width: 30px; height: 26px;
+  border: 0;
+  outline: none;
+  background: transparent;
+  color: var(--dim);
+  font: inherit;
+  font-size: 13px;
+  cursor: pointer;
+  transition: color .3s var(--ease), background .3s var(--ease);
+}
+
+#winbtns button:hover {
+  color: var(--ink);
+  background: rgba(63, 208, 242, .08);
+}
+
+#btn-close:hover {
+  color: #ff8080;
+  background: rgba(255, 90, 90, .12);
+}
+/* ==========================================================================
+   主菜单左侧压暗：黑洞在右边很亮，文字必须有自己的底
+   ========================================================================== */
+
+
+/* 子页面同理 */
+.sub::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(ellipse at 22% 50%,
+              rgba(2,4,8,.88) 0%,
+              rgba(2,4,8,.58) 38%,
+              transparent 72%);
+  pointer-events: none;
+  z-index: -1;
+}
+/* ==========================================================================
+   开始页：用一张静态图，左侧压暗承载文字
+   ========================================================================== */
+.sub[data-page="start"] {
+  background: #000 url(start-bg.jpg) center center / cover no-repeat;
+}
+
+/* 覆盖通用的 .sub::before，改成只压左边，右边留给角色 */
+.sub[data-page="start"]::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background:
+    linear-gradient(180deg,
+      rgba(2,4,8,.86) 0%,
+      rgba(2,4,8,.52) 14%,
+      rgba(2,4,8,.18) 26%,
+      transparent 40%),
+    linear-gradient(90deg,
+      rgba(2,4,8,.92) 0%,
+      rgba(2,4,8,.80) 30%,
+      rgba(2,4,8,.42) 48%,
+      rgba(2,4,8,.10) 64%,
+      transparent 78%);
+  pointer-events: none;
+  z-index: -1;
+}
+/* 开始页的内容只占左侧，别压到角色身上 */
+.sub[data-page="start"] .sub-body {
+  right: auto;
+  width: 44%;
+  max-width: 520px;
+}
+
+.sub[data-page="start"] .sub-title {
+  font-size: 44px;
+}
+
+.sub[data-page="start"] .block {
+  max-width: 100%;
+}
+
+/* 状态行的值跟在端口后面，不要推到最右 —— 否则会压到角色身上 */
+.sub[data-page="start"] .s-v {
+  margin-left: 26px;
+  padding-right: 0;
+}
+
+.sub[data-page="start"] .s-p {
+  width: 58px;
+}
+/* ==========================================================================
+   设置页：整活用的那张图。画面很亮，左侧压重一点才看得清字
+   ========================================================================== */
+.sub[data-page="conf"] {
+  background: #000 url(conf-bg.jpg) center center / cover no-repeat;
+}
+
+.sub[data-page="conf"]::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background:
+    linear-gradient(90deg,
+      rgba(2,4,8,.95) 0%,
+      rgba(2,4,8,.88) 30%,
+      rgba(2,4,8,.55) 48%,
+      rgba(2,4,8,.15) 64%,
+      transparent 80%),
+    linear-gradient(180deg,
+      rgba(2,4,8,.75) 0%,
+      transparent 22%,
+      transparent 78%,
+      rgba(2,4,8,.68) 100%);
+  pointer-events: none;
+  z-index: -1;
+}
+
+.sub[data-page="conf"] .sub-body {
+  right: auto;
+  width: 46%;
+  max-width: 540px;
+}
+/* 设置页右侧的操作按钮要够亮，否则压在人物衣服上看不见 */
+.sub[data-page="conf"] .c-act {
+  color: #b9c9d4;
+  text-shadow: 0 1px 8px rgba(0, 0, 0, .9);
+}
+
+.sub[data-page="conf"] .c-act:hover { color: var(--accent); }
+
+.sub[data-page="conf"] .c-act.dim { color: #6d7c88; }
+
+.sub[data-page="conf"] .c-k {
+  color: #93a5b2;
+  text-shadow: 0 1px 8px rgba(0, 0, 0, .9);
+}
+
+.sub[data-page="conf"] .c-row {
+  border-bottom-color: rgba(120, 140, 155, .22);
+}
+
+/* 内容区再收窄一点，避开人物主体 */
+.sub[data-page="conf"] .sub-body {
+  width: 41%;
+  max-width: 500px;
+}
+/* ==========================================================================
+   对战页：红色调那张。画面本身很饱和，左侧压到接近全黑才不抢字
+   ========================================================================== */
+.sub[data-page="arena"] {
+  background: #000 url(arena-bg.jpg) center center / cover no-repeat;
+}
+
+.sub[data-page="arena"]::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background:
+    linear-gradient(90deg,
+      rgba(3,2,4,.96) 0%,
+      rgba(3,2,4,.90) 28%,
+      rgba(3,2,4,.58) 46%,
+      rgba(3,2,4,.16) 62%,
+      transparent 78%),
+    linear-gradient(180deg,
+      rgba(3,2,4,.55) 0%,
+      transparent 18%,
+      transparent 80%,
+      rgba(3,2,4,.55) 100%);
+  pointer-events: none;
+  z-index: -1;
+}
+
+.sub[data-page="arena"] .sub-body {
+  right: auto;
+  width: 42%;
+  max-width: 500px;
+}
+
+/* 红色背景上，青色按钮对比最强，保留；但描边要淡一点 */
+.sub[data-page="arena"] .act {
+  text-shadow: 0 1px 12px rgba(0, 0, 0, .95);
+}
+
+.sub[data-page="arena"] .s-k,
+.sub[data-page="arena"] .s-v {
+  text-shadow: 0 1px 8px rgba(0, 0, 0, .9);
+}
+
+.sub[data-page="arena"] .s-row {
+  border-bottom-color: rgba(150, 90, 90, .22);
+}
+/* ==========================================================================
+   模组页：蓝灰那张。冷色调压在左侧，列表要占宽一点
+   ========================================================================== */
+.sub[data-page="mods"] {
+  background: #000 url(mods-bg.jpg) center center / cover no-repeat;
+}
+
+.sub[data-page="mods"]::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background:
+    linear-gradient(90deg,
+      rgba(4,6,10,.96) 0%,
+      rgba(4,6,10,.90) 30%,
+      rgba(4,6,10,.62) 50%,
+      rgba(4,6,10,.18) 66%,
+      transparent 80%),
+    linear-gradient(180deg,
+      rgba(4,6,10,.50) 0%,
+      transparent 20%,
+      transparent 78%,
+      rgba(4,6,10,.52) 100%);
+  pointer-events: none;
+  z-index: -1;
+}
+
+.sub[data-page="mods"] .sub-body {
+  right: auto;
+  width: 48%;
+  max-width: 560px;
+}
+
+/* 列表和说明在图上要够亮 */
+.sub[data-page="mods"] .r-name,
+.sub[data-page="mods"] .r-id,
+.sub[data-page="mods"] .r-ver,
+.sub[data-page="mods"] .para {
+  text-shadow: 0 1px 8px rgba(0, 0, 0, .9);
+}
+
+.sub[data-page="mods"] .row {
+  border-bottom-color: rgba(120, 140, 160, .22);
+}
+
+.sub[data-page="mods"] .b-head {
+  border-bottom-color: rgba(120, 140, 160, .25);
+}
+/* 模组页右侧收窄，版本号和开关别落在雨丝上 */
+.sub[data-page="mods"] .sub-body {
+  width: 45%;
+  max-width: 520px;
+}
+
+.sub[data-page="mods"] .r-ver {
+  color: #9db0bd;
+  text-shadow: 0 1px 10px rgba(0, 0, 0, .95);
+}
+
+/* 开关给一个暗底托着，不然看不出来是开还是关 */
+.sub[data-page="mods"] .r-sw {
+  background: rgba(10, 16, 22, .85);
+  box-shadow: 0 0 0 1px rgba(120, 140, 160, .18);
+}
+
+.sub[data-page="mods"] .r-sw.is-on {
+  background: rgba(63, 208, 242, .40);
+}
+
+.sub[data-page="mods"] .b-act {
+  color: #a8bcc8;
+  text-shadow: 0 1px 10px rgba(0, 0, 0, .95);
+}
+/* ==========================================================================
+   模组列表（动态渲染）
+   ========================================================================== */
+.mod-list {
+  margin-top: 6px;
+}
+
+.mod-row {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  height: 52px;
+  border-bottom: 1px solid rgba(120, 140, 160, .20);
+  font-size: 13px;
+  transition: background .25s var(--ease);
+}
+
+.mod-row:hover {
+  background: rgba(63, 208, 242, .05);
+}
+
+.mod-idx {
+  width: 26px;
+  color: #5f7180;
+  font-size: 11px;
+  text-shadow: 0 1px 8px rgba(0,0,0,.9);
+}
+
+.mod-name {
+  flex: 1;
+  min-width: 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  letter-spacing: .04em;
+  text-shadow: 0 1px 8px rgba(0,0,0,.9);
+}
+
+.mod-info {
+  color: #8b9dab;
+  font-size: 10px;
+  letter-spacing: .1em;
+  text-shadow: 0 1px 8px rgba(0,0,0,.9);
+}
+
+/* 开关：点击切换 */
+.mod-sw {
+  position: relative;
+  width: 34px;
+  height: 16px;
+  flex: 0 0 auto;
+  background: rgba(8, 14, 20, .85);
+  border: 1px solid rgba(120, 140, 160, .28);
+  cursor: pointer;
+  transition: background .3s var(--ease), border-color .3s var(--ease);
+}
+
+.mod-sw::after {
+  content: "";
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  width: 10px;
+  height: 10px;
+  background: #6a7c8a;
+  transition: left .3s var(--ease), background .3s var(--ease);
+}
+
+.mod-sw.on {
+  background: rgba(63, 208, 242, .18);
+  border-color: rgba(63, 208, 242, .55);
+}
+
+.mod-sw.on::after {
+  left: 20px;
+  background: var(--accent);
+}
+
+.mod-sw:hover {
+  border-color: rgba(63, 208, 242, .8);
+}
+
+/* 状态文字 */
+.mod-state {
+  width: 44px;
+  text-align: right;
+  font-size: 10px;
+  letter-spacing: .12em;
+  text-shadow: 0 1px 8px rgba(0,0,0,.9);
+}
+
+.mod-state.on  { color: #2fd08a; }
+.mod-state.off { color: #7a8b98; }
+
+/* 路径提示 */
+.path-hint {
+  margin-top: 10px;
+  padding: 10px 14px;
+  font-size: 11px;
+  letter-spacing: .02em;
+  color: #a8bcc8;
+  background: rgba(8, 14, 20, .72);
+  border-left: 2px solid rgba(63, 208, 242, .5);
+  word-break: break-all;
+  user-select: text;
+}
+
+.para code {
+  padding: 1px 5px;
+  background: rgba(63, 208, 242, .10);
+  color: #a8dff0;
+  font-size: 11px;
+}
+
+/* 设置页的长路径要能换行 */
+.c-v {
+  word-break: break-all;
+  line-height: 1.5;
+}
+
+/* 空状态 */
+.mod-empty {
+  padding: 26px 0;
+  color: #7a8b98;
+  font-size: 12px;
+  letter-spacing: .06em;
+}
+/* ==========================================================================
+   可读性修正
+
+   问题：--faint (#2b3a45) 基本就是背景色，路径这类"次要信息"用它
+   在图上完全看不见。变量还被 background 复用，不能直接改。
+   所以针对性地把"文字用途"的几处提亮，并统一加阴影。
+   ========================================================================== */
+
+/* 所有子页面的文字统一加一层暗投影，压在任何图上都能读 */
+.sub .sub-desc,
+.sub .b-head,
+.sub .b-act,
+.sub .para,
+.sub .s-k,
+.sub .s-v,
+.sub .c-k,
+.sub .c-v,
+.sub .c-act,
+.sub .r-name,
+.sub .r-ver,
+.sub .r-id,
+.sub .mod-idx,
+.sub .mod-name,
+.sub .mod-info,
+.sub .mod-state {
+  text-shadow: 0 1px 10px rgba(0, 0, 0, .95), 0 0 3px rgba(0, 0, 0, .85);
+}
+
+/* 路径值：原来是 --faint，几乎不可见，提到中等亮度 */
+.s-v.dim {
+  color: #a5b8c4;
+}
+
+/* 区块小标题：原来是 --faint */
+.b-head {
+  color: #9dafbc;
+}
+
+/* 键名：从 --dim 提亮一档 */
+.s-k,
+.c-k {
+  color: #8296a4;
+}
+
+/* 中间那个空列 */
+.s-p {
+  color: #6c8091;
+}
+
+/* 序号 */
+.r-id,
+.mod-idx {
+  color: #7c8f9d;
+}
+
+/* 说明文字 */
+.para {
+  color: #9aacb9;
+}
+
+/* 副标题 */
+.sub-desc {
+  color: #94a6b4;
+}
+
+/* 更新源这种长字符串 */
+.c-v {
+  color: #a8bac6;
+}
+
+/* 设置页右侧操作 */
+.c-act {
+  color: #a2b4c0;
+}
+/* ==========================================================================
+   更新中的按钮状态
+
+   pending   发现更新等待处理  → 偏暖的黄，暗示"要动它"
+   busy      正在下载/检查      → 呼吸，暗示"别点"
+   ========================================================================== */
+.act.pending {
+  color: #f0c674;
+  border-bottom-color: rgba(240, 198, 116, .55);
+}
+
+.act.pending::after {
+  background: #f0c674;
+  box-shadow: 0 0 12px rgba(240, 198, 116, .7);
+}
+
+.act.busy {
+  color: #94a6b4;
+  border-bottom-color: rgba(148, 166, 180, .35);
+  animation: busy-breathe 1.8s ease-in-out infinite;
+  cursor: progress;
+}
+
+.act.busy::after {
+  background: #94a6b4;
+  box-shadow: none;
+}
+
+@keyframes busy-breathe {
+  0%, 100% { opacity: 1; }
+  50%      { opacity: .45; }
+}

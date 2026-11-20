@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>LIMBUS</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<canvas id="gl"></canvas>
+<canvas id="glitch"></canvas>
+<div id="flash"></div>
+
+<!-- ============================================================
+     加载层
+     ============================================================ -->
+<section id="boot">
+  <div class="boot-inner">
+    <div class="boot-brand">LIMBUS</div>
+    <div class="boot-sub">PRIVATE TERMINAL</div>
+    <div class="boot-log" id="bootlog"></div>
+    <div class="boot-bar"><i id="bootbar"></i></div>
+    <div class="boot-pct" id="bootpct">0%</div>
+  </div>
+</section>
+
+<!-- ============================================================
+     主界面
+     ============================================================ -->
+<main id="app" class="hidden">
+
+  <div id="mark">
+    <svg viewBox="0 0 40 40" width="30" height="30">
+      <rect x="20" y="2" width="25.5" height="25.5" transform="rotate(45 20 2)"
+            fill="none" stroke="rgba(63,208,242,.75)" stroke-width="1"/>
+      <rect x="20" y="9" width="15.5" height="15.5" transform="rotate(45 20 9)"
+            fill="none" stroke="rgba(63,208,242,.42)" stroke-width="1"/>
+      <circle cx="20" cy="20" r="2.2" fill="#3fd0f2"/>
+    </svg>
+  </div>
+
+  <div id="winbtns">
+    <button id="btn-min" title="最小化">—</button>
+    <button id="btn-close" title="关闭">✕</button>
+  </div>
+
+  <div id="dragbar"></div>
+
+  <!-- ==========================================================
+       第一屏：主菜单
+       ========================================================== -->
+  <section id="menu" class="screen is-on">
+
+    <div id="m-head">
+      <div id="m-brand">LIMBUS</div>
+      <div id="m-sub">PRIVATE TERMINAL</div>
+    </div>
+
+    <nav id="m-list">
+      <button class="m-i" data-go="start"><b>开始游戏</b><i>启动私服并进入</i></button>
+      <button class="m-i" data-go="mods"><b>模组管理</b><i id="m-mods">—</i></button>
+      <button class="m-i" data-go="arena"><b>人格对战</b><i id="m-arena">独立程序</i></button>
+      <button class="m-i" data-go="conf"><b>设置</b><i>路径与更新</i></button>
+    </nav>
+
+    <div id="m-foot">
+      <span id="m-ver">v0.1</span><span class="dot"></span><span id="m-status">检查中</span>
+    </div>
+
+  </section>
+
+  <!-- ==========================================================
+       开始游戏
+       ========================================================== -->
+  <section class="screen sub" data-page="start">
+    <button class="back" data-back>← 返回</button>
+    <div class="sub-body">
+      <h1 class="sub-title">SYSTEM READY</h1>
+      <p class="sub-desc">等待操作员指令</p>
+
+      <button class="act act-main" id="act-launch">启动游戏</button>
+
+      <div class="block">
+        <div class="b-head">环境</div>
+        <div class="s-row"><span class="s-k">游戏本体</span><span class="s-p"></span><span class="s-v dim" id="s-game">—</span></div>
+        <div class="s-row"><span class="s-k">启动脚本</span><span class="s-p"></span><span class="s-v dim" id="s-launch">—</span></div>
+        <div class="s-row"><span class="s-k">模组</span><span class="s-p"></span><span class="s-v dim" id="s-mods">—</span></div>
+      </div>
+
+      <div class="block">
+        <div class="b-head">说明</div>
+        <p class="para" id="s-note">
+          点「启动游戏」会先起服务再开游戏。如果包里有 launch.exe 就用它，
+          没有就直接开 LimbusCompany.exe。
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================
+       模组管理
+       ========================================================== -->
+  <section class="screen sub" data-page="mods">
+    <button class="back" data-back>← 返回</button>
+    <div class="sub-body">
+      <h1 class="sub-title">MODULES</h1>
+      <p class="sub-desc" id="mods-summary">扫描中…</p>
+
+      <div class="block">
+        <div class="b-head">已安装 <span class="b-act" id="mods-refresh">重新扫描</span></div>
+        <div id="mods-list" class="mod-list"></div>
+        <p class="para" id="mods-empty" hidden>
+          这里还没有模组。把模组文件夹整个复制到下面这个位置，再点「重新扫描」：
+        </p>
+        <p class="path-hint" id="mods-path" hidden></p>
+      </div>
+
+      <div class="block">
+        <div class="b-head">操作</div>
+        <button class="act" id="mods-open">打开模组文件夹</button>
+        <p class="para">
+          启用 / 禁用只是把文件夹在 <code>mods</code> 和 <code>mods-off</code> 之间移动，
+          不会删任何文件。改完要重启游戏才生效。
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================
+       人格对战
+       ========================================================== -->
+  <section class="screen sub" data-page="arena">
+    <button class="back" data-back>← 返回</button>
+    <div class="sub-body">
+      <h1 class="sub-title">ARENA</h1>
+      <p class="sub-desc">独立程序，由启动器统一更新和拉起</p>
+
+      <button class="act act-main" id="arena-launch">打开人格对战</button>
+
+      <div class="block">
+        <div class="b-head">程序</div>
+        <div class="s-row"><span class="s-k">路径</span><span class="s-p"></span><span class="s-v dim" id="arena-path">—</span></div>
+        <div class="s-row"><span class="s-k">状态</span><span class="s-p"></span><span class="s-v" id="arena-state">—</span></div>
+      </div>
+
+      <div class="block">
+        <div class="b-head">说明</div>
+        <p class="para">
+          人格对战是独立程序，但它和私服一起打包、一起更新。
+          以后更新只需要在启动器里点一次，不用分别维护两个包。
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================
+       设置
+       ========================================================== -->
+  <section class="screen sub" data-page="conf">
+    <button class="back" data-back>← 返回</button>
+    <div class="sub-body">
+      <h1 class="sub-title">CONFIG</h1>
+      <p class="sub-desc">本地配置 · 版本 <span id="cfg-version">0.1</span></p>
+
+      <div class="block">
+        <div class="b-head">目录</div>
+        <div class="c-row"><span class="c-k">启动器</span><span class="c-v" id="cfg-root">—</span></div>
+        <div class="c-row"><span class="c-k">游戏本体</span><span class="c-v" id="cfg-game">—</span></div>
+        <div class="c-row"><span class="c-k">模组</span><span class="c-v" id="cfg-mods">—</span></div>
+        <div class="c-row"><span class="c-k">人格对战</span><span class="c-v" id="cfg-arena">—</span></div>
+      </div>
+
+      <div class="block">
+        <div class="b-head">更新</div>
+        <div class="c-row">
+          <span class="c-k">更新源</span>
+          <span class="c-v" id="cfg-update">—</span>
+          <span class="c-act" id="cfg-check">检查</span>
+        </div>
+        <div class="c-row">
+          <span class="c-k">日志</span>
+          <span class="c-v" id="cfg-log">—</span>
+          <span class="c-act" id="cfg-openlog">打开</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer id="foot"><span id="log">ready</span></footer>
+</main>
+
+<script src="main.js"></script>
+<script src="data.js"></script>
+</body>
+</html>
