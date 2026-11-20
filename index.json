@@ -2,15 +2,15 @@
     "repo":  "lqkf852741/limbus-update",
     "time":  "2026-11-20 19:55:28",
     "launcher":  {
-                     "version":  "0.1",
-                     "note":  "自动更新接入 + UI 更新",
-                     "time":  "2026-11-20 19:55:28",
+                     "version":  "0.2",
+                     "note":  "修复自动更新：force 参数、前端触发、超时",
+                     "time":  "2026-11-20 20:28:49",
                      "files":  [
                                    {
                                        "path":  "Launcher.exe",
-                                       "file":  "files/launcher/628855ce3780e484_Launcher.exe",
-                                       "sha256":  "628855ce3780e484b3015433a84f47e5d484d44f76857b574f0e29f734d0f6ae",
-                                       "size":  63383282
+                                       "file":  "files/launcher/d4b27718a7e55b3a_Launcher.exe",
+                                       "sha256":  "d4b27718a7e55b3a0f9f7d653c18b1bfd1b9b17cf85b1584b1986cab60f7a495",
+                                       "size":  63384818
                                    },
                                    {
                                        "path":  "wwwroot/arena-bg.jpg",
@@ -26,9 +26,9 @@
                                    },
                                    {
                                        "path":  "wwwroot/data.js",
-                                       "file":  "files/launcher/bc95365ebaa33125_data.js",
-                                       "sha256":  "bc95365ebaa33125af5f6d2d051111edbca6b492b176e93fe1afa3eff6f6a6db",
-                                       "size":  9737
+                                       "file":  "files/launcher/5ecfa32e3ebe9067_data.js",
+                                       "sha256":  "5ecfa32e3ebe9067cd4b82da29ff3f2c5b49e5dce353b7c4495faa7cb0febc86",
+                                       "size":  9761
                                    },
                                    {
                                        "path":  "wwwroot/index.html",
