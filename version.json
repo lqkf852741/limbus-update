@@ -1,0 +1,38 @@
+{
+    "version":  "1.0.1",
+    "note":  "锁槽只在自定义关卡(40020201/696902)生效；App 路径按 game-root.txt 解析",
+    "time":  "2026-11-20 13:42:18",
+    "repo":  "lqkf852741/limbus-update",
+    "files":  [
+                  {
+                      "path":  "BepInEx/plugins/ArenaRedirect.dll",
+                      "file":  "ArenaRedirect.dll",
+                      "sha256":  "cd97cd47a8e10f33186fc23ba97b50ebb4a623b1faefc68869e8075cd1576384",
+                      "size":  86016
+                  },
+                  {
+                      "path":  "ArenaApp/ArenaApp.exe",
+                      "file":  "ArenaApp.exe",
+                      "sha256":  "47d1d138d46275d695540bf27a2a70335eee0845b4fbc215ab9a92c037612ad3",
+                      "size":  372224
+                  },
+                  {
+                      "path":  "ArenaApp/ArenaApp.dll",
+                      "file":  "ArenaApp.dll",
+                      "sha256":  "53ee6a372ad08d17db8ce346b4f25da65839c5c9dff62519eca76c3568ec5260",
+                      "size":  270336
+                  },
+                  {
+                      "path":  "ArenaApp/ArenaApp.runtimeconfig.json",
+                      "file":  "ArenaApp.runtimeconfig.json",
+                      "sha256":  "05917b409d59af31bc8d3021bc06302a0c21c7d05b449603d6cc9f0301a2b66c",
+                      "size":  516
+                  },
+                  {
+                      "path":  "ArenaApp/ArenaApp.deps.json",
+                      "file":  "ArenaApp.deps.json",
+                      "sha256":  "fd57f3638db63997667db66a759ca4e656320cc5a16b387c6f1bbc34ad0626cb",
+                      "size":  416
+                  }
+              ]
+}
