@@ -1,7 +1,7 @@
 {
-    "version":  "1.0.1",
-    "note":  "锁槽只在自定义关卡(40020201/696902)生效；App 路径按 game-root.txt 解析",
-    "time":  "2026-11-20 13:42:18",
+    "version":  "1.0.2",
+    "note":  "锁槽只在自定义关卡生效；App 路径按 game-root.txt 解析；json 统一 LF",
+    "time":  "2026-11-20 14:09:59",
     "repo":  "lqkf852741/limbus-update",
     "files":  [
                   {
@@ -25,14 +25,14 @@
                   {
                       "path":  "ArenaApp/ArenaApp.runtimeconfig.json",
                       "file":  "ArenaApp.runtimeconfig.json",
-                      "sha256":  "05917b409d59af31bc8d3021bc06302a0c21c7d05b449603d6cc9f0301a2b66c",
-                      "size":  516
+                      "sha256":  "0927ab269d96809b2ebc2eb7142fb4bb91433ec3bc6e46f34e48f0c67d86edae",
+                      "size":  497
                   },
                   {
                       "path":  "ArenaApp/ArenaApp.deps.json",
                       "file":  "ArenaApp.deps.json",
-                      "sha256":  "fd57f3638db63997667db66a759ca4e656320cc5a16b387c6f1bbc34ad0626cb",
-                      "size":  416
+                      "sha256":  "b01cc7d61cf07007bb68dfa4a9fde7c9f8e235341cb594829456c2cd33704eb2",
+                      "size":  394
                   }
               ]
 }
