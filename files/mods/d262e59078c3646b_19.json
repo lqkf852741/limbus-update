@@ -1,0 +1,45 @@
+{
+ "list": [
+  {
+   "stageType": "NORMAL_BATTLE",
+   "restrictList": [
+    {
+     "id": 10920,
+     "abstainIds": []
+    },
+    {
+     "id": 10922,
+     "abstainIds": []
+    },
+    {
+     "id": 10925,
+     "abstainIds": []
+    },
+    {
+     "id": 10926,
+     "mustParticipateIds": [],
+     "abstainIds": []
+    },
+    {
+     "id": 10928,
+     "mustParticipateIds": [],
+     "abstainIds": []
+    },
+    {
+     "id": 10929,
+     "mustParticipateIds": [],
+     "abstainIds": []
+    },
+    {
+     "id": 10930,
+     "mustParticipateIds": [],
+     "abstainIds": []
+    },
+    {
+     "id": 10933,
+     "mustParticipateIds": []
+    }
+   ]
+  }
+ ]
+}

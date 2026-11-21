@@ -1,0 +1,648 @@
+{
+  "repo": "lqkf852741/limbus-update",
+  "version": "1.0.0",
+  "time": "2026-11-22 00:54:15",
+  "base": "BepInEx/plugins/Lethe/mods",
+  "mods": [
+    {
+      "name": "AbnorsAsIDs",
+      "version": "1",
+      "dest": "BepInEx/plugins/Lethe/mods/AbnorsAsIDs",
+      "files": [
+        {
+          "path": "custom_encounters/PVP/encounter.json",
+          "file": "files/mods/83c5c3b29a26270f_encounter.json",
+          "sha256": "83c5c3b29a26270f25cd25cb271bb7e0be15c97d85f557be056344f17cd44503",
+          "size": 885
+        }
+      ]
+    },
+    {
+      "name": "NoRestrict",
+      "version": "1",
+      "dest": "BepInEx/plugins/Lethe/mods/NoRestrict",
+      "files": [
+        {
+          "path": "custom_limbus_data/restrict-participation/10.json",
+          "file": "files/mods/87fb867ca4b9ef0b_10.json",
+          "sha256": "87fb867ca4b9ef0b29df187c0d3eae9ef5c874dfaa55eff72558d13e60424f90",
+          "size": 271
+        },
+        {
+          "path": "custom_limbus_data/restrict-participation/12.json",
+          "file": "files/mods/dd20badbd4abceae_12.json",
+          "sha256": "dd20badbd4abceae67d9d36da4057c19686b4bc80689bb40bcc7731414ec3aee",
+          "size": 595
+        },
+        {
+          "path": "custom_limbus_data/restrict-participation/14.json",
+          "file": "files/mods/b81b0c9ed1cb9b6c_14.json",
+          "sha256": "b81b0c9ed1cb9b6c840e99375f019272fcd4e2fa62ac1b93f26d3734ded88bc8",
+          "size": 663
+        },
+        {
+          "path": "custom_limbus_data/restrict-participation/16.json",
+          "file": "files/mods/928062071fc56e90_16.json",
+          "sha256": "928062071fc56e9082f7fcfcf8dda50bd9ac8cc146476d8f5d71dc7a0faba855",
+          "size": 541
+        },
+        {
+          "path": "custom_limbus_data/restrict-participation/17.json",
+          "file": "files/mods/66680a8bc1165f17_17.json",
+          "sha256": "66680a8bc1165f17cadc6354823fd8083e95514fd5b2c9fc62e74e4a8f08d8c1",
+          "size": 1762
+        },
+        {
+          "path": "custom_limbus_data/restrict-participation/18.json",
+          "file": "files/mods/dd64874b29018740_18.json",
+          "sha256": "dd64874b2901874091b7d8d5fa332cf4dae562923a993103ea325efdbf1e5b05",
+          "size": 416
+        },
+        {
+          "path": "custom_limbus_data/restrict-participation/19.json",
+          "file": "files/mods/d262e59078c3646b_19.json",
+          "sha256": "d262e59078c3646bc7d35e3bbbe6fa24e58ba48eb3e2177f1c5a3673c194e01d",
+          "size": 683
+        },
+        {
+          "path": "custom_limbus_data/restrict-participation/2.json",
+          "file": "files/mods/deb2ceefe4791204_2.json",
+          "sha256": "deb2ceefe4791204fa4c8d5243c8ac1619aa8bc8ca57a37fcf4f50e7f10f715c",
+          "size": 2380
+        },
+        {
+          "path": "custom_limbus_data/restrict-participation/20.json",
+          "file": "files/mods/eb24d51222d176fe_20.json",
+          "sha256": "eb24d51222d176fe7ef2ca39c8e530410ecc9e753445f87d55c9d932c8b63d4e",
+          "size": 1795
+        },
+        {
+          "path": "custom_limbus_data/restrict-participation/21.json",
+          "file": "files/mods/42a54599ece70e9f_21.json",
+          "sha256": "42a54599ece70e9feb2c68ba8ddbed29b152cbd9a7dd75fc852d58d969fc354d",
+          "size": 1348
+        },
+        {
+          "path": "custom_limbus_data/restrict-participation/22.json",
+          "file": "files/mods/bb953661172b4b3a_22.json",
+          "sha256": "bb953661172b4b3add09062cfceb4ba1058e1b81a21232080e44da3104719943",
+          "size": 1085
+        },
+        {
+          "path": "custom_limbus_data/restrict-participation/23.json",
+          "file": "files/mods/e6675e2382885a44_23.json",
+          "sha256": "e6675e2382885a44e44b49c96c4d7b4e231586885e42e43a84f76de5eaa82e47",
+          "size": 817
+        },
+        {
+          "path": "custom_limbus_data/restrict-participation/24.json",
+          "file": "files/mods/edfa7cf44155378b_24.json",
+          "sha256": "edfa7cf44155378b7bc80e96f602c4733b364978836f64f9317cd8e464ebe071",
+          "size": 271
+        },
+        {
+          "path": "custom_limbus_data/restrict-participation/25.json",
+          "file": "files/mods/4dd6f500f7f9445f_25.json",
+          "sha256": "4dd6f500f7f9445f98c50b17dbd23b2c75b13b0b0a979e399dce5a1e54cd4b10",
+          "size": 181
+        },
+        {
+          "path": "custom_limbus_data/restrict-participation/26.json",
+          "file": "files/mods/af39386f1d578371_26.json",
+          "sha256": "af39386f1d5783712947f2ef23faf26d8451b3f0bc5c260068e7ac473f05a98f",
+          "size": 1718
+        },
+        {
+          "path": "custom_limbus_data/restrict-participation/27.json",
+          "file": "files/mods/2e99ff74dba4c208_27.json",
+          "sha256": "2e99ff74dba4c20847e43dc0f9c091b9de9077ab47f5de208e7948e50275b006",
+          "size": 1912
+        },
+        {
+          "path": "custom_limbus_data/restrict-participation/28.json",
+          "file": "files/mods/196e3989ca105b65_28.json",
+          "sha256": "196e3989ca105b6526e57ad18b23ba6795897916e51610422023688ea61dabe3",
+          "size": 286
+        },
+        {
+          "path": "custom_limbus_data/restrict-participation/7.json",
+          "file": "files/mods/5ca7b66dd8cee1c3_7.json",
+          "sha256": "5ca7b66dd8cee1c3cd70fd864a8b2ed927ca562e7a10f4ef542572576563c35d",
+          "size": 796
+        },
+        {
+          "path": "custom_limbus_data/restrict-participation/8.json",
+          "file": "files/mods/63284cc24f34c24c_8.json",
+          "sha256": "63284cc24f34c24cccb3d148e8e447e1b8b42cdb6c2af5f8b866c231c3c016de",
+          "size": 724
+        }
+      ]
+    },
+    {
+      "name": "ReflectrialUnlock",
+      "version": "1",
+      "dest": "BepInEx/plugins/Lethe/mods/ReflectrialUnlock",
+      "files": [
+        {
+          "path": "custom_limbus_data/battle-bossraid/0.json",
+          "file": "files/mods/547b67764e942b2c_0.json",
+          "sha256": "547b67764e942b2c2ad45810b625a810907a6fbd06782d9917d11e9f25b5f0fe",
+          "size": 3913
+        },
+        {
+          "path": "custom_limbus_data/battle-bossraid/1.json",
+          "file": "files/mods/3dab925f903a7d88_1.json",
+          "sha256": "3dab925f903a7d886875a43a8e481ca7200a4a13d65807060d23f2c38fcb29e6",
+          "size": 2797
+        },
+        {
+          "path": "custom_limbus_data/battle-bossraid/2.json",
+          "file": "files/mods/409801f633cc94d0_2.json",
+          "sha256": "409801f633cc94d05fb39819b7d50cfa7d9c2da7415aa33e7607541b14a4910c",
+          "size": 3621
+        },
+        {
+          "path": "custom_limbus_data/battle-bossraid/3.json",
+          "file": "files/mods/ef1b870b61e2e186_3.json",
+          "sha256": "ef1b870b61e2e186f0e03ffeb18944746bdb0838de752b5607a973b629e4dcad",
+          "size": 2013
+        },
+        {
+          "path": "custom_limbus_data/battle-mirrordungeon/0.json",
+          "file": "files/mods/3bc05838fb9089c1_0.json",
+          "sha256": "3bc05838fb9089c1fdc4f77753133a7a62522fe9e290c9364635fafe316bdc66",
+          "size": 420429
+        },
+        {
+          "path": "custom_limbus_data/battle-mirrordungeon/1.json",
+          "file": "files/mods/9e4987c6a0797b64_1.json",
+          "sha256": "9e4987c6a0797b64a27eb23d8d6bc53ced9de9ae420c8cbc67bf4d6ca52c9d73",
+          "size": 263462
+        },
+        {
+          "path": "custom_limbus_data/battle-mirrordungeon/10.json",
+          "file": "files/mods/ed336931bb488f6f_10.json",
+          "sha256": "ed336931bb488f6f6c2ea108e2fbd896a5c5b727d8912ef78453805950230e12",
+          "size": 2608389
+        },
+        {
+          "path": "custom_limbus_data/battle-mirrordungeon/11.json",
+          "file": "files/mods/5d6dedddb2eff36d_11.json",
+          "sha256": "5d6dedddb2eff36d2ad522140a5dbfa5bc7b9185047a4305439df503224a6e61",
+          "size": 859639
+        },
+        {
+          "path": "custom_limbus_data/battle-mirrordungeon/12.json",
+          "file": "files/mods/94e5219cc3c259e0_12.json",
+          "sha256": "94e5219cc3c259e060854bf5027ed93be6fd00c40ecef55a43f4737e53526856",
+          "size": 150299
+        },
+        {
+          "path": "custom_limbus_data/battle-mirrordungeon/13.json",
+          "file": "files/mods/19b49cf671715c3f_13.json",
+          "sha256": "19b49cf671715c3fb5346065689dba2530f474ef17163448c19162ef490a3ac2",
+          "size": 78949
+        },
+        {
+          "path": "custom_limbus_data/battle-mirrordungeon/14.json",
+          "file": "files/mods/2bb97440b874c0f8_14.json",
+          "sha256": "2bb97440b874c0f8f0d8e0138f3034c02157de99cfc3694e8b235d59c721c1a3",
+          "size": 5773
+        },
+        {
+          "path": "custom_limbus_data/battle-mirrordungeon/15.json",
+          "file": "files/mods/a300dc072d07b9cf_15.json",
+          "sha256": "a300dc072d07b9cf1229d32394c30154ab1085a2275b1a1835f936f1e8321e82",
+          "size": 17120
+        },
+        {
+          "path": "custom_limbus_data/battle-mirrordungeon/16.json",
+          "file": "files/mods/519b5086a458a79e_16.json",
+          "sha256": "519b5086a458a79e62a129af0676970cab439995047dce36e0eebf0cdcab89f8",
+          "size": 6801
+        },
+        {
+          "path": "custom_limbus_data/battle-mirrordungeon/17.json",
+          "file": "files/mods/543bb4e35ae7686a_17.json",
+          "sha256": "543bb4e35ae7686a03c13ae67e507ea261f6359babb513b87b78a56c28ccc291",
+          "size": 126297
+        },
+        {
+          "path": "custom_limbus_data/battle-mirrordungeon/18.json",
+          "file": "files/mods/ba2b7c0d8fe3f8ca_18.json",
+          "sha256": "ba2b7c0d8fe3f8ca3c4cae6028ef357388572b72fb86dd3c2c411ad873e35d5d",
+          "size": 81303
+        },
+        {
+          "path": "custom_limbus_data/battle-mirrordungeon/19.json",
+          "file": "files/mods/e2a6ef85f970bd76_19.json",
+          "sha256": "e2a6ef85f970bd761820f4a91e266a85e3afb9eb1a138025d0f8b3781ef46cdc",
+          "size": 4584
+        },
+        {
+          "path": "custom_limbus_data/battle-mirrordungeon/2.json",
+          "file": "files/mods/db501994aac79b53_2.json",
+          "sha256": "db501994aac79b5396d3b1a819cb6af9c23942c05f059600aa0bd14d532fe5c6",
+          "size": 262180
+        },
+        {
+          "path": "custom_limbus_data/battle-mirrordungeon/20.json",
+          "file": "files/mods/fff4a72212ccc150_20.json",
+          "sha256": "fff4a72212ccc15044dd89649f86e925f4674e4dd257b6e9d0a7e025188ccfa7",
+          "size": 9869
+        },
+        {
+          "path": "custom_limbus_data/battle-mirrordungeon/21.json",
+          "file": "files/mods/73d0f0f810082153_21.json",
+          "sha256": "73d0f0f8100821530136ce3ab6fa8a62aeabe3cd70da375ef96022eef85213e2",
+          "size": 4032
+        },
+        {
+          "path": "custom_limbus_data/battle-mirrordungeon/22.json",
+          "file": "files/mods/e5832f05c29bfd97_22.json",
+          "sha256": "e5832f05c29bfd97f3b2fb542cc0d3110cc004443990ae49b9c41544bd21cb41",
+          "size": 96977
+        },
+        {
+          "path": "custom_limbus_data/battle-mirrordungeon/23.json",
+          "file": "files/mods/a7051e46a16781f3_23.json",
+          "sha256": "a7051e46a16781f3512ee7b75ad4e9243f8453bb675f335abec87b4230a6e1e8",
+          "size": 43004
+        },
+        {
+          "path": "custom_limbus_data/battle-mirrordungeon/3.json",
+          "file": "files/mods/5c2cdbe6cdf27ce7_3.json",
+          "sha256": "5c2cdbe6cdf27ce7cf2d0fec3cf0f3722c1daabb73ab822a8e35ff6cba3abc66",
+          "size": 355167
+        },
+        {
+          "path": "custom_limbus_data/battle-mirrordungeon/4.json",
+          "file": "files/mods/09a8b823189973b9_4.json",
+          "sha256": "09a8b823189973b9904088c681997ac20a6369f960fea83c70f3e2ffb0b9454a",
+          "size": 493470
+        },
+        {
+          "path": "custom_limbus_data/battle-mirrordungeon/5.json",
+          "file": "files/mods/3e00fbf0ee5ad779_5.json",
+          "sha256": "3e00fbf0ee5ad779a7b3866a14c9ef1d46233c71ace0740fcb67a0efc89b8b45",
+          "size": 130152
+        },
+        {
+          "path": "custom_limbus_data/battle-mirrordungeon/6.json",
+          "file": "files/mods/d5f17cb454d8f73a_6.json",
+          "sha256": "d5f17cb454d8f73a3a125ad531c97c0136d6256d20448711f90ae1af1364e984",
+          "size": 123453
+        },
+        {
+          "path": "custom_limbus_data/battle-mirrordungeon/7.json",
+          "file": "files/mods/fd9442b8343e39f5_7.json",
+          "sha256": "fd9442b8343e39f5cbc47b02d39ac01cc9de5e4e044029c97a5b42380730f883",
+          "size": 132225
+        },
+        {
+          "path": "custom_limbus_data/battle-mirrordungeon/8.json",
+          "file": "files/mods/edc6ea27bdca3334_8.json",
+          "sha256": "edc6ea27bdca3334f160ad8ae70d2f4a9dc9a99fcd985f969b72d76d586156d9",
+          "size": 410745
+        },
+        {
+          "path": "custom_limbus_data/battle-mirrordungeon/9.json",
+          "file": "files/mods/c28c1d00f6300cb9_9.json",
+          "sha256": "c28c1d00f6300cb9de3afd2ebf2ddbaf81d79eff453fefd115b8c68c3b2b8e4f",
+          "size": 573416
+        },
+        {
+          "path": "custom_limbus_data/battle-railway-dungeon/0.json",
+          "file": "files/mods/61f346483fe5752e_0.json",
+          "sha256": "61f346483fe5752e64f0531913345b1e27ef7fa88dab13513e195d964f26e2b6",
+          "size": 13332
+        },
+        {
+          "path": "custom_limbus_data/battle-railway-dungeon/2.json",
+          "file": "files/mods/8d73bc68065d80f5_2.json",
+          "sha256": "8d73bc68065d80f57e35d73e45529d8b3377eb1fd52eb291589243de5ea19aba",
+          "size": 11026
+        },
+        {
+          "path": "custom_limbus_data/battle-railway-dungeon/3.json",
+          "file": "files/mods/a2127af060b892ff_3.json",
+          "sha256": "a2127af060b892ffd80f0243106af95b932b28e41412a92da3e997425780dfbc",
+          "size": 12314
+        },
+        {
+          "path": "custom_limbus_data/battle-railway-dungeon/4.json",
+          "file": "files/mods/31f5117aa2476392_4.json",
+          "sha256": "31f5117aa2476392ad82ac132566466c178bf6ab02f72efda3ba76a8a4f918bc",
+          "size": 11962
+        },
+        {
+          "path": "custom_limbus_data/battle-railway-dungeon/5.json",
+          "file": "files/mods/61176af6db3f6f48_5.json",
+          "sha256": "61176af6db3f6f48fdf40a8f4a313e0ea6ead94901bf9947cb8c5f7d0f35ca52",
+          "size": 14453
+        },
+        {
+          "path": "custom_limbus_data/battle-railway-dungeon/6.json",
+          "file": "files/mods/c1f1a843249a8524_6.json",
+          "sha256": "c1f1a843249a8524c7661c1880167589675bc0fa730b3866dd9a9c911c3d15b1",
+          "size": 11653
+        },
+        {
+          "path": "custom_limbus_data/battle-railway-dungeon/7.json",
+          "file": "files/mods/a92ff4b1df4678d1_7.json",
+          "sha256": "a92ff4b1df4678d1ab2f6eadd6a8b0b91dfbc20d08b97f2b5ac812a5665e562a",
+          "size": 14936
+        },
+        {
+          "path": "custom_limbus_data/battle-story/0.json",
+          "file": "files/mods/a650e7c6a847dbaa_0.json",
+          "sha256": "a650e7c6a847dbaafa6d0e179c6fa3f765e62bdc3ac9a9fd9656bbc6d03c6934",
+          "size": 12065
+        },
+        {
+          "path": "custom_limbus_data/battle-story/1.json",
+          "file": "files/mods/624dd7b20997dd6c_1.json",
+          "sha256": "624dd7b20997dd6cbb8f83e5b61ef4743c01e216654ea4cb372bb235f04eebda",
+          "size": 19015
+        },
+        {
+          "path": "custom_limbus_data/battle-story/10.json",
+          "file": "files/mods/1bbd17bbca881998_10.json",
+          "sha256": "1bbd17bbca88199877d82b54ee7efead093194979d902393dbd5d3c8da6ce5b4",
+          "size": 15277
+        },
+        {
+          "path": "custom_limbus_data/battle-story/11.json",
+          "file": "files/mods/6331f400b095b0d9_11.json",
+          "sha256": "6331f400b095b0d92102de6d76c509e62708a9b2decc3d299d779b647ac9e923",
+          "size": 25753
+        },
+        {
+          "path": "custom_limbus_data/battle-story/12.json",
+          "file": "files/mods/44f7d7eecc33688e_12.json",
+          "sha256": "44f7d7eecc33688e01453f631884f020ed746a4b0bf46ff521d013fe17f73791",
+          "size": 14358
+        },
+        {
+          "path": "custom_limbus_data/battle-story/13.json",
+          "file": "files/mods/c7034d24be734ec1_13.json",
+          "sha256": "c7034d24be734ec17573d1a19e68aade717fd5fa41bd31628d5bf30ad26ceef1",
+          "size": 17582
+        },
+        {
+          "path": "custom_limbus_data/battle-story/14.json",
+          "file": "files/mods/885cc658b9eb70d3_14.json",
+          "sha256": "885cc658b9eb70d3cccb4fa4ec26716d2179a92d3a9c54d8f5958395f9b7c02b",
+          "size": 17772
+        },
+        {
+          "path": "custom_limbus_data/battle-story/15.json",
+          "file": "files/mods/d88afdb4c4b0ac28_15.json",
+          "sha256": "d88afdb4c4b0ac2810f85da302818b56ca1f3195d96f7964bb8735ef12df8307",
+          "size": 16787
+        },
+        {
+          "path": "custom_limbus_data/battle-story/16.json",
+          "file": "files/mods/87832990907d8031_16.json",
+          "sha256": "87832990907d803183539789eec72eb6569914cc91a96b72652204d83ee44a49",
+          "size": 3283
+        },
+        {
+          "path": "custom_limbus_data/battle-story/17.json",
+          "file": "files/mods/f01db2a0a90d2e58_17.json",
+          "sha256": "f01db2a0a90d2e5810cb85faf14fa963342b610f7e2fc057e0e5062112cac193",
+          "size": 7807
+        },
+        {
+          "path": "custom_limbus_data/battle-story/18.json",
+          "file": "files/mods/dcf2a74f962db45d_18.json",
+          "sha256": "dcf2a74f962db45d03bdf366968dd4ec069bde7d44d62d1e5a917266ef4ca4b3",
+          "size": 12632
+        },
+        {
+          "path": "custom_limbus_data/battle-story/19.json",
+          "file": "files/mods/4ac9d3f9779ac8b3_19.json",
+          "sha256": "4ac9d3f9779ac8b351d675f1df0752ba9e8cbf63ee7c2633239bf4dc482ab3a0",
+          "size": 8273
+        },
+        {
+          "path": "custom_limbus_data/battle-story/2.json",
+          "file": "files/mods/54fbf043b79d484d_2.json",
+          "sha256": "54fbf043b79d484d1f93c1fe2f5d033cc6cfbdcc02ec6fc10a79fd213a39500b",
+          "size": 21723
+        },
+        {
+          "path": "custom_limbus_data/battle-story/20.json",
+          "file": "files/mods/147e20bb9a7a087f_20.json",
+          "sha256": "147e20bb9a7a087f65deb4029778c835b4e9d12a9e1e5653b5f7f9bd6415e2b1",
+          "size": 18495
+        },
+        {
+          "path": "custom_limbus_data/battle-story/21.json",
+          "file": "files/mods/938eb7fc6c8d2383_21.json",
+          "sha256": "938eb7fc6c8d2383f6a95a97f9596ffba7951557a756338ad622c175b3e41662",
+          "size": 16493
+        },
+        {
+          "path": "custom_limbus_data/battle-story/22.json",
+          "file": "files/mods/9959a72a68d66bbc_22.json",
+          "sha256": "9959a72a68d66bbcace7f3f4899c24b653d7ed9763e2f33330ad1345e3cc1c40",
+          "size": 15547
+        },
+        {
+          "path": "custom_limbus_data/battle-story/23.json",
+          "file": "files/mods/4980a025af4656b7_23.json",
+          "sha256": "4980a025af4656b7f348439d301450503f0896771344dbe2bbedb7f0e638f1a2",
+          "size": 21935
+        },
+        {
+          "path": "custom_limbus_data/battle-story/24.json",
+          "file": "files/mods/72e1a2a024786e12_24.json",
+          "sha256": "72e1a2a024786e124920e6bdb53a855f05d6b5c8edacad5b61879fce4ed3f697",
+          "size": 15061
+        },
+        {
+          "path": "custom_limbus_data/battle-story/25.json",
+          "file": "files/mods/644cb2755b7d8858_25.json",
+          "sha256": "644cb2755b7d885873f6656917dccc0d4527f0e14c7ea1e45e9f5d67d6ea50e5",
+          "size": 14628
+        },
+        {
+          "path": "custom_limbus_data/battle-story/26.json",
+          "file": "files/mods/497e01270e622bad_26.json",
+          "sha256": "497e01270e622bad97ad18dd0a3766f175faa1ce42f1ddcbaffbd54e834b561c",
+          "size": 13725
+        },
+        {
+          "path": "custom_limbus_data/battle-story/27.json",
+          "file": "files/mods/16a10a61a498ce38_27.json",
+          "sha256": "16a10a61a498ce38ed6301d7c0dc8b9c6f3da0adfe56d20ede065c15d34d90ed",
+          "size": 1084
+        },
+        {
+          "path": "custom_limbus_data/battle-story/28.json",
+          "file": "files/mods/9aecf4fdab4dd780_28.json",
+          "sha256": "9aecf4fdab4dd7809915ca3e414da8c9ef9c1aa28370067bddeb44d1f40e2297",
+          "size": 17746
+        },
+        {
+          "path": "custom_limbus_data/battle-story/29.json",
+          "file": "files/mods/f6f08879b163355a_29.json",
+          "sha256": "f6f08879b163355a311ed0d8076d6fea034f0ffae34797855d72adf9fd40d10c",
+          "size": 16349
+        },
+        {
+          "path": "custom_limbus_data/battle-story/3.json",
+          "file": "files/mods/01ecef96902bd895_3.json",
+          "sha256": "01ecef96902bd895cc719c640bd3c7de350750c2925c87bca2ec499c09323ea1",
+          "size": 10687
+        },
+        {
+          "path": "custom_limbus_data/battle-story/30.json",
+          "file": "files/mods/979853e8587b7979_30.json",
+          "sha256": "979853e8587b79793b997b50bc926382ae6670fffb01949cb1382467883b7567",
+          "size": 4839
+        },
+        {
+          "path": "custom_limbus_data/battle-story/31.json",
+          "file": "files/mods/52921a7147053e95_31.json",
+          "sha256": "52921a7147053e957a983bfb8871304ae4a93c892e2e3df3f48e1de35406e8d6",
+          "size": 7865
+        },
+        {
+          "path": "custom_limbus_data/battle-story/32.json",
+          "file": "files/mods/9213f91cd79a7c0d_32.json",
+          "sha256": "9213f91cd79a7c0d16610c33d8514689c0390d451e2a96c0339517833b50a926",
+          "size": 13240
+        },
+        {
+          "path": "custom_limbus_data/battle-story/33.json",
+          "file": "files/mods/598ce1d3c4acc343_33.json",
+          "sha256": "598ce1d3c4acc34338e5f531258b433ee69ddf9655a5c3fe5ff4854adf920a12",
+          "size": 17635
+        },
+        {
+          "path": "custom_limbus_data/battle-story/34.json",
+          "file": "files/mods/8b3d1d8f280aa42d_34.json",
+          "sha256": "8b3d1d8f280aa42df98a24e7cdc2137c664db1cec0c774f01e8fff2879c26df8",
+          "size": 17635
+        },
+        {
+          "path": "custom_limbus_data/battle-story/35.json",
+          "file": "files/mods/aa005bba8324ad37_35.json",
+          "sha256": "aa005bba8324ad374c3406d229d7900df5928672e00e3e987ecc09ce6ae1b326",
+          "size": 12632
+        },
+        {
+          "path": "custom_limbus_data/battle-story/36.json",
+          "file": "files/mods/ae8f97a86031cd87_36.json",
+          "sha256": "ae8f97a86031cd87e69e044714d06a32ea601559fb302522b25be797cf8cead7",
+          "size": 18927
+        },
+        {
+          "path": "custom_limbus_data/battle-story/37.json",
+          "file": "files/mods/9c35baa5e446d440_37.json",
+          "sha256": "9c35baa5e446d4402c5934fc0fde5807583312173cbfb8085a566d25b7d19f32",
+          "size": 13117
+        },
+        {
+          "path": "custom_limbus_data/battle-story/38.json",
+          "file": "files/mods/63705116629f1574_38.json",
+          "sha256": "63705116629f1574005bd0ab25346aebd60b9036ca5185932d9f79443384a376",
+          "size": 15832
+        },
+        {
+          "path": "custom_limbus_data/battle-story/39.json",
+          "file": "files/mods/5a4664b6f82bd31d_39.json",
+          "sha256": "5a4664b6f82bd31d8e42bf521bed4e57f4032e533f3f1fd5edaeeed43085f8f2",
+          "size": 12844
+        },
+        {
+          "path": "custom_limbus_data/battle-story/4.json",
+          "file": "files/mods/9722a71add0d23b1_4.json",
+          "sha256": "9722a71add0d23b18d9e33c9e16c92e7230324d7655710ef80d8f95bc957f707",
+          "size": 12658
+        },
+        {
+          "path": "custom_limbus_data/battle-story/40.json",
+          "file": "files/mods/70fc2f488d67c480_40.json",
+          "sha256": "70fc2f488d67c4802a6be072f12565c34bb9f6230cce552b70ee42b120f58ef7",
+          "size": 15089
+        },
+        {
+          "path": "custom_limbus_data/battle-story/41.json",
+          "file": "files/mods/245f7eed0ab83ff9_41.json",
+          "sha256": "245f7eed0ab83ff97686d494de81420dce3ec6edfdd7e6f1551c98f9eba01d97",
+          "size": 2373
+        },
+        {
+          "path": "custom_limbus_data/battle-story/42.json",
+          "file": "files/mods/603c925452b6f80c_42.json",
+          "sha256": "603c925452b6f80c83e8c914947b2a92907c0d8c006f6db09d77957de34a247b",
+          "size": 14258
+        },
+        {
+          "path": "custom_limbus_data/battle-story/43.json",
+          "file": "files/mods/494f72990ad25c77_43.json",
+          "sha256": "494f72990ad25c7723c03745e028aeb23709b8dbe9c915be6ef1ecad6bbe92a8",
+          "size": 13783
+        },
+        {
+          "path": "custom_limbus_data/battle-story/44.json",
+          "file": "files/mods/97c4c586c3116516_44.json",
+          "sha256": "97c4c586c311651676de349219cdb66e8ee1b55689c4e420553becffd110c698",
+          "size": 9583
+        },
+        {
+          "path": "custom_limbus_data/battle-story/45.json",
+          "file": "files/mods/1df5c7b072fe638e_45.json",
+          "sha256": "1df5c7b072fe638ea7494d9edaafc00bbd6b84780dd98903e34491e4bfb963a4",
+          "size": 28435
+        },
+        {
+          "path": "custom_limbus_data/battle-story/46.json",
+          "file": "files/mods/2c014a8825afc282_46.json",
+          "sha256": "2c014a8825afc282721e24a5f4d1cb21d5032fd67248597d8790120da88597ab",
+          "size": 32365
+        },
+        {
+          "path": "custom_limbus_data/battle-story/47.json",
+          "file": "files/mods/2b96fa9437075602_47.json",
+          "sha256": "2b96fa9437075602cbba6bb2215ea6cc69fd212080385f1b986d4d25e0ec7a8b",
+          "size": 5772
+        },
+        {
+          "path": "custom_limbus_data/battle-story/48.json",
+          "file": "files/mods/99bc30ee66a7c752_48.json",
+          "sha256": "99bc30ee66a7c7528714ed6e3fb74cdeb69a92f89e54f079aabe3e2391eb84b3",
+          "size": 10888
+        },
+        {
+          "path": "custom_limbus_data/battle-story/5.json",
+          "file": "files/mods/4c1d82e6f8e8bfe2_5.json",
+          "sha256": "4c1d82e6f8e8bfe22676652f18eb7b720b0c046bd1bf9ea8274300a7d4028352",
+          "size": 45783
+        },
+        {
+          "path": "custom_limbus_data/battle-story/6.json",
+          "file": "files/mods/dc5460548745f04f_6.json",
+          "sha256": "dc5460548745f04f1c6e4c05fac040e304faa2554b991d0ea6f3f19d3ac59d70",
+          "size": 4176
+        },
+        {
+          "path": "custom_limbus_data/battle-story/7.json",
+          "file": "files/mods/1132381d2c257052_7.json",
+          "sha256": "1132381d2c2570526059bb0952de7695bb97bc9c5740192f189a4d236aa35790",
+          "size": 20884
+        },
+        {
+          "path": "custom_limbus_data/battle-story/8.json",
+          "file": "files/mods/297c37e2d09e7390_8.json",
+          "sha256": "297c37e2d09e739052fac864a3872ac5dbddcb9af1885ffca7952ec3e1d0afd7",
+          "size": 17218
+        }
+      ]
+    }
+  ],
+  "delete": []
+}

@@ -1,0 +1,151 @@
+{
+ "list": [
+  {
+   "stageType": "NORMAL_BATTLE",
+   "restrictList": [
+    {
+     "id": 10532,
+     "mustParticipateIds": []
+    },
+    {
+     "id": 910503,
+     "abstainIds": []
+    },
+    {
+     "id": 910504,
+     "abstainIds": []
+    },
+    {
+     "id": 910505,
+     "abstainIds": []
+    },
+    {
+     "id": 910506,
+     "abstainIds": []
+    },
+    {
+     "id": 910507,
+     "abstainIds": []
+    },
+    {
+     "id": 910508,
+     "abstainIds": []
+    },
+    {
+     "id": 910509,
+     "abstainIds": []
+    },
+    {
+     "id": 10632,
+     "mustParticipateIds": []
+    },
+    {
+     "id": 10633,
+     "mustParticipateIds": []
+    },
+    {
+     "id": 10634,
+     "mustParticipateIds": []
+    },
+    {
+     "id": 10635,
+     "abstainIds": []
+    },
+    {
+     "id": 10641,
+     "mustParticipateIds": []
+    },
+    {
+     "id": 10644,
+     "mustParticipateIds": []
+    },
+    {
+     "id": 10645,
+     "mustParticipateIds": []
+    },
+    {
+     "id": 10648,
+     "mustParticipateIds": []
+    },
+    {
+     "id": 910906,
+     "mustParticipateIds": [],
+     "abstainIds": []
+    },
+    {
+     "id": 910907,
+     "mustParticipateIds": [],
+     "abstainIds": []
+    },
+    {
+     "id": 910908,
+     "mustParticipateIds": [],
+     "abstainIds": []
+    },
+    {
+     "id": 910909,
+     "mustParticipateIds": [],
+     "abstainIds": []
+    },
+    {
+     "id": 910910,
+     "mustParticipateIds": [],
+     "abstainIds": []
+    },
+    {
+     "id": 911203,
+     "abstainIds": []
+    },
+    {
+     "id": 911204,
+     "abstainIds": []
+    },
+    {
+     "id": 911205,
+     "abstainIds": []
+    },
+    {
+     "id": 911206,
+     "abstainIds": []
+    },
+    {
+     "id": 911207,
+     "abstainIds": []
+    },
+    {
+     "id": 911208,
+     "abstainIds": []
+    },
+    {
+     "id": 911209,
+     "abstainIds": []
+    },
+    {
+     "id": 911406,
+     "mustParticipateIds": [],
+     "abstainIds": []
+    },
+    {
+     "id": 911407,
+     "mustParticipateIds": [],
+     "abstainIds": []
+    },
+    {
+     "id": 911408,
+     "mustParticipateIds": [],
+     "abstainIds": []
+    },
+    {
+     "id": 911409,
+     "mustParticipateIds": [],
+     "abstainIds": []
+    },
+    {
+     "id": 911410,
+     "mustParticipateIds": [],
+     "abstainIds": []
+    }
+   ]
+  }
+ ]
+}

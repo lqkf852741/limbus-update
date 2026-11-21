@@ -1,0 +1,69 @@
+{
+ "list": [
+  {
+   "stageType": "NORMAL_BATTLE",
+   "restrictList": [
+    {
+     "id": 912401,
+     "fixedAnnouncerIds": [
+      90001
+     ]
+    },
+    {
+     "id": 912404,
+     "fixedAnnouncerIds": [
+      90001
+     ]
+    },
+    {
+     "id": 912406,
+     "fixedAnnouncerIds": [
+      90001
+     ],
+     "mustParticipateIds": [],
+     "abstainIds": []
+    },
+    {
+     "id": 912407,
+     "fixedAnnouncerIds": [
+      90001
+     ],
+     "mustParticipateIds": [],
+     "abstainIds": []
+    },
+    {
+     "id": 912408,
+     "fixedAnnouncerIds": [
+      90001
+     ],
+     "mustParticipateIds": [],
+     "abstainIds": []
+    },
+    {
+     "id": 912409,
+     "fixedAnnouncerIds": [
+      90001
+     ],
+     "mustParticipateIds": [],
+     "abstainIds": []
+    },
+    {
+     "id": 912410,
+     "fixedAnnouncerIds": [
+      90001
+     ],
+     "mustParticipateIds": [],
+     "abstainIds": []
+    },
+    {
+     "id": 912411,
+     "excludeAnnouncerIds": [
+      20,
+      21
+     ],
+     "abstainIds": []
+    }
+   ]
+  }
+ ]
+}

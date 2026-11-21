@@ -1,0 +1,121 @@
+{
+ "list": [
+  {
+   "stageType": "NORMAL_BATTLE",
+   "restrictList": [
+    {
+     "id": 11026,
+     "mustParticipateIds": []
+    },
+    {
+     "id": 11027,
+     "mustParticipateIds": []
+    },
+    {
+     "id": 11028,
+     "mustParticipateIds": []
+    },
+    {
+     "id": 11029,
+     "mustParticipateIds": []
+    },
+    {
+     "id": 11030,
+     "mustParticipateIds": []
+    },
+    {
+     "id": 11031,
+     "mustParticipateIds": []
+    },
+    {
+     "id": 11032,
+     "mustParticipateIds": []
+    },
+    {
+     "id": 11033,
+     "mustParticipateIds": []
+    },
+    {
+     "id": 11034,
+     "mustParticipateIds": []
+    },
+    {
+     "id": 11038,
+     "mustParticipateIds": []
+    },
+    {
+     "id": 11040,
+     "mustParticipateIds": []
+    },
+    {
+     "id": 11042,
+     "mustParticipateIds": []
+    },
+    {
+     "id": 11044,
+     "mustParticipateIds": []
+    },
+    {
+     "id": 11046,
+     "mustParticipateIds": []
+    },
+    {
+     "id": 11047,
+     "mustParticipateIds": []
+    },
+    {
+     "id": 11048,
+     "mustParticipateIds": []
+    },
+    {
+     "id": 11049,
+     "mustParticipateIds": []
+    },
+    {
+     "id": 11051,
+     "mustParticipateIds": []
+    },
+    {
+     "id": 11052,
+     "mustParticipateIds": []
+    },
+    {
+     "id": 11053,
+     "mustParticipateIds": []
+    },
+    {
+     "id": 11054,
+     "mustParticipateIds": []
+    },
+    {
+     "id": 11055,
+     "mustParticipateIds": []
+    },
+    {
+     "id": 11056,
+     "mustParticipateIds": []
+    },
+    {
+     "id": 11057,
+     "mustParticipateIds": []
+    },
+    {
+     "id": 11058,
+     "mustParticipateIds": []
+    },
+    {
+     "id": 11059,
+     "mustParticipateIds": []
+    },
+    {
+     "id": 11092,
+     "mustParticipateIds": []
+    },
+    {
+     "id": 110999,
+     "mustParticipateIds": []
+    }
+   ]
+  }
+ ]
+}

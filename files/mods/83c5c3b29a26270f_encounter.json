@@ -1,0 +1,45 @@
+{
+  "id": 696902,
+  "stageLevel": 65,
+  "stageType": "Abnormality",
+  "isBatonPassOn": false,
+  "includeBoss": 0,
+  "participantInfo": {
+    "min": 1,
+    "max": 1
+  },
+  "waveList": [
+    {
+      "battleMapInfo": {
+        "mapSize": 33.28,
+        "mapName": "Cp4_BrokenKCorpStreet"
+      },
+      "unitList": [
+        {
+          "unitID": 2000010515,
+          "unitLevel": 65,
+          "unitCount": 1,
+          "unitSyncLevel": 5,
+          "isHide": false
+        }
+      ],
+      "bgmList": [
+        "Battle_Cp1_Ally_2"
+      ],
+      "allyPositionID": 1,
+      "enemyPositionID": 2
+    }
+  ],
+  "staminaCost": 0,
+  "recommendedLevel": 65,
+  "turnLimit": 99,
+  "stageScriptList": [],
+  "eventScriptName": [],
+  "abnormalityEventList": [],
+  "questlist": [],
+  "rewardList": [],
+  "story": {
+    "enter": [],
+    "exit": null
+  }
+}

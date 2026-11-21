@@ -1,0 +1,49 @@
+{
+ "list": [
+  {
+   "stageType": "NORMAL_BATTLE",
+   "restrictList": [
+    {
+     "id": 912503,
+     "abstainIds": [],
+     "uiConfig": {
+      "cardUpperDeco": [
+       {
+        "characterId": 12,
+        "prefabAddress": "FormationUnitRustDeco"
+       }
+      ]
+     }
+    },
+    {
+     "id": 912506,
+     "abstainIds": [],
+     "uiConfig": {
+      "cardUpperDeco": [
+       {
+        "characterId": 12,
+        "prefabAddress": "FormationUnitRustDeco"
+       }
+      ]
+     }
+    },
+    {
+     "id": 912507,
+     "abstainIds": [],
+     "uiConfig": {
+      "cardUpperDeco": [
+       {
+        "characterId": 12,
+        "prefabAddress": "FormationUnitRustDeco"
+       }
+      ]
+     }
+    },
+    {
+     "id": 912509,
+     "mustParticipateIds": []
+    }
+   ]
+  }
+ ]
+}
