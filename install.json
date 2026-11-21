@@ -1,0 +1,58 @@
+{
+  "version": "1.0.0",
+  "time": "2026-11-22 01:34:23",
+  "base": "https://raw.githubusercontent.com/lqkf852741/limbus-update/main",
+  "files": [
+    {
+      "path": "StartServer.cmd",
+      "file": "files/client/b0bafa9585788b28_StartServer.cmd",
+      "sha256": "b0bafa9585788b288a5a9cd8d8699f2657020a450a7cacb325946ee81cee3346",
+      "size": 1683,
+      "dest": "启动私服.cmd"
+    },
+    {
+      "path": "ModSync.ps1",
+      "file": "files/client/ad9c9a28ede45c2d_ModSync.ps1",
+      "sha256": "ad9c9a28ede45c2d03f92365709695b7bc7a6fa1387c010d3c3526293992d331",
+      "size": 2578,
+      "dest": "modsync.ps1"
+    },
+    {
+      "path": "Readme.txt",
+      "file": "files/client/bd82927c801ad5b5_Readme.txt",
+      "sha256": "bd82927c801ad5b51dbd7d0e848951eead19f840387ddf04c4191685c26d6797",
+      "size": 7335,
+      "dest": "使用说明.txt"
+    },
+    {
+      "path": "arena.ico",
+      "file": "files/client/1e873a4ef58dd3ac_arena.ico",
+      "sha256": "1e873a4ef58dd3aca670388bbf662f02a661929fd4c4447e193c35ef76c5eeb4",
+      "size": 215054
+    },
+    {
+      "path": "Launcher.exe",
+      "file": "files/launcher/6cf20240b7468839_Launcher.exe",
+      "sha256": "6cf20240b7468839091b5af92298b23fc388db7125fdb7fbdded4a40e89532ca",
+      "size": 63386866
+    },
+    {
+      "path": "BepInEx/plugins/ArenaRedirect.dll",
+      "file": "files/server/d9f3c2f900db1901_ArenaRedirect.dll",
+      "sha256": "d9f3c2f900db1901dc7aee6aeee00c5caa9a44cecb578b45aec0f3d7fed58ecd",
+      "size": 107520
+    },
+    {
+      "path": "index.json",
+      "file": "files/client/f05d6c0154c8e1b6_index.json",
+      "sha256": "f05d6c0154c8e1b6683e0195cb0e3252a68bf6811174ad0313b06c26082d8820",
+      "size": 3883
+    },
+    {
+      "path": "version.json",
+      "file": "files/client/3ba08845efb4bc23_version.json",
+      "sha256": "3ba08845efb4bc232f266cad28ff5bcc179b090733444976b7985164cf5aa349",
+      "size": 1174
+    }
+  ]
+}
