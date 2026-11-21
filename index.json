@@ -1,16 +1,16 @@
 {
   "repo": "lqkf852741/limbus-update",
-  "time": "2026-11-20 19:55:28",
+  "time": "2026-11-22 00:31:05",
   "launcher": {
-    "version": "0.1",
+    "version": "0.2",
     "note": "首个版本",
-    "time": "2026-11-20 20:33:56",
+    "time": "2026-11-22 00:31:05",
     "files": [
       {
         "path": "Launcher.exe",
-        "file": "files/launcher/d4b27718a7e55b3a_Launcher.exe",
-        "sha256": "d4b27718a7e55b3a0f9f7d653c18b1bfd1b9b17cf85b1584b1986cab60f7a495",
-        "size": 63384818
+        "file": "files/launcher/6cf20240b7468839_Launcher.exe",
+        "sha256": "6cf20240b7468839091b5af92298b23fc388db7125fdb7fbdded4a40e89532ca",
+        "size": 63386866
       },
       {
         "path": "wwwroot/arena-bg.jpg",
@@ -100,15 +100,15 @@
     ]
   },
   "server": {
-    "version": "0.1",
+    "version": "0.2",
     "note": "首个版本",
-    "time": "2026-11-20 20:33:56",
+    "time": "2026-11-22 00:31:05",
     "files": [
       {
         "path": "BepInEx/plugins/ArenaRedirect.dll",
-        "file": "files/server/cd97cd47a8e10f33_ArenaRedirect.dll",
-        "sha256": "cd97cd47a8e10f33186fc23ba97b50ebb4a623b1faefc68869e8075cd1576384",
-        "size": 86016
+        "file": "files/server/d9f3c2f900db1901_ArenaRedirect.dll",
+        "sha256": "d9f3c2f900db1901dc7aee6aeee00c5caa9a44cecb578b45aec0f3d7fed58ecd",
+        "size": 107520
       }
     ]
   }

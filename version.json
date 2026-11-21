@@ -1,38 +1,38 @@
 {
-    "version":  "1.0.2",
-    "note":  "锁槽只在自定义关卡生效；App 路径按 game-root.txt 解析；json 统一 LF",
-    "time":  "2026-11-20 14:09:59",
-    "repo":  "lqkf852741/limbus-update",
-    "files":  [
-                  {
-                      "path":  "BepInEx/plugins/ArenaRedirect.dll",
-                      "file":  "ArenaRedirect.dll",
-                      "sha256":  "cd97cd47a8e10f33186fc23ba97b50ebb4a623b1faefc68869e8075cd1576384",
-                      "size":  86016
-                  },
-                  {
-                      "path":  "ArenaApp/ArenaApp.exe",
-                      "file":  "ArenaApp.exe",
-                      "sha256":  "47d1d138d46275d695540bf27a2a70335eee0845b4fbc215ab9a92c037612ad3",
-                      "size":  372224
-                  },
-                  {
-                      "path":  "ArenaApp/ArenaApp.dll",
-                      "file":  "ArenaApp.dll",
-                      "sha256":  "53ee6a372ad08d17db8ce346b4f25da65839c5c9dff62519eca76c3568ec5260",
-                      "size":  270336
-                  },
-                  {
-                      "path":  "ArenaApp/ArenaApp.runtimeconfig.json",
-                      "file":  "ArenaApp.runtimeconfig.json",
-                      "sha256":  "0927ab269d96809b2ebc2eb7142fb4bb91433ec3bc6e46f34e48f0c67d86edae",
-                      "size":  497
-                  },
-                  {
-                      "path":  "ArenaApp/ArenaApp.deps.json",
-                      "file":  "ArenaApp.deps.json",
-                      "sha256":  "b01cc7d61cf07007bb68dfa4a9fde7c9f8e235341cb594829456c2cd33704eb2",
-                      "size":  394
-                  }
-              ]
+  "version": "1.0.3",
+  "note": "ArenaRedirect.dll 重新计算 size/sha256；json 统一 LF",
+  "time": "2026-11-22 00:29:10",
+  "repo": "lqkf852741/limbus-update",
+  "files": [
+    {
+      "path": "BepInEx/plugins/ArenaRedirect.dll",
+      "file": "ArenaRedirect.dll",
+      "sha256": "d9f3c2f900db1901dc7aee6aeee00c5caa9a44cecb578b45aec0f3d7fed58ecd",
+      "size": 107520
+    },
+    {
+      "path": "ArenaApp/ArenaApp.exe",
+      "file": "ArenaApp.exe",
+      "sha256": "47d1d138d46275d695540bf27a2a70335eee0845b4fbc215ab9a92c037612ad3",
+      "size": 372224
+    },
+    {
+      "path": "ArenaApp/ArenaApp.dll",
+      "file": "ArenaApp.dll",
+      "sha256": "53ee6a372ad08d17db8ce346b4f25da65839c5c9dff62519eca76c3568ec5260",
+      "size": 270336
+    },
+    {
+      "path": "ArenaApp/ArenaApp.runtimeconfig.json",
+      "file": "ArenaApp.runtimeconfig.json",
+      "sha256": "0927ab269d96809b2ebc2eb7142fb4bb91433ec3bc6e46f34e48f0c67d86edae",
+      "size": 497
+    },
+    {
+      "path": "ArenaApp/ArenaApp.deps.json",
+      "file": "ArenaApp.deps.json",
+      "sha256": "b01cc7d61cf07007bb68dfa4a9fde7c9f8e235341cb594829456c2cd33704eb2",
+      "size": 394
+    }
+  ]
 }
