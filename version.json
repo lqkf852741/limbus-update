@@ -1,14 +1,15 @@
 {
-  "version": "1.0.3",
-  "note": "ArenaRedirect.dll 重新计算 size/sha256；json 统一 LF",
-  "time": "2026-11-22 00:29:10",
+  "version": "1.0.4",
+  "note": "ArenaRedirect 修复：结算路径改为按游戏根目录解析；战斗结束即回传（OnEndBattle）",
+  "time": "2026-11-23 20:40:00",
   "repo": "lqkf852741/limbus-update",
   "files": [
     {
       "path": "BepInEx/plugins/ArenaRedirect.dll",
-      "file": "ArenaRedirect.dll",
-      "sha256": "d9f3c2f900db1901dc7aee6aeee00c5caa9a44cecb578b45aec0f3d7fed58ecd",
-      "size": 107520
+      "file": "0a754dfed970e0ba_ArenaRedirect.dll",
+      "sha256": "0a754dfed970e0badd780d0ec9c73acd96d297f0304c2a58ce7831745f39c191",
+      "size": 109568,
+      "remote": "files/server/0a754dfed970e0ba_ArenaRedirect.dll"
     },
     {
       "path": "ArenaApp/ArenaApp.exe",
