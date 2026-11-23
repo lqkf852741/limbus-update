@@ -46,14 +46,14 @@
     {
       "path": "index.json",
       "file": "files/client/f05d6c0154c8e1b6_index.json",
-      "sha256": "f05d6c0154c8e1b6683e0195cb0e3252a68bf6811174ad0313b06c26082d8820",
-      "size": 3883
+      "sha256": "883c99bddf4dc14d348864cf326e69a929f9db6b30bd83994dfcb76fe40a3337",
+      "size": 3885
     },
     {
       "path": "version.json",
       "file": "files/client/3ba08845efb4bc23_version.json",
-      "sha256": "3ba08845efb4bc232f266cad28ff5bcc179b090733444976b7985164cf5aa349",
-      "size": 1174
+      "sha256": "7becdf076cd14e5b3feba65ab73d73b0b087bdb7e344c3b418207676e14fe5e4",
+      "size": 1305
     }
   ]
 }
