@@ -1,0 +1,115 @@
+{
+  "repo": "lqkf852741/limbus-update",
+  "time": "2026-11-22 00:31:05",
+  "launcher": {
+    "version": "0.2",
+    "note": "首个版本",
+    "time": "2026-11-22 00:31:05",
+    "files": [
+      {
+        "path": "Launcher.exe",
+        "file": "files/launcher/6cf20240b7468839_Launcher.exe",
+        "sha256": "6cf20240b7468839091b5af92298b23fc388db7125fdb7fbdded4a40e89532ca",
+        "size": 63386866
+      },
+      {
+        "path": "wwwroot/arena-bg.jpg",
+        "file": "files/launcher/cb9c58efe2b25b7c_arena-bg.jpg",
+        "sha256": "cb9c58efe2b25b7ce1a95bf7f3cb6ac2ab8a8ef87e32d53488ca28be57727492",
+        "size": 256185
+      },
+      {
+        "path": "wwwroot/conf-bg.jpg",
+        "file": "files/launcher/cd04bed302858d82_conf-bg.jpg",
+        "sha256": "cd04bed302858d82a4511a52daf29ff9708f96eed59bdf9b57fe90e948754c4e",
+        "size": 168332
+      },
+      {
+        "path": "wwwroot/data.js",
+        "file": "files/launcher/5ecfa32e3ebe9067_data.js",
+        "sha256": "5ecfa32e3ebe9067cd4b82da29ff3f2c5b49e5dce353b7c4495faa7cb0febc86",
+        "size": 9761
+      },
+      {
+        "path": "wwwroot/index.html",
+        "file": "files/launcher/1d8bd6f9090f6d9a_index.html",
+        "sha256": "1d8bd6f9090f6d9afcbc4699da3226fed80e85869d827d8dd7b861158d279376",
+        "size": 7653
+      },
+      {
+        "path": "wwwroot/main.js",
+        "file": "files/launcher/fa87cf830cd9b6ed_main.js",
+        "sha256": "fa87cf830cd9b6eded5c8fe8d554fe77df53c35af793a26d2205c0f100a9669b",
+        "size": 27841
+      },
+      {
+        "path": "wwwroot/menu-bg.jpg",
+        "file": "files/launcher/d399346e905aece6_menu-bg.jpg",
+        "sha256": "d399346e905aece6ae14baab3b2391a81c7a3ce06bfcb4f5bb2855f47e76a7fb",
+        "size": 311210
+      },
+      {
+        "path": "wwwroot/mods-bg.jpg",
+        "file": "files/launcher/07591e4d74b0a9ec_mods-bg.jpg",
+        "sha256": "07591e4d74b0a9ec6f4e9087e724642561c4f1c9b7da89f1a9a24a2d06fbca72",
+        "size": 308734
+      },
+      {
+        "path": "wwwroot/start-bg.jpg",
+        "file": "files/launcher/b9f6463ed9af5f7b_start-bg.jpg",
+        "sha256": "b9f6463ed9af5f7b7561ba2564c2f289da227ce747368d46183f5390aafef883",
+        "size": 335744
+      },
+      {
+        "path": "wwwroot/style.css",
+        "file": "files/launcher/19a65038c5acdc57_style.css",
+        "sha256": "19a65038c5acdc57402586855ba6631e0e11440bdab89fe2bce7a279dd5eaf4d",
+        "size": 26235
+      }
+    ]
+  },
+  "pvp": {
+    "version": "0.1",
+    "note": "首个版本",
+    "time": "2026-11-20 20:33:56",
+    "files": [
+      {
+        "path": "ArenaApp/ArenaApp.exe",
+        "file": "files/pvp/47d1d138d46275d6_ArenaApp.exe",
+        "sha256": "47d1d138d46275d695540bf27a2a70335eee0845b4fbc215ab9a92c037612ad3",
+        "size": 372224
+      },
+      {
+        "path": "ArenaApp/ArenaApp.dll",
+        "file": "files/pvp/53ee6a372ad08d17_ArenaApp.dll",
+        "sha256": "53ee6a372ad08d17db8ce346b4f25da65839c5c9dff62519eca76c3568ec5260",
+        "size": 270336
+      },
+      {
+        "path": "ArenaApp/ArenaApp.runtimeconfig.json",
+        "file": "files/pvp/0927ab269d96809b_ArenaApp.runtimeconfig.json",
+        "sha256": "0927ab269d96809b2ebc2eb7142fb4bb91433ec3bc6e46f34e48f0c67d86edae",
+        "size": 497
+      },
+      {
+        "path": "ArenaApp/ArenaApp.deps.json",
+        "file": "files/pvp/b01cc7d61cf07007_ArenaApp.deps.json",
+        "sha256": "b01cc7d61cf07007bb68dfa4a9fde7c9f8e235341cb594829456c2cd33704eb2",
+        "size": 394
+      }
+    ]
+  },
+  "server": {
+    "version": "0.3",
+    "note": "首个版本",
+    "time": "2026-11-22 00:31:05",
+    "files": [
+      {
+        "path": "BepInEx/plugins/ArenaRedirect.dll",
+        "remote": "files/server/0a754dfed970e0ba_ArenaRedirect.dll",
+        "size": 109568,
+        "sha256": "0a754dfed970e0badd780d0ec9c73acd96d297f0304c2a58ce7831745f39c191"
+      }
+    ]
+  }
+}
