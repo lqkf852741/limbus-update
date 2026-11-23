@@ -1,7 +1,4 @@
 {
-  "version": "1.0.0",
-  "time": "2026-11-22 01:34:23",
-  "base": "https://raw.githubusercontent.com/lqkf852741/limbus-update/main",
   "files": [
     {
       "path": "StartServer.cmd",
@@ -29,6 +26,60 @@
       "file": "files/client/1e873a4ef58dd3ac_arena.ico",
       "sha256": "1e873a4ef58dd3aca670388bbf662f02a661929fd4c4447e193c35ef76c5eeb4",
       "size": 215054
+    },
+    {
+      "path": "wwwroot/arena-bg.jpg",
+      "file": "files/launcher/cb9c58efe2b25b7c_arena-bg.jpg",
+      "sha256": "cb9c58efe2b25b7ce1a95bf7f3cb6ac2ab8a8ef87e32d53488ca28be57727492",
+      "size": 256185
+    },
+    {
+      "path": "wwwroot/conf-bg.jpg",
+      "file": "files/launcher/cd04bed302858d82_conf-bg.jpg",
+      "sha256": "cd04bed302858d82a4511a52daf29ff9708f96eed59bdf9b57fe90e948754c4e",
+      "size": 168332
+    },
+    {
+      "path": "wwwroot/data.js",
+      "file": "files/launcher/5ecfa32e3ebe9067_data.js",
+      "sha256": "5ecfa32e3ebe9067cd4b82da29ff3f2c5b49e5dce353b7c4495faa7cb0febc86",
+      "size": 9761
+    },
+    {
+      "path": "wwwroot/index.html",
+      "file": "files/launcher/1d8bd6f9090f6d9a_index.html",
+      "sha256": "1d8bd6f9090f6d9afcbc4699da3226fed80e85869d827d8dd7b861158d279376",
+      "size": 7653
+    },
+    {
+      "path": "wwwroot/main.js",
+      "file": "files/launcher/fa87cf830cd9b6ed_main.js",
+      "sha256": "fa87cf830cd9b6eded5c8fe8d554fe77df53c35af793a26d2205c0f100a9669b",
+      "size": 27841
+    },
+    {
+      "path": "wwwroot/menu-bg.jpg",
+      "file": "files/launcher/d399346e905aece6_menu-bg.jpg",
+      "sha256": "d399346e905aece6ae14baab3b2391a81c7a3ce06bfcb4f5bb2855f47e76a7fb",
+      "size": 311210
+    },
+    {
+      "path": "wwwroot/mods-bg.jpg",
+      "file": "files/launcher/07591e4d74b0a9ec_mods-bg.jpg",
+      "sha256": "07591e4d74b0a9ec6f4e9087e724642561c4f1c9b7da89f1a9a24a2d06fbca72",
+      "size": 308734
+    },
+    {
+      "path": "wwwroot/start-bg.jpg",
+      "file": "files/launcher/b9f6463ed9af5f7b_start-bg.jpg",
+      "sha256": "b9f6463ed9af5f7b7561ba2564c2f289da227ce747368d46183f5390aafef883",
+      "size": 335744
+    },
+    {
+      "path": "wwwroot/style.css",
+      "file": "files/launcher/19a65038c5acdc57_style.css",
+      "sha256": "19a65038c5acdc57402586855ba6631e0e11440bdab89fe2bce7a279dd5eaf4d",
+      "size": 26235
     },
     {
       "path": "Launcher.exe",
