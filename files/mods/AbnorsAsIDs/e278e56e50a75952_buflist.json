@@ -1,0 +1,64 @@
+{
+    "DicipleLittleFingerAlly": {
+        "id": "DicipleLittleFingerAlly",
+        "name": "Moonlit Azure Blade",
+        "desc": "- Max Stack: 50\n- Defense Level +1 for every 10 Stacks\n- Turn Start: Gain 2 Shield for every Stack\n- +1% Damage on Critical Hit for every Stack",
+        "summary": ""
+    },
+    "IndexPrescriptRienAlly_0": {
+        "id": "IndexPrescriptRienAlly_0",
+        "name": "Prescript: [Device] I",
+        "desc": "Attack and hit any Target.\n\n- Turn Start: Gain this effect when this unit has no Unlock\n- Maximum stackable Grace of the Prescript with this Prescript is limited to 3",
+        "summary": "",
+        "flavor": "The Prescripts are delivered by many means, their medium determined with finality akin to divine prophecy. Those who receive them hold no power over how they arrive."
+    },
+    "IndexPrescriptRienAlly_1": {
+        "id": "IndexPrescriptRienAlly_1",
+        "name": "Prescript: [Device] II",
+        "desc": "Attack and hit a Prescript's Target.\n\n- Turn Start: Gain this effect when this unit has Unlock-I\n- Maximum stackable Grace of the Prescript with this Prescript is limited to 6",
+        "summary": "",
+        "flavor": "The Prescripts are delivered by many means, their medium determined with finality akin to divine prophecy. Those who receive them hold no power over how they arrive."
+    },
+    "IndexPrescriptRienAlly_2": {
+        "id": "IndexPrescriptRienAlly_2",
+        "name": "Prescript: [Device] III",
+        "desc": "Gain Procuration [Hermes]. Repeat this Prescript until Procuration [Hermes] reaches 9 Stacks.\n\n- Turn Start: Gain this effect when this unit has Unlock-II\n- Maximum stackable Grace of the Prescript with this Prescript is limited to 9",
+        "summary": "",
+        "flavor": "The Prescripts are delivered by many means, their medium determined with finality akin to divine prophecy. Those who receive them hold no power over how they arrive."
+    },
+    "IndexPrescriptRienAlly_3": {
+        "id": "IndexPrescriptRienAlly_3",
+        "name": "Prescript: [Device] IV",
+        "desc": "Eliminate all enemies before the next Prescript arrives.\n\n- Turn Start: Gain this effect when this unit has Unlock-III",
+        "summary": "",
+        "flavor": "The Prescripts are delivered by many means, their medium determined with finality akin to divine prophecy. Those who receive them hold no power over how they arrive."
+    },
+    "BurningWoundRien_MaskAlly": {
+        "id": "BurningWoundRien_MaskAlly",
+        "name": "Rien's Mask",
+        "desc": "- Offense Level +2, Defense Level -2\n- Take -10% damage from Unopposed Attacks",
+        "summary": "",
+        "flavor": "\"I keep it covered because it hurts to even look at.\""
+    },
+    "BurningWoundRienAlly": {
+        "id": "BurningWoundRienAlly",
+        "name": "Sizzling Wound",
+        "desc": "- Offense Level +3, Defense Level -3\n- Take -25% damage from Unopposed Attacks\n- Turn Start: Gain 3 Burn and 3 Bleed",
+        "summary": "",
+        "flavor": "When in proximity of the sword, the wound unheals and the flesh that once cooled burns once again."
+    },
+    "BlackNightmareRienAlly": {
+        "id": "BlackNightmareRienAlly",
+        "name": "Indulgence in Prescripts",
+        "desc": "- Min & Max Speed +5\n- Apply the following effects to 'Furioso [Crescendo]':\n· On Hit, inflict +1 more Sinking Potency\n- Expire at Turn End",
+        "summary": "",
+        "flavor": "The acceptance of the Prescripts is apparent in his execution of them; yet, on the other side of the mask, one may glimpse a hint of resentment for them.\nHowever, as he could indulge in all the suffering and pleasures of the world behind the mask of \"Prescripts,\" his true immanent yearning is concluded by that of gratitude."
+    },
+    "StackRienSpecialSkillAlly": {
+        "id": "StackRienSpecialSkillAlly",
+        "name": "Procuration [Hermes]",
+        "desc": "- Gain 1 Stack when using a Weapon (once per Weapon; does not gain Stack from the same Weapon twice)\n· Can be gained up to (Unlock stage + 1) Stack per turn\n- Turn Start: at 9 Stack, a powerful Skill becomes available\n- Max Stack: 9\n· At below Unlock-II, this effect's maximum stack is limited to 8",
+        "summary": "",
+        "flavor": "\"As my god commands.\""
+    }
+}

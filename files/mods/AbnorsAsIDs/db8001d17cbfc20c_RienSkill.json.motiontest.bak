@@ -1,0 +1,2535 @@
+{
+  "list": [
+    {
+      "id": 1013710,
+      "skillTier": 1,
+      "skillType": "SKILL",
+      "textID": 134701,
+      "skillData": [
+        {
+          "iconID": 134701,
+          "gaksungLevel": 1,
+          "attributeType": "SHAMROCK",
+          "atkType": "HIT",
+          "defType": "ATTACK",
+          "targetNum": 1,
+          "skillTargetType": "FRONT",
+          "canTeamKill": false,
+          "canDuel": true,
+          "canChangeTarget": true,
+          "skillLevelCorrection": 2,
+          "defaultValue": 6,
+          "skillMotion": "S1",
+          "viewType": "BATTLE",
+          "parryingCloseType": "NEAR",
+          "abilityScriptList": [
+            {
+              "scriptName": "SkillPowerResultAdderByIndexUnlockRankWithLimit3",
+              "value": 1
+            },
+            {
+              "scriptName": "DmgMul1347IfAtkType_HIT",
+              "value": 0.2
+            },
+            {
+              "scriptName": "DmgMul1347IfNotAtkType_HIT",
+              "value": -0.1
+            },
+            {
+              "scriptName": "GiveBuffOnUse",
+              "buffData": {
+                "buffKeyword": "Breath",
+                "target": "Self",
+                "buffOwner": "",
+                "stack": 0,
+                "turn": 1,
+                "activeRound": 0
+              }
+            },
+            {
+              "scriptName": "HiddenSkill"
+            },
+            {
+              "scriptName": "Modular/TIMING:OnCoinToss/LUA:RienWeapons/LUAMAIN:GiveRandomWeapon(OCT,Blunt)"
+            },
+            {
+              "scriptName": "Modular/TIMING:RoundStart/LUA:RienWeapons/LUAMAIN:GiveRandomWeapon(RoundStart)"
+            },
+            {
+              "scriptName": "Modular/TIMING:EndSkill/LUA:RienWeapons/LUAMAIN:GiveRandomWeapon(EndSkill,Blunt)"
+            },
+            {
+              "scriptName": "Modular/TIMING:WhenUse/LUA:RienWeapons/LUAMAIN:ApplyWeaponMotion()"
+            }
+          ],
+          "coinList": [
+            {
+              "operatorType": "ADD",
+              "scale": 6,
+              "abilityScriptList": [
+                {
+                  "scriptName": "Modular/TIMING:ChangeMotion/LUA:RienWeapons/LUAMAIN:GiveRandomWeaponMotion(Motion,Blunt)"
+                },
+                {
+                  "scriptName": "Modular/TIMING:ChangeMotion/LUA:RienWeapons/LUAMAIN:ChangeMotionBasedOnWeapon(Motion,0)"
+                },
+                {
+                  "scriptName": "GiveBuffOnSucceedAttack",
+                  "buffData": {
+                    "buffKeyword": "Sinking",
+                    "target": "Target",
+                    "stack": 3,
+                    "turn": 0,
+                    "activeRound": 0
+                  }
+                }
+              ]
+            },
+            {
+              "operatorType": "ADD",
+              "scale": 6,
+              "abilityScriptList": [
+                {
+                  "scriptName": "Modular/TIMING:ChangeMotion/LUA:RienWeapons/LUAMAIN:GiveRandomWeaponMotion(Motion,Blunt)"
+                },
+                {
+                  "scriptName": "Modular/TIMING:ChangeMotion/LUA:RienWeapons/LUAMAIN:ChangeMotionBasedOnWeapon(Motion,1)"
+                },
+                {
+                  "scriptName": "GiveBuffOnSucceedAttack",
+                  "buffData": {
+                    "buffKeyword": "Breath",
+                    "target": "Self",
+                    "stack": 2,
+                    "turn": 0,
+                    "activeRound": 0
+                  }
+                },
+                {
+                  "scriptName": "GiveBuffOnSucceedAttack",
+                  "buffData": {
+                    "buffKeyword": "RienWeapon01Hatchet2phase",
+                    "target": "Self",
+                    "stack": 1,
+                    "turn": 0,
+                    "activeRound": 0
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 1013711,
+      "skillTier": 1,
+      "skillType": "SKILL",
+      "skillData": [
+        {
+          "iconID": 134701,
+          "gaksungLevel": 1,
+          "attributeType": "SHAMROCK",
+          "atkType": "HIT",
+          "defType": "ATTACK",
+          "targetNum": 1,
+          "skillTargetType": "FRONT",
+          "canTeamKill": false,
+          "canDuel": true,
+          "canChangeTarget": true,
+          "skillLevelCorrection": 2,
+          "defaultValue": 6,
+          "skillMotion": "S1",
+          "viewType": "BATTLE",
+          "parryingCloseType": "NEAR",
+          "abilityScriptList": [
+            {
+              "scriptName": "SkillPowerResultAdderByIndexUnlockRankWithLimit2",
+              "value": 1
+            },
+            {
+              "scriptName": "CoinScaleAdderViaSelfBreathAndBuffCheck",
+              "buffData": {
+                "buffKeyword": "Sinking",
+                "stack": 6,
+                "turn": 0,
+                "buffOwner": "Target",
+                "value": 1
+              }
+            },
+            {
+              "scriptName": "DmgMul1347IfAtkType_HIT",
+              "value": 0.2
+            },
+            {
+              "scriptName": "DmgMul1347IfNotAtkType_HIT",
+              "value": -0.1
+            },
+            {
+              "scriptName": "GiveBuffOnUse",
+              "buffData": {
+                "buffKeyword": "Breath",
+                "target": "Self",
+                "buffOwner": "",
+                "stack": 0,
+                "turn": 2,
+                "activeRound": 0
+              }
+            },
+            {
+              "scriptName": "Modular/TIMING:OnCoinToss/LUA:RienWeapons/LUAMAIN:GiveRandomWeapon(OCT,Blunt)"
+            },
+            {
+              "scriptName": "Modular/TIMING:RoundStart/LUA:RienWeapons/LUAMAIN:GiveRandomWeapon(RoundStart)"
+            },
+            {
+              "scriptName": "Modular/TIMING:EndSkill/LUA:RienWeapons/LUAMAIN:GiveRandomWeapon(EndSkill)"
+            },
+            {
+              "scriptName": "Modular/TIMING:WhenUse/LUA:RienWeapons/LUAMAIN:ApplyWeaponMotion()"
+            }
+          ],
+          "coinList": [
+            {
+              "operatorType": "ADD",
+              "scale": 6,
+              "abilityScriptList": [
+                {
+                  "scriptName": "Modular/TIMING:ChangeMotion/LUA:RienWeapons/LUAMAIN:GiveRandomWeaponMotion(Motion,Blunt)"
+                },
+                {
+                  "scriptName": "Modular/TIMING:ChangeMotion/LUA:RienWeapons/LUAMAIN:ChangeMotionBasedOnWeapon(Motion,0)"
+                },
+                {
+                  "scriptName": "GiveBuffOnSucceedAttack",
+                  "buffData": {
+                    "buffKeyword": "Sinking",
+                    "target": "Target",
+                    "stack": 3,
+                    "turn": 0,
+                    "activeRound": 0
+                  }
+                }
+              ]
+            },
+            {
+              "operatorType": "ADD",
+              "scale": 6,
+              "abilityScriptList": [
+                {
+                  "scriptName": "Modular/TIMING:ChangeMotion/LUA:RienWeapons/LUAMAIN:GiveRandomWeaponMotion(Motion,Blunt)"
+                },
+                {
+                  "scriptName": "Modular/TIMING:ChangeMotion/LUA:RienWeapons/LUAMAIN:ChangeMotionBasedOnWeapon(Motion,1)"
+                },
+                {
+                  "scriptName": "GiveBuffOnSucceedAttack",
+                  "buffData": {
+                    "buffKeyword": "Breath",
+                    "target": "Self",
+                    "stack": 2,
+                    "turn": 0,
+                    "activeRound": 0
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 1013712,
+      "skillTier": 1,
+      "skillType": "SKILL",
+      "skillData": [
+        {
+          "iconID": 134702,
+          "gaksungLevel": 1,
+          "attributeType": "SHAMROCK",
+          "atkType": "PENETRATE",
+          "defType": "ATTACK",
+          "targetNum": 1,
+          "skillTargetType": "FRONT",
+          "canTeamKill": false,
+          "canDuel": true,
+          "canChangeTarget": true,
+          "skillLevelCorrection": 2,
+          "defaultValue": 6,
+          "skillMotion": "S1",
+          "viewType": "BATTLE",
+          "parryingCloseType": "NEAR",
+          "abilityScriptList": [
+            {
+              "scriptName": "SkillPowerResultAdderByIndexUnlockRankWithLimit2",
+              "value": 1
+            },
+            {
+              "scriptName": "CoinScaleAdderViaSelfBreathAndBuffCheck",
+              "buffData": {
+                "buffKeyword": "Sinking",
+                "stack": 6,
+                "turn": 0,
+                "buffOwner": "Target",
+                "value": 1
+              }
+            },
+            {
+              "scriptName": "DmgMul1347IfAtkType_PENETRATE",
+              "value": 0.2
+            },
+            {
+              "scriptName": "DmgMul1347IfNotAtkType_PENETRATE",
+              "value": -0.1
+            },
+            {
+              "scriptName": "GiveBuffOnUse",
+              "buffData": {
+                "buffKeyword": "Breath",
+                "target": "Self",
+                "buffOwner": "",
+                "stack": 0,
+                "turn": 2,
+                "activeRound": 0
+              }
+            },
+            {
+              "scriptName": "Modular/TIMING:OnCoinToss/LUA:RienWeapons/LUAMAIN:GiveRandomWeapon(OCT,Pierce)"
+            },
+            {
+              "scriptName": "Modular/TIMING:RoundStart/LUA:RienWeapons/LUAMAIN:GiveRandomWeapon(RoundStart)"
+            },
+            {
+              "scriptName": "Modular/TIMING:EndSkill/LUA:RienWeapons/LUAMAIN:GiveRandomWeapon(EndSkill)"
+            },
+            {
+              "scriptName": "Modular/TIMING:WhenUse/LUA:RienWeapons/LUAMAIN:ApplyWeaponMotion()"
+            }
+          ],
+          "coinList": [
+            {
+              "operatorType": "ADD",
+              "scale": 6,
+              "abilityScriptList": [
+                {
+                  "scriptName": "Modular/TIMING:ChangeMotion/LUA:RienWeapons/LUAMAIN:GiveRandomWeaponMotion(Motion,Pierce)"
+                },
+                {
+                  "scriptName": "Modular/TIMING:ChangeMotion/LUA:RienWeapons/LUAMAIN:ChangeMotionBasedOnWeapon(Motion,0)"
+                },
+                {
+                  "scriptName": "GiveBuffOnSucceedAttack",
+                  "buffData": {
+                    "buffKeyword": "Breath",
+                    "target": "Self",
+                    "stack": 1,
+                    "turn": 0,
+                    "activeRound": 0
+                  }
+                },
+                {
+                  "scriptName": "GiveBuffOnSucceedAttack",
+                  "buffData": {
+                    "buffKeyword": "Sinking",
+                    "target": "Target",
+                    "stack": 1,
+                    "turn": 0,
+                    "activeRound": 0
+                  }
+                }
+              ]
+            },
+            {
+              "operatorType": "ADD",
+              "scale": 6,
+              "abilityScriptList": [
+                {
+                  "scriptName": "Modular/TIMING:ChangeMotion/LUA:RienWeapons/LUAMAIN:GiveRandomWeaponMotion(Motion,Pierce)"
+                },
+                {
+                  "scriptName": "Modular/TIMING:ChangeMotion/LUA:RienWeapons/LUAMAIN:ChangeMotionBasedOnWeapon(Motion,1)"
+                },
+                {
+                  "scriptName": "GiveBuffOnSucceedAttack",
+                  "buffData": {
+                    "buffKeyword": "Breath",
+                    "target": "Self",
+                    "stack": 1,
+                    "turn": 0,
+                    "activeRound": 0
+                  }
+                },
+                {
+                  "scriptName": "GiveBuffOnSuccessCriticalAttack",
+                  "buffData": {
+                    "buffKeyword": "Sinking",
+                    "target": "Target",
+                    "stack": 2,
+                    "turn": 0,
+                    "activeRound": 0
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 1013713,
+      "skillTier": 1,
+      "skillType": "SKILL",
+      "skillData": [
+        {
+          "iconID": 134703,
+          "gaksungLevel": 1,
+          "attributeType": "SHAMROCK",
+          "atkType": "SLASH",
+          "defType": "ATTACK",
+          "targetNum": 1,
+          "skillTargetType": "FRONT",
+          "canTeamKill": false,
+          "canDuel": true,
+          "canChangeTarget": true,
+          "skillLevelCorrection": 2,
+          "defaultValue": 6,
+          "skillMotion": "S1",
+          "viewType": "BATTLE",
+          "parryingCloseType": "NEAR",
+          "abilityScriptList": [
+            {
+              "scriptName": "SkillPowerResultAdderByIndexUnlockRankWithLimit2",
+              "value": 1
+            },
+            {
+              "scriptName": "CoinScaleAdderViaSelfBreathAndBuffCheck",
+              "buffData": {
+                "buffKeyword": "Sinking",
+                "stack": 6,
+                "turn": 0,
+                "buffOwner": "Target",
+                "value": 1
+              }
+            },
+            {
+              "scriptName": "DmgMul1347IfAtkType_SLASH",
+              "value": 0.2
+            },
+            {
+              "scriptName": "DmgMul1347IfNotAtkType_SLASH",
+              "value": -0.1
+            },
+            {
+              "scriptName": "GiveBuffOnUse",
+              "buffData": {
+                "buffKeyword": "Breath",
+                "target": "Self",
+                "buffOwner": "",
+                "stack": 0,
+                "turn": 2,
+                "activeRound": 0
+              }
+            },
+            {
+              "scriptName": "Modular/TIMING:OnCoinToss/LUA:RienWeapons/LUAMAIN:GiveRandomWeapon(OCT,Slash)"
+            },
+            {
+              "scriptName": "Modular/TIMING:RoundStart/LUA:RienWeapons/LUAMAIN:GiveRandomWeapon(RoundStart)"
+            },
+            {
+              "scriptName": "Modular/TIMING:EndSkill/LUA:RienWeapons/LUAMAIN:GiveRandomWeapon(EndSkill)"
+            },
+            {
+              "scriptName": "Modular/TIMING:WhenUse/LUA:RienWeapons/LUAMAIN:ApplyWeaponMotion()"
+            }
+          ],
+          "coinList": [
+            {
+              "operatorType": "ADD",
+              "scale": 6,
+              "abilityScriptList": [
+                {
+                  "scriptName": "Modular/TIMING:ChangeMotion/LUA:RienWeapons/LUAMAIN:GiveRandomWeaponMotion(Motion,Slash)"
+                },
+                {
+                  "scriptName": "Modular/TIMING:ChangeMotion/LUA:RienWeapons/LUAMAIN:ChangeMotionBasedOnWeapon(Motion,0)"
+                },
+                {
+                  "scriptName": "GiveBuffOnSucceedAttack",
+                  "buffData": {
+                    "buffKeyword": "Breath",
+                    "target": "Self",
+                    "stack": 2,
+                    "turn": 0,
+                    "activeRound": 0
+                  }
+                },
+                {
+                  "scriptName": "GiveBuffOnSucceedAttack",
+                  "buffData": {
+                    "buffKeyword": "Sinking",
+                    "target": "Target",
+                    "stack": 2,
+                    "turn": 0,
+                    "activeRound": 0
+                  }
+                }
+              ]
+            },
+            {
+              "operatorType": "ADD",
+              "scale": 6,
+              "abilityScriptList": [
+                {
+                  "scriptName": "Modular/TIMING:ChangeMotion/LUA:RienWeapons/LUAMAIN:GiveRandomWeaponMotion(Motion,Slash)"
+                },
+                {
+                  "scriptName": "Modular/TIMING:ChangeMotion/LUA:RienWeapons/LUAMAIN:ChangeMotionBasedOnWeapon(Motion,1)"
+                },
+                {
+                  "scriptName": "GiveBuffOnSucceedAttack",
+                  "buffData": {
+                    "buffKeyword": "Sinking",
+                    "target": "Target",
+                    "stack": 0,
+                    "turn": 1,
+                    "activeRound": 0
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 1013720,
+      "skillTier": 2,
+      "skillType": "SKILL",
+      "textID": 134704,
+      "skillData": [
+        {
+          "iconID": 134704,
+          "gaksungLevel": 1,
+          "attributeType": "INDIGO",
+          "atkType": "HIT",
+          "defType": "ATTACK",
+          "targetNum": 1,
+          "skillTargetType": "FRONT",
+          "canTeamKill": false,
+          "canDuel": true,
+          "canChangeTarget": true,
+          "skillLevelCorrection": 4,
+          "defaultValue": 8,
+          "skillMotion": "S1",
+          "viewType": "BATTLE",
+          "parryingCloseType": "NEAR",
+          "abilityScriptList": [
+            {
+              "scriptName": "SkillPowerResultAdderByIndexUnlockRankWithLimit3",
+              "value": 1
+            },
+            {
+              "scriptName": "DmgMul1347IfAtkType_HIT",
+              "value": 0.3
+            },
+            {
+              "scriptName": "DmgMul1347IfNotAtkType_HIT",
+              "value": -0.15
+            },
+            {
+              "scriptName": "ChangeLastCoinToSuperCoinOBSIfIndexRankUpperThan_2"
+            },
+            {
+              "scriptName": "RecoverBSOnWinDuelIfIndexRankOnBSNotLessThan_3",
+              "value": 10
+            },
+            {
+              "scriptName": "GiveBuffOnUse",
+              "buffData": {
+                "buffKeyword": "Breath",
+                "target": "Self",
+                "buffOwner": "",
+                "stack": 2,
+                "turn": 0,
+                "activeRound": 0
+              }
+            },
+            {
+              "scriptName": "HiddenSkill"
+            },
+            {
+              "scriptName": "Modular/TIMING:OnCoinToss/LUA:RienWeapons/LUAMAIN:GiveRandomWeapon(OCT,Blunt)"
+            },
+            {
+              "scriptName": "Modular/TIMING:RoundStart/LUA:RienWeapons/LUAMAIN:GiveRandomWeapon(RoundStart)"
+            },
+            {
+              "scriptName": "Modular/TIMING:EndSkill/LUA:RienWeapons/LUAMAIN:GiveRandomWeapon(EndSkill)"
+            },
+            {
+              "scriptName": "Modular/TIMING:WhenUse/LUA:RienWeapons/LUAMAIN:ApplyWeaponMotion()"
+            }
+          ],
+          "coinList": [
+            {
+              "operatorType": "ADD",
+              "scale": 4,
+              "abilityScriptList": [
+                {
+                  "scriptName": "Modular/TIMING:ChangeMotion/LUA:RienWeapons/LUAMAIN:GiveRandomWeaponMotion(Motion,Blunt)"
+                },
+                {
+                  "scriptName": "Modular/TIMING:ChangeMotion/LUA:RienWeapons/LUAMAIN:ChangeMotionBasedOnWeapon(Motion,0)"
+                }
+              ]
+            },
+            {
+              "operatorType": "ADD",
+              "scale": 4,
+              "abilityScriptList": [
+                {
+                  "scriptName": "Modular/TIMING:ChangeMotion/LUA:RienWeapons/LUAMAIN:GiveRandomWeaponMotion(Motion,Blunt)"
+                },
+                {
+                  "scriptName": "Modular/TIMING:ChangeMotion/LUA:RienWeapons/LUAMAIN:ChangeMotionBasedOnWeapon(Motion,1)"
+                },
+                {
+                  "scriptName": "GiveBuffOnSucceedAttack",
+                  "buffData": {
+                    "buffKeyword": "Sinking",
+                    "target": "Target",
+                    "stack": 3,
+                    "turn": 0,
+                    "activeRound": 0
+                  }
+                }
+              ]
+            },
+            {
+              "operatorType": "ADD",
+              "scale": 4,
+              "abilityScriptList": [
+                {
+                  "scriptName": "Modular/TIMING:ChangeMotion/LUA:RienWeapons/LUAMAIN:GiveRandomWeaponMotion(Motion,Blunt)"
+                },
+                {
+                  "scriptName": "Modular/TIMING:ChangeMotion/LUA:RienWeapons/LUAMAIN:ChangeMotionBasedOnWeapon(Motion,3)"
+                },
+                {
+                  "scriptName": "GiveBuffOnSucceedAttack",
+                  "buffData": {
+                    "buffKeyword": "Breath",
+                    "target": "Self",
+                    "stack": 0,
+                    "turn": 1,
+                    "activeRound": 0
+                  }
+                },
+                {
+                  "scriptName": "GiveBuffOnSucceedAttack",
+                  "buffData": {
+                    "buffKeyword": "Sinking",
+                    "target": "Target",
+                    "stack": 0,
+                    "turn": 1,
+                    "activeRound": 0
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 1013721,
+      "skillTier": 2,
+      "skillType": "SKILL",
+      "skillData": [
+        {
+          "iconID": 134704,
+          "gaksungLevel": 1,
+          "attributeType": "INDIGO",
+          "atkType": "HIT",
+          "defType": "ATTACK",
+          "targetNum": 1,
+          "skillTargetType": "FRONT",
+          "canTeamKill": false,
+          "canDuel": true,
+          "canChangeTarget": true,
+          "skillLevelCorrection": 4,
+          "defaultValue": 8,
+          "skillMotion": "S1",
+          "viewType": "BATTLE",
+          "parryingCloseType": "NEAR",
+          "abilityScriptList": [
+            {
+              "scriptName": "SkillPowerResultAdderByIndexUnlockRankWithLimit3",
+              "value": 1
+            },
+            {
+              "scriptName": "CoinScaleAdderViaSelfBreathAndBuffCheck",
+              "buffData": {
+                "buffKeyword": "Sinking",
+                "stack": 6,
+                "turn": 0,
+                "buffOwner": "Target",
+                "value": 1
+              }
+            },
+            {
+              "scriptName": "DmgMul1347IfAtkType_HIT",
+              "value": 0.3
+            },
+            {
+              "scriptName": "DmgMul1347IfNotAtkType_HIT",
+              "value": -0.15
+            },
+            {
+              "scriptName": "ChangeLastCoinToSuperCoinOBSIfIndexRankUpperThan_2"
+            },
+            {
+              "scriptName": "RecoverBSOnWinDuelIfIndexRankOnBSNotLessThan_3",
+              "value": 10
+            },
+            {
+              "scriptName": "GiveBuffOnUse",
+              "buffData": {
+                "buffKeyword": "Breath",
+                "target": "Self",
+                "buffOwner": "",
+                "stack": 2,
+                "turn": 0,
+                "activeRound": 0
+              }
+            },
+            {
+              "scriptName": "Modular/TIMING:OnCoinToss/LUA:RienWeapons/LUAMAIN:GiveRandomWeapon(OCT,Blunt)"
+            },
+            {
+              "scriptName": "Modular/TIMING:RoundStart/LUA:RienWeapons/LUAMAIN:GiveRandomWeapon(RoundStart)"
+            },
+            {
+              "scriptName": "Modular/TIMING:EndSkill/LUA:RienWeapons/LUAMAIN:GiveRandomWeapon(EndSkill)"
+            },
+            {
+              "scriptName": "Modular/TIMING:WhenUse/LUA:RienWeapons/LUAMAIN:ApplyWeaponMotion()"
+            }
+          ],
+          "coinList": [
+            {
+              "operatorType": "ADD",
+              "scale": 4,
+              "abilityScriptList": [
+                {
+                  "scriptName": "Modular/TIMING:ChangeMotion/LUA:RienWeapons/LUAMAIN:GiveRandomWeaponMotion(Motion,Blunt)"
+                },
+                {
+                  "scriptName": "Modular/TIMING:ChangeMotion/LUA:RienWeapons/LUAMAIN:ChangeMotionBasedOnWeapon(Motion,0)"
+                },
+                {
+                  "scriptName": "GiveBuffOnSucceedAttack",
+                  "buffData": {
+                    "buffKeyword": "Sinking",
+                    "target": "Target",
+                    "stack": 2,
+                    "turn": 0,
+                    "activeRound": 0
+                  }
+                }
+              ]
+            },
+            {
+              "operatorType": "ADD",
+              "scale": 4,
+              "abilityScriptList": [
+                {
+                  "scriptName": "Modular/TIMING:ChangeMotion/LUA:RienWeapons/LUAMAIN:GiveRandomWeaponMotion(Motion,Blunt)"
+                },
+                {
+                  "scriptName": "Modular/TIMING:ChangeMotion/LUA:RienWeapons/LUAMAIN:ChangeMotionBasedOnWeapon(Motion,1)"
+                },
+                {
+                  "scriptName": "GiveBuffOnSucceedAttack",
+                  "buffData": {
+                    "buffKeyword": "Sinking",
+                    "target": "Target",
+                    "stack": 2,
+                    "turn": 0,
+                    "activeRound": 0
+                  }
+                }
+              ]
+            },
+            {
+              "operatorType": "ADD",
+              "scale": 4,
+              "abilityScriptList": [
+                {
+                  "scriptName": "Modular/TIMING:ChangeMotion/LUA:RienWeapons/LUAMAIN:GiveRandomWeaponMotion(Motion,Blunt)"
+                },
+                {
+                  "scriptName": "Modular/TIMING:ChangeMotion/LUA:RienWeapons/LUAMAIN:ChangeMotionBasedOnWeapon(Motion,3)"
+                },
+                {
+                  "scriptName": "GiveBuffOnSucceedAttack",
+                  "buffData": {
+                    "buffKeyword": "Breath",
+                    "target": "Self",
+                    "stack": 0,
+                    "turn": 1,
+                    "activeRound": 0
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 1013722,
+      "skillTier": 2,
+      "skillType": "SKILL",
+      "skillData": [
+        {
+          "iconID": 134705,
+          "gaksungLevel": 1,
+          "attributeType": "INDIGO",
+          "atkType": "PENETRATE",
+          "defType": "ATTACK",
+          "targetNum": 1,
+          "skillTargetType": "FRONT",
+          "canTeamKill": false,
+          "canDuel": true,
+          "canChangeTarget": true,
+          "skillLevelCorrection": 4,
+          "defaultValue": 8,
+          "skillMotion": "S1",
+          "viewType": "BATTLE",
+          "parryingCloseType": "NEAR",
+          "abilityScriptList": [
+            {
+              "scriptName": "SkillPowerResultAdderByIndexUnlockRankWithLimit3",
+              "value": 1
+            },
+            {
+              "scriptName": "CoinScaleAdderViaSelfBreathAndBuffCheck",
+              "buffData": {
+                "buffKeyword": "Sinking",
+                "stack": 6,
+                "turn": 0,
+                "buffOwner": "Target",
+                "value": 1
+              }
+            },
+            {
+              "scriptName": "DmgMul1347IfAtkType_PENETRATE",
+              "value": 0.3
+            },
+            {
+              "scriptName": "DmgMul1347IfNotAtkType_PENETRATE",
+              "value": -0.15
+            },
+            {
+              "scriptName": "ChangeLastCoinToSuperCoinOBSIfIndexRankUpperThan_2"
+            },
+            {
+              "scriptName": "GiveBuffOnWinDuelIfIndexRankOnBSNotLessThan_3",
+              "buffData": {
+                "buffKeyword": "ResultReduction",
+                "target": "Target",
+                "buffOwner": "",
+                "stack": 1,
+                "turn": 0,
+                "activeRound": 1
+              }
+            },
+            {
+              "scriptName": "GiveBuffOnUse",
+              "buffData": {
+                "buffKeyword": "Breath",
+                "target": "Self",
+                "buffOwner": "",
+                "stack": 2,
+                "turn": 0,
+                "activeRound": 0
+              }
+            },
+            {
+              "scriptName": "Modular/TIMING:OnCoinToss/LUA:RienWeapons/LUAMAIN:GiveRandomWeapon(OCT,Pierce)"
+            },
+            {
+              "scriptName": "Modular/TIMING:RoundStart/LUA:RienWeapons/LUAMAIN:GiveRandomWeapon(RoundStart)"
+            },
+            {
+              "scriptName": "Modular/TIMING:EndSkill/LUA:RienWeapons/LUAMAIN:GiveRandomWeapon(EndSkill)"
+            },
+            {
+              "scriptName": "Modular/TIMING:WhenUse/LUA:RienWeapons/LUAMAIN:ApplyWeaponMotion()"
+            }
+          ],
+          "coinList": [
+            {
+              "operatorType": "ADD",
+              "scale": 4,
+              "abilityScriptList": [
+                {
+                  "scriptName": "Modular/TIMING:ChangeMotion/LUA:RienWeapons/LUAMAIN:GiveRandomWeaponMotion(Motion,Pierce)"
+                },
+                {
+                  "scriptName": "Modular/TIMING:ChangeMotion/LUA:RienWeapons/LUAMAIN:ChangeMotionBasedOnWeapon(Motion,0)"
+                },
+                {
+                  "scriptName": "GiveBuffOnSucceedAttack",
+                  "buffData": {
+                    "buffKeyword": "Sinking",
+                    "target": "Target",
+                    "stack": 2,
+                    "turn": 0,
+                    "activeRound": 0
+                  }
+                }
+              ]
+            },
+            {
+              "operatorType": "ADD",
+              "scale": 4,
+              "abilityScriptList": [
+                {
+                  "scriptName": "Modular/TIMING:ChangeMotion/LUA:RienWeapons/LUAMAIN:GiveRandomWeaponMotion(Motion,Pierce)"
+                },
+                {
+                  "scriptName": "Modular/TIMING:ChangeMotion/LUA:RienWeapons/LUAMAIN:ChangeMotionBasedOnWeapon(Motion,1)"
+                },
+                {
+                  "scriptName": "GiveBuffOnSucceedAttack",
+                  "buffData": {
+                    "buffKeyword": "Sinking",
+                    "target": "Target",
+                    "stack": 0,
+                    "turn": 1,
+                    "activeRound": 0
+                  }
+                }
+              ]
+            },
+            {
+              "operatorType": "ADD",
+              "scale": 4,
+              "abilityScriptList": [
+                {
+                  "scriptName": "Modular/TIMING:ChangeMotion/LUA:RienWeapons/LUAMAIN:GiveRandomWeaponMotion(Motion,Pierce)"
+                },
+                {
+                  "scriptName": "Modular/TIMING:ChangeMotion/LUA:RienWeapons/LUAMAIN:ChangeMotionBasedOnWeapon(Motion,3)"
+                },
+                {
+                  "scriptName": "GiveBuffOnSucceedAttack",
+                  "buffData": {
+                    "buffKeyword": "Breath",
+                    "target": "Self",
+                    "stack": 0,
+                    "turn": 1,
+                    "activeRound": 0
+                  }
+                },
+                {
+                  "scriptName": "GiveBuffOnSuccessCriticalAttack",
+                  "buffData": {
+                    "buffKeyword": "Sinking",
+                    "target": "Target",
+                    "stack": 0,
+                    "turn": 2,
+                    "activeRound": 0
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 1013723,
+      "skillTier": 2,
+      "skillType": "SKILL",
+      "skillData": [
+        {
+          "iconID": 134706,
+          "gaksungLevel": 1,
+          "attributeType": "INDIGO",
+          "atkType": "SLASH",
+          "defType": "ATTACK",
+          "targetNum": 1,
+          "skillTargetType": "FRONT",
+          "canTeamKill": false,
+          "canDuel": true,
+          "canChangeTarget": true,
+          "skillLevelCorrection": 4,
+          "defaultValue": 8,
+          "skillMotion": "S1",
+          "viewType": "BATTLE",
+          "parryingCloseType": "NEAR",
+          "abilityScriptList": [
+            {
+              "scriptName": "SkillPowerResultAdderByIndexUnlockRankWithLimit3",
+              "value": 1
+            },
+            {
+              "scriptName": "CoinScaleAdderViaSelfBreathAndBuffCheck",
+              "buffData": {
+                "buffKeyword": "Sinking",
+                "stack": 6,
+                "turn": 0,
+                "buffOwner": "Target",
+                "value": 1
+              }
+            },
+            {
+              "scriptName": "DmgMul1347IfAtkType_SLASH",
+              "value": 0.3
+            },
+            {
+              "scriptName": "DmgMul1347IfNotAtkType_SLASH",
+              "value": -0.15
+            },
+            {
+              "scriptName": "ChangeLastCoinToSuperCoinOBSIfIndexRankUpperThan_2"
+            },
+            {
+              "scriptName": "GiveBuffOnWinDuelIfIndexRankOnBSNotLessThan_3",
+              "buffData": {
+                "buffKeyword": "ResultEnhancement",
+                "target": "Self",
+                "buffOwner": "",
+                "stack": 1,
+                "turn": 0,
+                "activeRound": 1
+              }
+            },
+            {
+              "scriptName": "GiveBuffOnUse",
+              "buffData": {
+                "buffKeyword": "Breath",
+                "target": "Self",
+                "buffOwner": "",
+                "stack": 2,
+                "turn": 0,
+                "activeRound": 0
+              }
+            },
+            {
+              "scriptName": "Modular/TIMING:OnCoinToss/LUA:RienWeapons/LUAMAIN:GiveRandomWeapon(OCT,Slash)"
+            },
+            {
+              "scriptName": "Modular/TIMING:RoundStart/LUA:RienWeapons/LUAMAIN:GiveRandomWeapon(RoundStart)"
+            },
+            {
+              "scriptName": "Modular/TIMING:EndSkill/LUA:RienWeapons/LUAMAIN:GiveRandomWeapon(EndSkill)"
+            },
+            {
+              "scriptName": "Modular/TIMING:WhenUse/LUA:RienWeapons/LUAMAIN:ApplyWeaponMotion()"
+            }
+          ],
+          "coinList": [
+            {
+              "operatorType": "ADD",
+              "scale": 4,
+              "abilityScriptList": [
+                {
+                  "scriptName": "Modular/TIMING:ChangeMotion/LUA:RienWeapons/LUAMAIN:GiveRandomWeaponMotion(Motion,Slash)"
+                },
+                {
+                  "scriptName": "Modular/TIMING:ChangeMotion/LUA:RienWeapons/LUAMAIN:ChangeMotionBasedOnWeapon(Motion,0)"
+                },
+                {
+                  "scriptName": "GiveBuffOnSucceedAttack",
+                  "buffData": {
+                    "buffKeyword": "Sinking",
+                    "target": "Target",
+                    "stack": 1,
+                    "turn": 0,
+                    "activeRound": 0
+                  }
+                }
+              ]
+            },
+            {
+              "operatorType": "ADD",
+              "scale": 4,
+              "abilityScriptList": [
+                {
+                  "scriptName": "Modular/TIMING:ChangeMotion/LUA:RienWeapons/LUAMAIN:GiveRandomWeaponMotion(Motion,Slash)"
+                },
+                {
+                  "scriptName": "Modular/TIMING:ChangeMotion/LUA:RienWeapons/LUAMAIN:ChangeMotionBasedOnWeapon(Motion,1)"
+                },
+                {
+                  "scriptName": "GiveBuffOnSucceedAttack",
+                  "buffData": {
+                    "buffKeyword": "Sinking",
+                    "target": "Target",
+                    "stack": 2,
+                    "turn": 0,
+                    "activeRound": 0
+                  }
+                }
+              ]
+            },
+            {
+              "operatorType": "ADD",
+              "scale": 4,
+              "abilityScriptList": [
+                {
+                  "scriptName": "Modular/TIMING:ChangeMotion/LUA:RienWeapons/LUAMAIN:GiveRandomWeaponMotion(Motion,Slash)"
+                },
+                {
+                  "scriptName": "Modular/TIMING:ChangeMotion/LUA:RienWeapons/LUAMAIN:ChangeMotionBasedOnWeapon(Motion,3)"
+                },
+                {
+                  "scriptName": "GiveBuffOnSucceedAttack",
+                  "buffData": {
+                    "buffKeyword": "Breath",
+                    "target": "Self",
+                    "stack": 0,
+                    "turn": 1,
+                    "activeRound": 0
+                  }
+                },
+                {
+                  "scriptName": "GiveBuffOnSucceedAttack",
+                  "buffData": {
+                    "buffKeyword": "Sinking",
+                    "target": "Target",
+                    "stack": 0,
+                    "turn": 1,
+                    "activeRound": 0
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 1013730,
+      "skillTier": 3,
+      "skillType": "SKILL",
+      "textID": 134707,
+      "skillData": [
+        {
+          "iconID": 134707,
+          "gaksungLevel": 1,
+          "attributeType": "AZURE",
+          "atkType": "HIT",
+          "defType": "ATTACK",
+          "targetNum": 1,
+          "skillTargetType": "FRONT",
+          "canTeamKill": false,
+          "canDuel": true,
+          "canChangeTarget": true,
+          "skillLevelCorrection": 6,
+          "defaultValue": 12,
+          "skillMotion": "S1",
+          "specialDuelIndex": 0,
+          "viewType": "ENCOUNTER",
+          "parryingCloseType": "NEAR",
+          "abilityScriptList": [
+            {
+              "scriptName": "DmgMul1347IfAtkType_HIT",
+              "value": 0.5
+            },
+            {
+              "scriptName": "DmgMul1347IfNotAtkType_HIT",
+              "value": -0.25
+            },
+            {
+              "scriptName": "ChangeCoinToSuperCoinOBSIfIndexRankUpperThanValue_3_4",
+              "value": 2
+            },
+            {
+              "scriptName": "DamageBSOnWinDuelIfIndexRankOnBSNotLessThan_3",
+              "value": 15
+            },
+            {
+              "scriptName": "GiveBuffOnUse",
+              "buffData": {
+                "buffKeyword": "Breath",
+                "target": "Self",
+                "buffOwner": "",
+                "stack": 2,
+                "turn": 2,
+                "activeRound": 0
+              }
+            },
+            {
+              "scriptName": "HiddenSkill"
+            },
+            {
+              "scriptName": "Modular/TIMING:OnCoinToss/LUA:RienWeapons/LUAMAIN:GiveRandomWeapon(OCT,Blunt)"
+            },
+            {
+              "scriptName": "Modular/TIMING:RoundStart/LUA:RienWeapons/LUAMAIN:GiveRandomWeapon(RoundStart)"
+            },
+            {
+              "scriptName": "Modular/TIMING:EndSkill/LUA:RienWeapons/LUAMAIN:GiveRandomWeapon(EndSkill)"
+            },
+            {
+              "scriptName": "Modular/TIMING:WhenUse/LUA:RienWeapons/LUAMAIN:ApplyWeaponMotion()"
+            }
+          ],
+          "coinList": [
+            {
+              "operatorType": "ADD",
+              "scale": 4,
+              "abilityScriptList": [
+                {
+                  "scriptName": "Modular/TIMING:ChangeMotion/LUA:RienWeapons/LUAMAIN:GiveRandomWeaponMotion(Motion,Blunt)"
+                },
+                {
+                  "scriptName": "Modular/TIMING:ChangeMotion/LUA:RienWeapons/LUAMAIN:ChangeMotionBasedOnWeapon(Motion,0)"
+                },
+                {
+                  "scriptName": "GiveBuffOnSucceedAttack",
+                  "buffData": {
+                    "buffKeyword": "Sinking",
+                    "target": "Target",
+                    "stack": 2,
+                    "turn": 0,
+                    "activeRound": 0
+                  }
+                }
+              ]
+            },
+            {
+              "operatorType": "ADD",
+              "scale": 4,
+              "abilityScriptList": [
+                {
+                  "scriptName": "Modular/TIMING:ChangeMotion/LUA:RienWeapons/LUAMAIN:GiveRandomWeaponMotion(Motion,Blunt)"
+                },
+                {
+                  "scriptName": "Modular/TIMING:ChangeMotion/LUA:RienWeapons/LUAMAIN:ChangeMotionBasedOnWeapon(Motion,1,2)"
+                },
+                {
+                  "scriptName": "GiveBuffOnSucceedAttack",
+                  "buffData": {
+                    "buffKeyword": "Sinking",
+                    "target": "Target",
+                    "stack": 0,
+                    "turn": 2,
+                    "activeRound": 0
+                  }
+                }
+              ]
+            },
+            {
+              "operatorType": "ADD",
+              "scale": 4,
+              "abilityScriptList": [
+                {
+                  "scriptName": "Modular/TIMING:ChangeMotion/LUA:RienWeapons/LUAMAIN:GiveRandomWeaponMotion(Motion,Blunt)"
+                },
+                {
+                  "scriptName": "Modular/TIMING:ChangeMotion/LUA:RienWeapons/LUAMAIN:ChangeMotionBasedOnWeapon(Motion,1,3)"
+                },
+                {
+                  "scriptName": "GiveBuffOnSucceedAttack",
+                  "buffData": {
+                    "buffKeyword": "Breath",
+                    "target": "Self",
+                    "stack": 2,
+                    "turn": 0,
+                    "activeRound": 0
+                  }
+                }
+              ]
+            },
+            {
+              "operatorType": "ADD",
+              "scale": 4,
+              "abilityScriptList": [
+                {
+                  "scriptName": "Modular/TIMING:ChangeMotion/LUA:RienWeapons/LUAMAIN:GiveRandomWeaponMotion(Motion,Blunt)"
+                },
+                {
+                  "scriptName": "Modular/TIMING:ChangeMotion/LUA:RienWeapons/LUAMAIN:ChangeMotionBasedOnWeapon(Motion,3)"
+                },
+                {
+                  "scriptName": "GiveBuffOnSucceedAttack",
+                  "buffData": {
+                    "buffKeyword": "Breath",
+                    "target": "Self",
+                    "stack": 0,
+                    "turn": 2,
+                    "activeRound": 0
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 1013731,
+      "skillTier": 3,
+      "skillType": "SKILL",
+      "skillData": [
+        {
+          "iconID": 134707,
+          "gaksungLevel": 1,
+          "attributeType": "AZURE",
+          "atkType": "HIT",
+          "defType": "ATTACK",
+          "targetNum": 1,
+          "skillTargetType": "FRONT",
+          "canTeamKill": false,
+          "canDuel": true,
+          "canChangeTarget": true,
+          "skillLevelCorrection": 6,
+          "defaultValue": 12,
+          "skillMotion": "S1",
+          "viewType": "ENCOUNTER",
+          "specialDuelIndex": 0,
+          "parryingCloseType": "NEAR",
+          "abilityScriptList": [
+            {
+              "scriptName": "SkillPowerResultAdderByIndexUnlockRankWithLimit3",
+              "value": 1
+            },
+            {
+              "scriptName": "CoinScaleAdderViaSelfBreathAndBuffCheck",
+              "buffData": {
+                "buffKeyword": "Sinking",
+                "stack": 6,
+                "turn": 0,
+                "buffOwner": "Target",
+                "value": 1
+              }
+            },
+            {
+              "scriptName": "DmgMul1347IfAtkType_HIT",
+              "value": 0.5
+            },
+            {
+              "scriptName": "DmgMul1347IfNotAtkType_HIT",
+              "value": -0.25
+            },
+            {
+              "scriptName": "ChangeCoinToSuperCoinOBSIfIndexRankUpperThanValue_3_4",
+              "value": 2
+            },
+            {
+              "scriptName": "DamageBSOnWinDuelIfIndexRankOnBSNotLessThan_3",
+              "value": 15
+            },
+            {
+              "scriptName": "GiveBuffOnUseAddStackByIndexUnlockRank",
+              "buffData": {
+                "buffKeyword": "Breath",
+                "target": "Self",
+                "buffOwner": "",
+                "stack": 0,
+                "turn": 3,
+                "value": 1,
+                "activeRound": 0
+              }
+            },
+            {
+              "scriptName": "Modular/TIMING:OnCoinToss/LUA:RienWeapons/LUAMAIN:GiveRandomWeapon(OCT,Blunt)"
+            },
+            {
+              "scriptName": "Modular/TIMING:RoundStart/LUA:RienWeapons/LUAMAIN:GiveRandomWeapon(RoundStart)"
+            },
+            {
+              "scriptName": "Modular/TIMING:EndSkill/LUA:RienWeapons/LUAMAIN:GiveRandomWeapon(EndSkill)"
+            },
+            {
+              "scriptName": "Modular/TIMING:WhenUse/LUA:RienWeapons/LUAMAIN:ApplyWeaponMotion()"
+            }
+          ],
+          "coinList": [
+            {
+              "operatorType": "ADD",
+              "scale": 4,
+              "abilityScriptList": [
+                {
+                  "scriptName": "Modular/TIMING:ChangeMotion/LUA:RienWeapons/LUAMAIN:GiveRandomWeaponMotion(Motion,Blunt)"
+                },
+                {
+                  "scriptName": "Modular/TIMING:ChangeMotion/LUA:RienWeapons/LUAMAIN:ChangeMotionBasedOnWeapon(Motion,0)"
+                },
+                {
+                  "scriptName": "GiveBuffOnSucceedAttack",
+                  "buffData": {
+                    "buffKeyword": "Sinking",
+                    "target": "Target",
+                    "stack": 3,
+                    "turn": 0,
+                    "activeRound": 0
+                  }
+                }
+              ]
+            },
+            {
+              "operatorType": "ADD",
+              "scale": 4,
+              "abilityScriptList": [
+                {
+                  "scriptName": "Modular/TIMING:ChangeMotion/LUA:RienWeapons/LUAMAIN:GiveRandomWeaponMotion(Motion,Blunt)"
+                },
+                {
+                  "scriptName": "Modular/TIMING:ChangeMotion/LUA:RienWeapons/LUAMAIN:ChangeMotionBasedOnWeapon(Motion,1,2)"
+                },
+                {
+                  "scriptName": "GiveBuffOnSucceedAttack",
+                  "buffData": {
+                    "buffKeyword": "Sinking",
+                    "target": "Target",
+                    "stack": 2,
+                    "turn": 0,
+                    "activeRound": 0
+                  }
+                }
+              ]
+            },
+            {
+              "operatorType": "ADD",
+              "scale": 4,
+              "abilityScriptList": [
+                {
+                  "scriptName": "Modular/TIMING:ChangeMotion/LUA:RienWeapons/LUAMAIN:GiveRandomWeaponMotion(Motion,Blunt)"
+                },
+                {
+                  "scriptName": "Modular/TIMING:ChangeMotion/LUA:RienWeapons/LUAMAIN:ChangeMotionBasedOnWeapon(Motion,1,3)"
+                },
+                {
+                  "scriptName": "GiveBuffOnSucceedAttack",
+                  "buffData": {
+                    "buffKeyword": "Breath",
+                    "target": "Self",
+                    "stack": 2,
+                    "turn": 0,
+                    "activeRound": 0
+                  }
+                }
+              ]
+            },
+            {
+              "operatorType": "ADD",
+              "scale": 4,
+              "abilityScriptList": [
+                {
+                  "scriptName": "Modular/TIMING:ChangeMotion/LUA:RienWeapons/LUAMAIN:GiveRandomWeaponMotion(Motion,Blunt)"
+                },
+                {
+                  "scriptName": "Modular/TIMING:ChangeMotion/LUA:RienWeapons/LUAMAIN:ChangeMotionBasedOnWeapon(Motion,3)"
+                },
+                {
+                  "scriptName": "GiveBuffOnSucceedAttack",
+                  "buffData": {
+                    "buffKeyword": "Breath",
+                    "target": "Self",
+                    "stack": 0,
+                    "turn": 2,
+                    "activeRound": 0
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 1013732,
+      "skillTier": 3,
+      "skillType": "SKILL",
+      "skillData": [
+        {
+          "iconID": 134708,
+          "gaksungLevel": 1,
+          "attributeType": "AZURE",
+          "atkType": "PENETRATE",
+          "defType": "ATTACK",
+          "targetNum": 1,
+          "skillTargetType": "FRONT",
+          "canTeamKill": false,
+          "canDuel": true,
+          "canChangeTarget": true,
+          "skillLevelCorrection": 6,
+          "defaultValue": 12,
+          "skillMotion": "S1",
+          "viewType": "ENCOUNTER",
+          "specialDuelIndex": 0,
+          "parryingCloseType": "NEAR",
+          "abilityScriptList": [
+            {
+              "scriptName": "SkillPowerResultAdderByIndexUnlockRankWithLimit3",
+              "value": 1
+            },
+            {
+              "scriptName": "CoinScaleAdderViaSelfBreathAndBuffCheck",
+              "buffData": {
+                "buffKeyword": "Sinking",
+                "stack": 6,
+                "turn": 0,
+                "buffOwner": "Target",
+                "value": 1
+              }
+            },
+            {
+              "scriptName": "DmgMul1347IfAtkType_PENETRATE",
+              "value": 0.5
+            },
+            {
+              "scriptName": "DmgMul1347IfNotAtkType_PENETRATE",
+              "value": -0.25
+            },
+            {
+              "scriptName": "ChangeCoinToSuperCoinOBSIfIndexRankUpperThanValue_3_4",
+              "value": 2
+            },
+            {
+              "scriptName": "GiveBuffOnWinDuelIfIndexRankOnBSNotLessThan_3",
+              "buffData": {
+                "buffKeyword": "AttackDmgUp",
+                "target": "Self",
+                "buffOwner": "",
+                "stack": 1,
+                "turn": 0,
+                "activeRound": 1
+              }
+            },
+            {
+              "scriptName": "GiveBuffOnUseAddStackByIndexUnlockRank",
+              "buffData": {
+                "buffKeyword": "Breath",
+                "target": "Self",
+                "buffOwner": "",
+                "stack": 0,
+                "turn": 3,
+                "value": 1,
+                "activeRound": 0
+              }
+            },
+            {
+              "scriptName": "Modular/TIMING:OnCoinToss/LUA:RienWeapons/LUAMAIN:GiveRandomWeapon(OCT,Pierce)"
+            },
+            {
+              "scriptName": "Modular/TIMING:RoundStart/LUA:RienWeapons/LUAMAIN:GiveRandomWeapon(RoundStart)"
+            },
+            {
+              "scriptName": "Modular/TIMING:EndSkill/LUA:RienWeapons/LUAMAIN:GiveRandomWeapon(EndSkill)"
+            },
+            {
+              "scriptName": "Modular/TIMING:WhenUse/LUA:RienWeapons/LUAMAIN:ApplyWeaponMotion()"
+            }
+          ],
+          "coinList": [
+            {
+              "operatorType": "ADD",
+              "scale": 4,
+              "abilityScriptList": [
+                {
+                  "scriptName": "Modular/TIMING:ChangeMotion/LUA:RienWeapons/LUAMAIN:GiveRandomWeaponMotion(Motion,Pierce)"
+                },
+                {
+                  "scriptName": "Modular/TIMING:ChangeMotion/LUA:RienWeapons/LUAMAIN:ChangeMotionBasedOnWeapon(Motion,0)"
+                },
+                {
+                  "scriptName": "GiveBuffOnSucceedAttack",
+                  "buffData": {
+                    "buffKeyword": "Sinking",
+                    "target": "Target",
+                    "stack": 1,
+                    "turn": 0,
+                    "activeRound": 0
+                  }
+                },
+                {
+                  "scriptName": "GiveBuffOnSucceedAttack",
+                  "buffData": {
+                    "buffKeyword": "Breath",
+                    "target": "Self",
+                    "stack": 1,
+                    "turn": 0,
+                    "activeRound": 0
+                  }
+                }
+              ]
+            },
+            {
+              "operatorType": "ADD",
+              "scale": 4,
+              "abilityScriptList": [
+                {
+                  "scriptName": "Modular/TIMING:ChangeMotion/LUA:RienWeapons/LUAMAIN:GiveRandomWeaponMotion(Motion,Pierce)"
+                },
+                {
+                  "scriptName": "Modular/TIMING:ChangeMotion/LUA:RienWeapons/LUAMAIN:ChangeMotionBasedOnWeapon(Motion,1,2)"
+                },
+                {
+                  "scriptName": "GiveBuffOnSucceedAttack",
+                  "buffData": {
+                    "buffKeyword": "Sinking",
+                    "target": "Target",
+                    "stack": 1,
+                    "turn": 0,
+                    "activeRound": 0
+                  }
+                },
+                {
+                  "scriptName": "GiveBuffOnSucceedAttack",
+                  "buffData": {
+                    "buffKeyword": "Breath",
+                    "target": "Self",
+                    "stack": 1,
+                    "turn": 0,
+                    "activeRound": 0
+                  }
+                }
+              ]
+            },
+            {
+              "operatorType": "ADD",
+              "scale": 4,
+              "abilityScriptList": [
+                {
+                  "scriptName": "Modular/TIMING:ChangeMotion/LUA:RienWeapons/LUAMAIN:GiveRandomWeaponMotion(Motion,Pierce)"
+                },
+                {
+                  "scriptName": "Modular/TIMING:ChangeMotion/LUA:RienWeapons/LUAMAIN:ChangeMotionBasedOnWeapon(Motion,1,3)"
+                },
+                {
+                  "scriptName": "GiveBuffOnSucceedAttack",
+                  "buffData": {
+                    "buffKeyword": "Breath",
+                    "target": "Self",
+                    "stack": 0,
+                    "turn": 1,
+                    "activeRound": 0
+                  }
+                }
+              ]
+            },
+            {
+              "operatorType": "ADD",
+              "scale": 4,
+              "abilityScriptList": [
+                {
+                  "scriptName": "Modular/TIMING:ChangeMotion/LUA:RienWeapons/LUAMAIN:GiveRandomWeaponMotion(Motion,Pierce)"
+                },
+                {
+                  "scriptName": "Modular/TIMING:ChangeMotion/LUA:RienWeapons/LUAMAIN:ChangeMotionBasedOnWeapon(Motion,3)"
+                },
+                {
+                  "scriptName": "GiveBuffOnSucceedAttack",
+                  "buffData": {
+                    "buffKeyword": "Breath",
+                    "target": "Self",
+                    "stack": 0,
+                    "turn": 1,
+                    "activeRound": 0
+                  }
+                },
+                {
+                  "scriptName": "GiveBuffOnSuccessCriticalAttack",
+                  "buffData": {
+                    "buffKeyword": "Sinking",
+                    "target": "Target",
+                    "stack": 0,
+                    "turn": 4,
+                    "activeRound": 0
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 1013733,
+      "skillTier": 3,
+      "skillType": "SKILL",
+      "skillData": [
+        {
+          "iconID": 134709,
+          "gaksungLevel": 1,
+          "attributeType": "AZURE",
+          "atkType": "SLASH",
+          "defType": "ATTACK",
+          "targetNum": 1,
+          "skillTargetType": "FRONT",
+          "canTeamKill": false,
+          "canDuel": true,
+          "canChangeTarget": true,
+          "skillLevelCorrection": 6,
+          "defaultValue": 12,
+          "skillMotion": "S1",
+          "viewType": "ENCOUNTER",
+          "specialDuelIndex": 0,
+          "parryingCloseType": "NEAR",
+          "abilityScriptList": [
+            {
+              "scriptName": "SkillPowerResultAdderByIndexUnlockRankWithLimit3",
+              "value": 1
+            },
+            {
+              "scriptName": "CoinScaleAdderViaSelfBreathAndBuffCheck",
+              "buffData": {
+                "buffKeyword": "Sinking",
+                "stack": 6,
+                "turn": 0,
+                "buffOwner": "Target",
+                "value": 1
+              }
+            },
+            {
+              "scriptName": "DmgMul1347IfAtkType_SLASH",
+              "value": 0.5
+            },
+            {
+              "scriptName": "DmgMul1347IfNotAtkType_SLASH",
+              "value": -0.25
+            },
+            {
+              "scriptName": "ChangeCoinToSuperCoinOBSIfIndexRankUpperThanValue_3_4",
+              "value": 2
+            },
+            {
+              "scriptName": "ResultAdderOnWinDuelIfIndexRankOnBSNotLessThan_3",
+              "value": 2
+            },
+            {
+              "scriptName": "GiveBuffOnUseAddStackByIndexUnlockRank",
+              "buffData": {
+                "buffKeyword": "Breath",
+                "target": "Self",
+                "buffOwner": "",
+                "stack": 0,
+                "turn": 3,
+                "value": 1,
+                "activeRound": 0
+              }
+            },
+            {
+              "scriptName": "Modular/TIMING:OnCoinToss/LUA:RienWeapons/LUAMAIN:GiveRandomWeapon(OCT,Slash)"
+            },
+            {
+              "scriptName": "Modular/TIMING:RoundStart/LUA:RienWeapons/LUAMAIN:GiveRandomWeapon(RoundStart)"
+            },
+            {
+              "scriptName": "Modular/TIMING:EndSkill/LUA:RienWeapons/LUAMAIN:GiveRandomWeapon(EndSkill)"
+            },
+            {
+              "scriptName": "Modular/TIMING:WhenUse/LUA:RienWeapons/LUAMAIN:ApplyWeaponMotion()"
+            }
+          ],
+          "coinList": [
+            {
+              "operatorType": "ADD",
+              "scale": 4,
+              "abilityScriptList": [
+                {
+                  "scriptName": "Modular/TIMING:ChangeMotion/LUA:RienWeapons/LUAMAIN:GiveRandomWeaponMotion(Motion,Slash)"
+                },
+                {
+                  "scriptName": "Modular/TIMING:ChangeMotion/LUA:RienWeapons/LUAMAIN:ChangeMotionBasedOnWeapon(Motion,0)"
+                },
+                {
+                  "scriptName": "GiveBuffOnSucceedAttack",
+                  "buffData": {
+                    "buffKeyword": "Breath",
+                    "target": "Self",
+                    "stack": 2,
+                    "turn": 0,
+                    "activeRound": 0
+                  }
+                }
+              ]
+            },
+            {
+              "operatorType": "ADD",
+              "scale": 4,
+              "abilityScriptList": [
+                {
+                  "scriptName": "Modular/TIMING:ChangeMotion/LUA:RienWeapons/LUAMAIN:GiveRandomWeaponMotion(Motion,Slash)"
+                },
+                {
+                  "scriptName": "Modular/TIMING:ChangeMotion/LUA:RienWeapons/LUAMAIN:ChangeMotionBasedOnWeapon(Motion,1,2)"
+                },
+                {
+                  "scriptName": "GiveBuffOnSucceedAttack",
+                  "buffData": {
+                    "buffKeyword": "Breath",
+                    "target": "Self",
+                    "stack": 0,
+                    "turn": 2,
+                    "activeRound": 0
+                  }
+                }
+              ]
+            },
+            {
+              "operatorType": "ADD",
+              "scale": 4,
+              "abilityScriptList": [
+                {
+                  "scriptName": "Modular/TIMING:ChangeMotion/LUA:RienWeapons/LUAMAIN:GiveRandomWeaponMotion(Motion,Slash)"
+                },
+                {
+                  "scriptName": "Modular/TIMING:ChangeMotion/LUA:RienWeapons/LUAMAIN:ChangeMotionBasedOnWeapon(Motion,1,3)"
+                },
+                {
+                  "scriptName": "GiveBuffOnSucceedAttack",
+                  "buffData": {
+                    "buffKeyword": "Sinking",
+                    "target": "Target",
+                    "stack": 2,
+                    "turn": 0,
+                    "activeRound": 0
+                  }
+                }
+              ]
+            },
+            {
+              "operatorType": "ADD",
+              "scale": 4,
+              "abilityScriptList": [
+                {
+                  "scriptName": "Modular/TIMING:ChangeMotion/LUA:RienWeapons/LUAMAIN:GiveRandomWeaponMotion(Motion,Slash)"
+                },
+                {
+                  "scriptName": "Modular/TIMING:ChangeMotion/LUA:RienWeapons/LUAMAIN:ChangeMotionBasedOnWeapon(Motion,3)"
+                },
+                {
+                  "scriptName": "GiveBuffOnSucceedAttack",
+                  "buffData": {
+                    "buffKeyword": "Sinking",
+                    "target": "Target",
+                    "stack": 0,
+                    "turn": 2,
+                    "activeRound": 0
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 101374,
+      "skillTier": 1,
+      "skillType": "SKILL",
+      "skillData": [
+        {
+          "iconID": 134710,
+          "attributeType": "AMBER",
+          "atkType": "SLASH",
+          "defType": "COUNTER",
+          "targetNum": 1,
+          "canTeamKill": false,
+          "canDuel": true,
+          "canChangeTarget": true,
+          "skillLevelCorrection": 8,
+          "defaultValue": 14,
+          "skillMotion": "S3",
+          "viewType": "BATTLE",
+          "parryingCloseType": "NEAR",
+          "importanceLevel": 3,
+          "abilityScriptList": [
+            {
+              "scriptName": "134810SkillSpecialBoost_coin3",
+              "value": 0.5
+            },
+            {
+              "scriptName": "EmptyBody"
+            },
+            {
+              "scriptName": "Modular/TIMING:WhenUse/LUA:RienWeapons/LUAMAIN:ApplyWeaponMotion()"
+            }
+          ],
+          "coinList": [
+            {
+              "operatorType": "ADD",
+              "scale": 6,
+              "grade": 2,
+              "color": "GREY",
+              "abilityScriptList": [
+                {
+                  "scriptName": "GiveBuffOnSucceedAttackIfUsableInDuel",
+                  "buffData": {
+                    "buffKeyword": "Sinking",
+                    "target": "Target",
+                    "stack": 3,
+                    "turn": 2,
+                    "activeRound": 0
+                  }
+                }
+              ]
+            },
+            {
+              "operatorType": "ADD",
+              "scale": 6,
+              "grade": 2,
+              "color": "GREY",
+              "abilityScriptList": [
+                {
+                  "scriptName": "GiveBuffOnSucceedAttackIfUsableInDuel",
+                  "buffData": {
+                    "buffKeyword": "Sinking",
+                    "target": "Target",
+                    "stack": 3,
+                    "turn": 2,
+                    "activeRound": 0
+                  }
+                }
+              ]
+            },
+            {
+              "operatorType": "ADD",
+              "scale": 6,
+              "grade": 2,
+              "color": "GREY",
+              "abilityScriptList": [
+                {
+                  "scriptName": "GiveBuffOnSucceedAttackIfUsableInDuel",
+                  "buffData": {
+                    "buffKeyword": "Sinking",
+                    "target": "Target",
+                    "stack": 3,
+                    "turn": 2,
+                    "activeRound": 0
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 101375,
+      "skillTier": 3,
+      "textID": 134711,
+      "skillType": "SKILL",
+      "skillData": [
+        {
+          "iconID": 134711,
+          "gaksungLevel": 3,
+          "attributeType": "CRIMSON",
+          "atkType": "SLASH",
+          "defType": "ATTACK",
+          "targetNum": 24,
+          "skillTargetType": "FRONT",
+          "canTeamKill": false,
+          "canDuel": true,
+          "canChangeTarget": true,
+          "skillLevelCorrection": 8,
+          "defaultValue": 12,
+          "range": 0,
+          "skillMotion": "S1",
+          "arearange": 10,
+          "viewType": "ENCOUNTER",
+          "specialDuelIndex": 1,
+          "parryingCloseType": "NEAR",
+          "abilityScriptList": [
+            {
+              "scriptName": "DealRandomTargetAmongTargetsMTFirst"
+            },
+            {
+              "scriptName": "IgnoreDefenseSkill"
+            },
+            {
+              "scriptName": "SkillViewer_134711"
+            },
+            {
+              "scriptName": "SkillView_1101403"
+            },
+            {
+              "scriptName": "GiveBuffOnUse",
+              "buffData": {
+                "buffKeyword": "Breath",
+                "target": "Self",
+                "stack": 3,
+                "turn": 3,
+                "activeRound": 0
+              }
+            },
+            {
+              "scriptName": "GiveBuffOnEndSkill",
+              "buffData": {
+                "buffKeyword": "BurningWoundRienAlly",
+                "target": "Self",
+                "stack": 1,
+                "turn": 0,
+                "activeRound": 1
+              }
+            },
+            {
+              "scriptName": "ParryingResultAdder134711",
+              "value": 20,
+              "buffData": {
+                "buffKeyword": "KarmaOfIndexAlly",
+                "stack": 5,
+                "value": -1
+              }
+            },
+            {
+              "scriptName": "CreateMangWithAttackDamageUpByRatioAndSKillPowerResultAdderOnStartTurn_1_8",
+              "value": 0.4
+            },
+            {
+              "scriptName": "GiveBuffOnWinDuel",
+              "buffData": {
+                "buffKeyword": "Breath",
+                "target": "Self",
+                "stack": 3,
+                "turn": 3,
+                "activeRound": 0
+              }
+            },
+            {
+              "scriptName": "GiveBuffToAllAttackedTargetsOnEndAttack",
+              "buffData": {
+                "buffKeyword": "Laceration",
+                "target": "Custom",
+                "stack": 5,
+                "turn": 0,
+                "activeRound": 1
+              }
+            },
+            {
+              "scriptName": "GiveBuffToAllAttackedTargetsOnEndAttack",
+              "buffData": {
+                "buffKeyword": "Binding",
+                "target": "Custom",
+                "stack": 3,
+                "turn": 0,
+                "activeRound": 1
+              }
+            },
+            {
+              "scriptName": "GiveBuffToAllAttackedTargetsOnEndAttack",
+              "buffData": {
+                "buffKeyword": "Vulnerable",
+                "target": "Custom",
+                "stack": 3,
+                "turn": 0,
+                "activeRound": 1
+              }
+            },
+            {
+              "scriptName": "UseMpSelfIfCreateMang",
+              "value": 0
+            },
+            {
+              "scriptName": "Modular/TIMING:WhenUse/destroybuff(Self,StackRienSpecialSkill,0)"
+            },
+            {
+              "scriptName": "Modular/TIMING:EndBattle/VALUE_0:getdata(Self,10137061)/VALUE_1:getdata(Self,10137062)/IF(AND,VALUE_0=0,VALUE_1=0):destroybuff(Self,BurningWoundRien_MaskAlly,0):buff(Self,BurningWoundRienAlly,1,0,1):setdata(Self,10137062,1)"
+            },
+            {
+              "scriptName": "Modular/TIMING:OnCoinToss/LUA:RienWeapons/LUAMAIN:GiveRandomFuriosoWeapon(OCT)"
+            },
+            {
+              "scriptName": "Modular/TIMING:RoundStart/LUA:RienWeapons/LUAMAIN:GiveRandomFuriosoWeapon(RoundStart)"
+            },
+            {
+              "scriptName": "Modular/TIMING:EndSkill/LUA:RienWeapons/LUAMAIN:GiveRandomFuriosoWeapon(EndSkill)"
+            },
+            {
+              "scriptName": "Modular/TIMING:WhenUse/LUA:RienWeapons/LUAMAIN:ApplyWeaponMotion()"
+            }
+          ],
+          "coinList": [
+            {
+              "operatorType": "ADD",
+              "scale": 2,
+              "grade": 2,
+              "color": "GREY",
+              "abilityScriptList": [
+                {
+                  "scriptName": "Modular/TIMING:ChangeMotion/LUA:RienWeapons/LUAMAIN:GiveRandomWeaponFuriosoMotion(Motion)"
+                },
+                {
+                  "scriptName": "Modular/TIMING:ChangeMotion/LUA:RienWeapons/LUAMAIN:FuriosoMotionBasedOnWeapon(Motion,S10,true)"
+                },
+                {
+                  "scriptName": "SuperCoin"
+                }
+              ]
+            },
+            {
+              "operatorType": "ADD",
+              "scale": 2,
+              "grade": 2,
+              "color": "GREY",
+              "abilityScriptList": [
+                {
+                  "scriptName": "Modular/TIMING:ChangeMotion/LUA:RienWeapons/LUAMAIN:GiveRandomWeaponFuriosoMotion(Motion)"
+                },
+                {
+                  "scriptName": "Modular/TIMING:ChangeMotion/LUA:RienWeapons/LUAMAIN:FuriosoMotionBasedOnWeapon(Motion,S10,true)"
+                },
+                {
+                  "scriptName": "SuperCoin"
+                },
+                {
+                  "scriptName": "RerollOnSAUpto7"
+                },
+                {
+                  "scriptName": "GiveBuffOnSucceedAttack",
+                  "buffData": {
+                    "buffKeyword": "Sinking",
+                    "target": "Target",
+                    "stack": 1,
+                    "turn": 0,
+                    "activeRound": 0
+                  }
+                },
+                {
+                  "scriptName": "GiveBuffOnSuccessCriticalAttack",
+                  "buffData": {
+                    "buffKeyword": "Sinking",
+                    "target": "Target",
+                    "stack": 0,
+                    "turn": 1,
+                    "activeRound": 0
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 101376,
+      "skillTier": 3,
+      "textID": 134811,
+      "skillType": "SKILL",
+      "skillData": [
+        {
+          "iconID": 134811,
+          "gaksungLevel": 1,
+          "attributeType": "CRIMSON",
+          "atkType": "SLASH",
+          "defType": "ATTACK",
+          "targetNum": 24,
+          "skillTargetType": "FRONT",
+          "canTeamKill": false,
+          "canDuel": true,
+          "canChangeTarget": true,
+          "skillLevelCorrection": 8,
+          "defaultValue": 14,
+          "range": 0,
+          "arearange": 10,
+          "skillMotion": "S1",
+          "viewType": "ENCOUNTER",
+          "specialDuelIndex": 1,
+          "parryingCloseType": "NEAR",
+          "abilityScriptList": [
+            {
+              "scriptName": "DealRandomTargetAmongTargetsMTFirst"
+            },
+            {
+              "scriptName": "IgnoreDefenseSkill"
+            },
+            {
+              "scriptName": "SkillViewer_134812"
+            },
+            {
+              "scriptName": "SkillView_1101403"
+            },
+            {
+              "scriptName": "GiveBuffOnUse",
+              "buffData": {
+                "buffKeyword": "Breath",
+                "target": "Self",
+                "stack": 3,
+                "turn": 3,
+                "activeRound": 0
+              }
+            },
+            {
+              "scriptName": "GiveBuffOnEndSkill",
+              "buffData": {
+                "buffKeyword": "BlackNightmare",
+                "target": "Self",
+                "stack": 1,
+                "turn": 0,
+                "activeRound": 1
+              }
+            },
+            {
+              "scriptName": "ParryingResultAdder134711",
+              "value": 15,
+              "buffData": {
+                "buffKeyword": "KarmaOfIndexAlly",
+                "stack": 5,
+                "value": -1
+              }
+            },
+            {
+              "scriptName": "CreateMangWithAttackDamageUpByRatioAndSKillPowerResultAdderOnStartTurn_2_8",
+              "value": 0.7
+            },
+            {
+              "scriptName": "GiveBuffToAllAttackedTargetsOnEndAttack",
+              "buffData": {
+                "buffKeyword": "Laceration",
+                "target": "Custom",
+                "stack": 5,
+                "turn": 0,
+                "activeRound": 1
+              }
+            },
+            {
+              "scriptName": "GiveBuffToAllAttackedTargetsOnEndAttack",
+              "buffData": {
+                "buffKeyword": "Binding",
+                "target": "Custom",
+                "stack": 3,
+                "turn": 0,
+                "activeRound": 1
+              }
+            },
+            {
+              "scriptName": "GiveBuffToAllAttackedTargetsOnEndAttack",
+              "buffData": {
+                "buffKeyword": "Vulnerable",
+                "target": "Custom",
+                "stack": 3,
+                "turn": 0,
+                "activeRound": 1
+              }
+            },
+            {
+              "scriptName": "UseMpSelfIfCreateMang",
+              "value": 0
+            },
+            {
+              "scriptName": "Modular/TIMING:WhenUse/destroybuff(Self,StackRienSpecialSkill,0)"
+            },
+            {
+              "scriptName": "Modular/TIMING:OnCoinToss/LUA:RienWeapons/LUAMAIN:GiveRandomFuriosoWeapon(OCT)"
+            },
+            {
+              "scriptName": "Modular/TIMING:RoundStart/LUA:RienWeapons/LUAMAIN:GiveRandomFuriosoWeapon(RoundStart)"
+            },
+            {
+              "scriptName": "Modular/TIMING:EndSkill/LUA:RienWeapons/LUAMAIN:GiveRandomFuriosoWeapon(EndSkill)"
+            },
+            {
+              "scriptName": "Modular/TIMING:WhenUse/LUA:RienWeapons/LUAMAIN:ApplyWeaponMotion()"
+            }
+          ],
+          "coinList": [
+            {
+              "operatorType": "ADD",
+              "scale": 2,
+              "grade": 2,
+              "color": "GREY",
+              "abilityScriptList": [
+                {
+                  "scriptName": "SuperCoin"
+                },
+                {
+                  "scriptName": "Modular/TIMING:ChangeMotion/LUA:RienWeapons/LUAMAIN:GiveRandomWeaponFuriosoMotion(Motion)"
+                },
+                {
+                  "scriptName": "Modular/TIMING:ChangeMotion/LUA:RienWeapons/LUAMAIN:FuriosoMotionBasedOnWeapon(Motion,S10,true)"
+                },
+                {
+                  "scriptName": "GiveBuffOnSucceedAttackIfUsableInDuel",
+                  "buffData": {
+                    "buffKeyword": "Sinking",
+                    "target": "Target",
+                    "stack": 1,
+                    "turn": 0,
+                    "activeRound": 0
+                  }
+                },
+                {
+                  "scriptName": "GiveBuffOnSucceedAttackIfUsableInDuel",
+                  "buffData": {
+                    "buffKeyword": "Breath",
+                    "target": "Self",
+                    "stack": 0,
+                    "turn": 5,
+                    "activeRound": 0
+                  }
+                }
+              ]
+            },
+            {
+              "operatorType": "ADD",
+              "scale": 2,
+              "grade": 2,
+              "color": "GREY",
+              "abilityScriptList": [
+                {
+                  "scriptName": "SuperCoin"
+                },
+                {
+                  "scriptName": "Modular/TIMING:ChangeMotion/LUA:RienWeapons/LUAMAIN:GiveRandomWeaponFuriosoMotion(Motion)"
+                },
+                {
+                  "scriptName": "Modular/TIMING:ChangeMotion/LUA:RienWeapons/LUAMAIN:FuriosoMotionBasedOnWeapon(Motion,S10,true)"
+                },
+                {
+                  "scriptName": "RerollCoinByValue",
+                  "value": 7
+                },
+                {
+                  "scriptName": "GiveBuffOnSucceedAttack",
+                  "buffData": {
+                    "buffKeyword": "Sinking",
+                    "target": "Target",
+                    "stack": 1,
+                    "turn": 0,
+                    "activeRound": 0
+                  }
+                },
+                {
+                  "scriptName": "GiveBuffOnSucceedAttackIfHasStack_BlackNightmareRienAlly1",
+                  "buffData": {
+                    "buffKeyword": "Sinking",
+                    "buffOwner": "Self",
+                    "target": "Target",
+                    "stack": 1,
+                    "turn": 0,
+                    "activeRound": 0
+                  }
+                },
+                {
+                  "scriptName": "GiveBuffOnSuccessCriticalAttack",
+                  "buffData": {
+                    "buffKeyword": "Sinking",
+                    "target": "Target",
+                    "stack": 0,
+                    "turn": 1,
+                    "activeRound": 0
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 101377,
+      "skillTier": 3,
+      "textID": 134812,
+      "skillType": "SKILL",
+      "skillData": [
+        {
+          "iconID": 134812,
+          "gaksungLevel": 1,
+          "attributeType": "CRIMSON",
+          "atkType": "SLASH",
+          "defType": "ATTACK",
+          "targetNum": 24,
+          "skillTargetType": "FRONT",
+          "canTeamKill": false,
+          "canDuel": true,
+          "canChangeTarget": true,
+          "skillLevelCorrection": 10,
+          "defaultValue": 14,
+          "range": 0,
+          "arearange": 10,
+          "skillMotion": "S1",
+          "viewType": "ENCOUNTER",
+          "specialDuelIndex": 1,
+          "parryingCloseType": "NEAR",
+          "abilityScriptList": [
+            {
+              "scriptName": "DealRandomTargetAmongTargetsMTFirst"
+            },
+            {
+              "scriptName": "IgnoreDefenseSkill"
+            },
+            {
+              "scriptName": "SkillViewer_134812"
+            },
+            {
+              "scriptName": "SkillView_1101403"
+            },
+            {
+              "scriptName": "GiveBuffOnUse",
+              "buffData": {
+                "buffKeyword": "Breath",
+                "target": "Self",
+                "stack": 3,
+                "turn": 3,
+                "activeRound": 0
+              }
+            },
+            {
+              "scriptName": "ParryingResultAdder134711",
+              "value": 15,
+              "buffData": {
+                "buffKeyword": "KarmaOfIndexAlly",
+                "stack": 5,
+                "value": -1
+              }
+            },
+            {
+              "scriptName": "CreateMangWithAttackDamageUpByRatioAndSKillPowerResultAdderOnStartTurn_3_8",
+              "value": 0.7
+            },
+            {
+              "scriptName": "GiveBuffToAllAttackedTargetsOnEndAttack",
+              "buffData": {
+                "buffKeyword": "Laceration",
+                "target": "Custom",
+                "stack": 5,
+                "turn": 0,
+                "activeRound": 1
+              }
+            },
+            {
+              "scriptName": "GiveBuffToAllAttackedTargetsOnEndAttack",
+              "buffData": {
+                "buffKeyword": "Binding",
+                "target": "Custom",
+                "stack": 3,
+                "turn": 0,
+                "activeRound": 1
+              }
+            },
+            {
+              "scriptName": "GiveBuffToAllAttackedTargetsOnEndAttack",
+              "buffData": {
+                "buffKeyword": "Vulnerable",
+                "target": "Custom",
+                "stack": 3,
+                "turn": 0,
+                "activeRound": 1
+              }
+            },
+            {
+              "scriptName": "UseMpSelfIfCreateMang",
+              "value": 0
+            },
+            {
+              "scriptName": "Modular/TIMING:WhenUse/destroybuff(Self,StackRienSpecialSkill,0)"
+            },
+            {
+              "scriptName": "Modular/TIMING:OnCoinToss/LUA:RienWeapons/LUAMAIN:GiveRandomFuriosoWeapon(OCT)"
+            },
+            {
+              "scriptName": "Modular/TIMING:RoundStart/LUA:RienWeapons/LUAMAIN:GiveRandomFuriosoWeapon(RoundStart)"
+            },
+            {
+              "scriptName": "Modular/TIMING:EndSkill/LUA:RienWeapons/LUAMAIN:GiveRandomFuriosoWeapon(EndSkill)"
+            },
+            {
+              "scriptName": "Modular/TIMING:WhenUse/LUA:RienWeapons/LUAMAIN:ApplyWeaponMotion()"
+            }
+          ],
+          "coinList": [
+            {
+              "operatorType": "ADD",
+              "scale": 2,
+              "grade": 2,
+              "color": "GREY",
+              "abilityScriptList": [
+                {
+                  "scriptName": "SuperCoin"
+                },
+                {
+                  "scriptName": "Modular/TIMING:ChangeMotion/LUA:RienWeapons/LUAMAIN:GiveRandomWeaponFuriosoMotion(Motion)"
+                },
+                {
+                  "scriptName": "Modular/TIMING:ChangeMotion/LUA:RienWeapons/LUAMAIN:FuriosoMotionBasedOnWeapon(Motion,S10,true)"
+                },
+                {
+                  "scriptName": "GiveBuffOnSucceedAttackIfUsableInDuel",
+                  "buffData": {
+                    "buffKeyword": "Sinking",
+                    "target": "Target",
+                    "stack": 1,
+                    "turn": 0,
+                    "activeRound": 0
+                  }
+                },
+                {
+                  "scriptName": "GiveBuffOnSucceedAttackIfUsableInDuel",
+                  "buffData": {
+                    "buffKeyword": "Breath",
+                    "target": "Self",
+                    "stack": 0,
+                    "turn": 5,
+                    "activeRound": 0
+                  }
+                }
+              ]
+            },
+            {
+              "operatorType": "ADD",
+              "scale": 2,
+              "grade": 2,
+              "color": "GREY",
+              "abilityScriptList": [
+                {
+                  "scriptName": "SuperCoin"
+                },
+                {
+                  "scriptName": "Modular/TIMING:ChangeMotion/LUA:RienWeapons/LUAMAIN:GiveRandomWeaponFuriosoMotion(Motion)"
+                },
+                {
+                  "scriptName": "Modular/TIMING:ChangeMotion/LUA:RienWeapons/LUAMAIN:FuriosoMotionBasedOnWeapon(Motion,S10,true)"
+                },
+                {
+                  "scriptName": "RerollCoinByValue",
+                  "value": 16
+                },
+                {
+                  "scriptName": "GiveBuffOnSucceedAttack",
+                  "buffData": {
+                    "buffKeyword": "Sinking",
+                    "target": "Target",
+                    "stack": 1,
+                    "turn": 0,
+                    "activeRound": 0
+                  }
+                },
+                {
+                  "scriptName": "GiveBuffOnSucceedAttackIfHasStack_BlackNightmareRienAlly1",
+                  "buffData": {
+                    "buffKeyword": "Sinking",
+                    "buffOwner": "Self",
+                    "target": "Target",
+                    "stack": 1,
+                    "turn": 0,
+                    "activeRound": 0
+                  }
+                },
+                {
+                  "scriptName": "GiveBuffOnSuccessCriticalAttack",
+                  "buffData": {
+                    "buffKeyword": "Sinking",
+                    "target": "Target",
+                    "stack": 0,
+                    "turn": 1,
+                    "activeRound": 0
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,325 @@
+{
+    "list": [
+        {
+            "id": 4000131,
+            "appearance": "400013_Sinclair_FutureAppearance",
+            "associationList": [
+                "ABRAXAS_CHARIOT"
+            ],
+            "unitKeywordList": [
+                "SMALL",
+                "HIDDEN_KEYWORD",
+                "SIGN_FUTURE",
+                "HIDDEN_KEYWORD_2ND",
+                "SMOKE_WAR_2ND",
+                "EXT_FX_B"
+            ],
+            "classType": "WAW",
+            "attributeType": "SHAMROCK",
+            "startActionSlotNum": 7,
+            "maxActionSlotNum": 7,
+            "specialDuelRank": 7,
+            "hp": {
+                "defaultStat": 327,
+                "incrementByLevel": 11.26
+            },
+            "unitScriptID": "400013",
+            "patternID": "PickByPattern_Abnormality",
+            "abnormalityPartList": [
+                40001301
+            ],
+            "mp": 45,
+            "hasMp": true,
+            "lowMorale": -20,
+            "panic": -45,
+            "panicType": 1080,
+            "mentalConditionInfo": {
+                "add": [
+                    {
+                        "level": 1,
+                        "conditionIDList": [
+                            {
+                                "conditionID": "OnWinDuelAsParryingCountMultiply10AndPlus20Percent"
+                            },
+                            {
+                                "conditionID": "OnKillEnemyMp10"
+                            },
+                            {
+                                "conditionID": "OnKillEnemyByOtherAlly5"
+                            }
+                        ]
+                    }
+                ],
+                "min": [
+                    {
+                        "level": 1,
+                        "conditionIDList": [
+                            {
+                                "conditionID": "OnLoseDuelAsParryingCountMultiply3AndPlus10Percent"
+                            }
+                        ]
+                    }
+                ]
+            },
+            "attributeList": [
+                {
+                    "skillId": 4001301,
+                    "number": 0
+                },
+                {
+                    "skillId": 4001302,
+                    "number": 0
+                },
+                {
+                    "skillId": 4001303,
+                    "number": 0
+                },
+                {
+                    "skillId": 4001304,
+                    "number": 0
+                },
+                {
+                    "skillId": 4001305,
+                    "number": 0
+                },
+                {
+                    "skillId": 4001306,
+                    "number": 0
+                }
+            ],
+            "passiveSet": {
+                "passiveIdList": [
+                    40001302,
+                    4001306,
+                    4001308
+                ]
+            },
+            "patternList": [
+                {
+                    "slotList": [
+                        {
+                            "skillParentList": [
+                                {
+                                    "skillChildList": [
+                                        {
+                                            "skillID": 4001302,
+                                            "chance": 1
+                                        }
+                                    ],
+                                    "chance": 1
+                                }
+                            ]
+                        },
+                        {
+                            "skillParentList": [
+                                {
+                                    "skillChildList": [
+                                        {
+                                            "skillID": 4001302,
+                                            "chance": 1
+                                        }
+                                    ],
+                                    "chance": 1
+                                }
+                            ]
+                        },
+                        {
+                            "skillParentList": [
+                                {
+                                    "skillChildList": [
+                                        {
+                                            "skillID": 4001301,
+                                            "chance": 1
+                                        }
+                                    ],
+                                    "chance": 1
+                                }
+                            ]
+                        },
+                        {
+                            "skillParentList": [
+                                {
+                                    "skillChildList": [
+                                        {
+                                            "skillID": 4001301,
+                                            "chance": 1
+                                        }
+                                    ],
+                                    "chance": 1
+                                }
+                            ]
+                        },
+                        {
+                            "skillParentList": [
+                                {
+                                    "skillChildList": [
+                                        {
+                                            "skillID": 4001301,
+                                            "chance": 1
+                                        }
+                                    ],
+                                    "chance": 1
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "slotList": [
+                        {
+                            "skillParentList": [
+                                {
+                                    "skillChildList": [
+                                        {
+                                            "skillID": 4001302,
+                                            "chance": 1
+                                        }
+                                    ],
+                                    "chance": 1
+                                }
+                            ]
+                        },
+                        {
+                            "skillParentList": [
+                                {
+                                    "skillChildList": [
+                                        {
+                                            "skillID": 4001302,
+                                            "chance": 1
+                                        }
+                                    ],
+                                    "chance": 1
+                                }
+                            ]
+                        },
+                        {
+                            "skillParentList": [
+                                {
+                                    "skillChildList": [
+                                        {
+                                            "skillID": 4001301,
+                                            "chance": 1
+                                        }
+                                    ],
+                                    "chance": 1
+                                }
+                            ]
+                        },
+                        {
+                            "skillParentList": [
+                                {
+                                    "skillChildList": [
+                                        {
+                                            "skillID": 4001301,
+                                            "chance": 1
+                                        }
+                                    ],
+                                    "chance": 1
+                                }
+                            ]
+                        },
+                        {
+                            "skillParentList": [
+                                {
+                                    "skillChildList": [
+                                        {
+                                            "skillID": 4001301,
+                                            "chance": 1
+                                        }
+                                    ],
+                                    "chance": 1
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "slotList": [
+                        {
+                            "skillParentList": [
+                                {
+                                    "skillChildList": [
+                                        {
+                                            "skillID": 4001303,
+                                            "chance": 1
+                                        }
+                                    ],
+                                    "chance": 1
+                                }
+                            ]
+                        },
+                        {
+                            "skillParentList": [
+                                {
+                                    "skillChildList": [
+                                        {
+                                            "skillID": 4001302,
+                                            "chance": 1
+                                        }
+                                    ],
+                                    "chance": 1
+                                }
+                            ]
+                        },
+                        {
+                            "skillParentList": [
+                                {
+                                    "skillChildList": [
+                                        {
+                                            "skillID": 4001302,
+                                            "chance": 1
+                                        }
+                                    ],
+                                    "chance": 1
+                                }
+                            ]
+                        },
+                        {
+                            "skillParentList": [
+                                {
+                                    "skillChildList": [
+                                        {
+                                            "skillID": 4001301,
+                                            "chance": 1
+                                        }
+                                    ],
+                                    "chance": 1
+                                }
+                            ]
+                        },
+                        {
+                            "skillParentList": [
+                                {
+                                    "skillChildList": [
+                                        {
+                                            "skillID": 4001301,
+                                            "chance": 1
+                                        }
+                                    ],
+                                    "chance": 1
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "slotList": [
+                        {
+                            "skillParentList": [
+                                {
+                                    "skillChildList": [
+                                        {
+                                            "skillID": 4001304,
+                                            "chance": 1
+                                        }
+                                    ],
+                                    "chance": 1
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

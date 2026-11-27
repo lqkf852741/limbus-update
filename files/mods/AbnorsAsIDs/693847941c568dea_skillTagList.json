@@ -1,0 +1,27 @@
+{
+  "DLittleFingerAllyINFO": {
+    "a": 0,
+    "id": "DLittleFingerAllyINFO",
+    "name": "<sprite name=\"DicipleLittleFinger\"><color=#9f6a3a><u><link=\"DicipleLittleFingerAlly\">Moonlit Azure Blade</color></link></u>"
+  },
+  "RienPrescriptAlly0": {
+    "a": 0,
+    "id": "RienPrescriptAlly0",
+    "name": "<sprite name=\"IndexPrescript_Base_2nd\"><color=#9f6a3a><u><link=\"IndexPrescriptRienAlly_0\">Prescript: [Device] I</color></link></u>"
+  },
+  "RienPrescriptAlly1": {
+    "a": 0,
+    "id": "RienPrescriptAlly1",
+    "name": "<sprite name=\"IndexPrescript_Base_2nd\"><color=#9f6a3a><u><link=\"IndexPrescriptRienAlly_1\">Prescript: [Device] II</color></link></u>"
+  },
+  "RienPrescriptAlly2": {
+    "a": 0,
+    "id": "RienPrescriptAlly2",
+    "name": "<sprite name=\"IndexPrescript_Base_2nd\"><color=#9f6a3a><u><link=\"IndexPrescriptRienAlly_2\">Prescript: [Device] III</color></link></u>"
+  },
+  "RienPrescriptAlly3": {
+    "a": 0,
+    "id": "RienPrescriptAlly3",
+    "name": "<sprite name=\"IndexPrescript_Base_2nd\"><color=#9f6a3a><u><link=\"IndexPrescriptRienAlly_3\">Prescript: [Device] IV</color></link></u>"
+  }
+}

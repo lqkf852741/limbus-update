@@ -1,0 +1,95 @@
+{
+    "list": [
+        {
+            "id": 40001301,
+            "nameID": 40001301,
+            "slotWeightConditionList": [
+                "Default1"
+            ],
+            "hp": {
+                "defaultStat": 327,
+                "incrementByLevel": 11.26
+            },
+            "defCorrection": -1,
+            "minSpeedList": [
+                3
+            ],
+            "maxSpeedList": [
+                7
+            ],
+            "isDestroyable": "false",
+            "skillCancelable": "false",
+            "canVanish": "false",
+            "canChangeSpriteOnDestoryed": "false",
+            "spreadMpEffectToAbnormality": "true",
+            "partType": "BODY",
+            "breakSection": {
+                "sectionList": []
+            },
+            "resistInfo": {
+                "atkResistList": [
+                    {
+                        "type": "SLASH",
+                        "value": 0.5
+                    },
+                    {
+                        "type": "PENETRATE",
+                        "value": 2
+                    },
+                    {
+                        "type": "HIT",
+                        "value": 1
+                    }
+                ],
+                "attributeResistList": [
+                    {
+                        "type": "CRIMSON",
+                        "value": 2
+                    },
+                    {
+                        "type": "SCARLET",
+                        "value": 1
+                    },
+                    {
+                        "type": "AMBER",
+                        "value": 1
+                    },
+                    {
+                        "type": "SHAMROCK",
+                        "value": 0.75
+                    },
+                    {
+                        "type": "AZURE",
+                        "value": 1
+                    },
+                    {
+                        "type": "INDIGO",
+                        "value": 2
+                    },
+                    {
+                        "type": "VIOLET",
+                        "value": 1
+                    },
+                    {
+                        "type": "WHITE",
+                        "value": 1
+                    },
+                    {
+                        "type": "BLACK",
+                        "value": 1
+                    }
+                ]
+            },
+            "passiveSet": {
+                "passiveIdList": [
+                    4001309,
+                    40001301,
+                    40001304,
+                    40001307,
+                    9999997,
+                    9999996
+                ]
+            }
+        }
+    ]
+}

@@ -1,0 +1,22 @@
+{
+  "chapterId": 400202,
+  "subchapterId": 40020201,
+  "nodeId": 40020201,
+  "storyIdInTheaterData": 0,
+  "isUnlockByUnlockCode": false,
+  "unlockCode": 102,
+  "relatedData": {
+    "chapterId": 9,
+    "subchapterId": 0,
+    "nodeId": 0
+  },
+  "uiConfig": {
+    "customChapterText": "Identity PVP",
+    "chapterTagIconType": "BATTLE",
+    "region": "p",
+    "mapAreaId": 102,
+    "timeLine": "A CERTAIN SOMEONE",
+    "illustId": ""
+  },
+  "type": "STAGE_NODE"
+}

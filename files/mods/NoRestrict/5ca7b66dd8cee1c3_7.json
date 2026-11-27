@@ -1,0 +1,43 @@
+{
+ "list": [
+  {
+   "stageType": "NORMAL_BATTLE",
+   "restrictList": [
+    {
+     "id": 10716,
+     "mustParticipateIds": []
+    },
+    {
+     "id": 10717,
+     "mustParticipateIds": []
+    },
+    {
+     "id": 10718,
+     "mustParticipateIds": []
+    },
+    {
+     "id": 10706,
+     "mustParticipateIds": [],
+     "forceCharacters": [
+      {
+       "characterId": 3,
+       "personalityId": 10301,
+       "egoZayin": 20301,
+       "egoTeth": -1,
+       "egoHe": -1,
+       "egoWaw": -1,
+       "egoAleph": -1,
+       "participateOrder": 1
+      }
+     ],
+     "abstainIds": [],
+     "minPersonalityLevel": 45,
+     "minPersonalityGacksung": 4,
+     "minEgoGacksung": 4,
+     "uiForceSelectedCount": 1,
+     "useStageStatistic": false
+    }
+   ]
+  }
+ ]
+}

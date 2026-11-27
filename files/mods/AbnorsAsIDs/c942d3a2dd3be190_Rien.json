@@ -1,0 +1,168 @@
+﻿{
+    "list":  [
+                 {
+                     "id":  10137,
+                     "appearance":  "1347_Index_fatherAppearance",
+                     "associationList":  [
+                                             "INDEX_FINGER",
+                                             "SPIDER_HOUSE"
+                                         ],
+                     "unitKeywordList":  [
+                                             "FINGER",
+                                             "SMALL",
+                                             "LAST_KNIGHT"
+                                         ],
+                     "skillKeywordList":  [
+                                              "Sinking",
+                                              "Breath"
+                                          ],
+                     "characterId":  1,
+                     "specialDuelRank":  15,
+                     "unitScriptID":  "1347",
+                     "panicType":  1097,
+                     "season":  7,
+                     "defenseSkillIDList":  [
+                                                101374
+                                            ],
+                     "panicSkillOnErosion":  1000104,
+                     "slotWeightConditionList":  [
+                                                     "Default1"
+                                                 ],
+                     "rank":  3,
+                     "hp":  {
+                                "defaultStat":  635,
+                                "incrementByLevel":  44
+                            },
+                     "defCorrection":  5,
+                     "minSpeedList":  [
+                                          2,
+                                          3,
+                                          4,
+                                          8
+                                      ],
+                     "maxSpeedList":  [
+                                          5,
+                                          6,
+                                          7,
+                                          10
+                                      ],
+                     "initBuffList":  [
+
+                                      ],
+                     "uniqueAttribute":  "SCARLET",
+                     "mentalConditionInfo":  {
+                                                 "add":  [
+                                                             {
+                                                                 "level":  1,
+                                                                 "conditionIDList":  [
+                                                                                         {
+                                                                                             "conditionID":  "OnWinDuelAsParryingCountMultiply10AndPlus20Percent"
+                                                                                         },
+                                                                                         {
+                                                                                             "conditionID":  "OnKillEnemyAsLevelRatioMultiply10"
+                                                                                         },
+                                                                                         {
+                                                                                             "conditionID":  "OnKillEnemyByOtherAllyAsLevelRatioMultiply5"
+                                                                                         }
+                                                                                     ]
+                                                             }
+                                                         ],
+                                                 "min":  [
+                                                             {
+                                                                 "level":  1,
+                                                                 "conditionIDList":  [
+                                                                                         {
+                                                                                             "conditionID":  "OnDieAllyAsLevelRatio10"
+                                                                                         }
+                                                                                     ]
+                                                             }
+                                                         ]
+                                             },
+                     "breakSection":  {
+                                          "sectionList":  [
+
+                                                          ]
+                                      },
+                     "resistInfo":  {
+                                        "atkResistList":  [
+                                                              {
+                                                                  "type":  "SLASH",
+                                                                  "value":  1.2
+                                                              },
+                                                              {
+                                                                  "type":  "PENETRATE",
+                                                                  "value":  0.9
+                                                              },
+                                                              {
+                                                                  "type":  "HIT",
+                                                                  "value":  0.9
+                                                              }
+                                                          ]
+                                    },
+                     "attributeList":  [
+                                           {
+                                               "skillId":  1013711,
+                                               "number":  0
+                                           },
+                                           {
+                                               "skillId":  1013721,
+                                               "number":  0
+                                           },
+                                           {
+                                               "skillId":  1013731,
+                                               "number":  0
+                                           },
+                                           {
+                                               "skillId":  1013712,
+                                               "number":  0
+                                           },
+                                           {
+                                               "skillId":  1013722,
+                                               "number":  0
+                                           },
+                                           {
+                                               "skillId":  1013732,
+                                               "number":  0
+                                           },
+                                           {
+                                               "skillId":  1013713,
+                                               "number":  0
+                                           },
+                                           {
+                                               "skillId":  1013723,
+                                               "number":  0
+                                           },
+                                           {
+                                               "skillId":  1013733,
+                                               "number":  0
+                                           },
+                                           {
+                                               "skillId":  101375,
+                                               "number":  0
+                                           },
+                                           {
+                                               "skillId":  101376,
+                                               "number":  0
+                                           },
+                                           {
+                                               "skillId":  1013710,
+                                               "number":  1
+                                           },
+                                           {
+                                               "skillId":  1013720,
+                                               "number":  1
+                                           },
+                                           {
+                                               "skillId":  1013730,
+                                               "number":  1
+                                           },
+                                           {
+                                               "skillId":  101377,
+                                               "number":  0
+                                           }
+                                       ],
+                     "startActionSlotNum":  6,
+                     "maxActionSlotNum":  6
+                 }
+             ]
+}

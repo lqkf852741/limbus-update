@@ -1,648 +1,1161 @@
 {
-  "repo": "lqkf852741/limbus-update",
-  "version": "1.0.0",
-  "time": "2026-11-22 00:54:15",
-  "base": "BepInEx/plugins/Lethe/mods",
+  "version": "0.3",
+  "note": "补全 AbnorsAsIDs 主体数据（异想体单位/部件/技能/被动），人格对战依赖",
   "mods": [
     {
       "name": "AbnorsAsIDs",
-      "version": "1",
-      "dest": "BepInEx/plugins/Lethe/mods/AbnorsAsIDs",
       "files": [
         {
+          "path": "custom_buffs/BlackNightmareRienAlly.txt",
+          "file": "files/mods/AbnorsAsIDs/e3b0c44298fc1c14_BlackNightmareRienAlly.txt",
+          "size": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "path": "custom_buffs/BurningWoundRienAlly.txt",
+          "file": "files/mods/AbnorsAsIDs/e3b0c44298fc1c14_BurningWoundRienAlly.txt",
+          "size": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "path": "custom_buffs/BurningWoundRien_MaskAlly.txt",
+          "file": "files/mods/AbnorsAsIDs/e3b0c44298fc1c14_BurningWoundRien_MaskAlly.txt",
+          "size": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "path": "custom_buffs/IndexPrescriptRienAlly_0.txt",
+          "file": "files/mods/AbnorsAsIDs/e3b0c44298fc1c14_IndexPrescriptRienAlly_0.txt",
+          "size": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "path": "custom_buffs/IndexPrescriptRienAlly_1.txt",
+          "file": "files/mods/AbnorsAsIDs/e3b0c44298fc1c14_IndexPrescriptRienAlly_1.txt",
+          "size": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "path": "custom_buffs/IndexPrescriptRienAlly_2.txt",
+          "file": "files/mods/AbnorsAsIDs/e3b0c44298fc1c14_IndexPrescriptRienAlly_2.txt",
+          "size": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "path": "custom_buffs/IndexPrescriptRienAlly_3.txt",
+          "file": "files/mods/AbnorsAsIDs/e3b0c44298fc1c14_IndexPrescriptRienAlly_3.txt",
+          "size": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "path": "custom_buffs/IndexPrescriptRien_0.txt",
+          "file": "files/mods/AbnorsAsIDs/e3b0c44298fc1c14_IndexPrescriptRien_0.txt",
+          "size": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "path": "custom_buffs/IndexPrescriptRien_1.txt",
+          "file": "files/mods/AbnorsAsIDs/e3b0c44298fc1c14_IndexPrescriptRien_1.txt",
+          "size": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "path": "custom_buffs/IndexPrescriptRien_2.txt",
+          "file": "files/mods/AbnorsAsIDs/e3b0c44298fc1c14_IndexPrescriptRien_2.txt",
+          "size": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "path": "custom_buffs/IndexPrescriptRien_3.txt",
+          "file": "files/mods/AbnorsAsIDs/e3b0c44298fc1c14_IndexPrescriptRien_3.txt",
+          "size": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "path": "custom_buffs/RienWeapon01Hatchet.txt",
+          "file": "files/mods/AbnorsAsIDs/e3b0c44298fc1c14_RienWeapon01Hatchet.txt",
+          "size": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "path": "custom_buffs/RienWeapon02Stiletto.txt",
+          "file": "files/mods/AbnorsAsIDs/e3b0c44298fc1c14_RienWeapon02Stiletto.txt",
+          "size": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "path": "custom_buffs/RienWeapon03Greatsword.txt",
+          "file": "files/mods/AbnorsAsIDs/e3b0c44298fc1c14_RienWeapon03Greatsword.txt",
+          "size": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "path": "custom_buffs/RienWeapon04Rapier.txt",
+          "file": "files/mods/AbnorsAsIDs/e3b0c44298fc1c14_RienWeapon04Rapier.txt",
+          "size": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "path": "custom_buffs/RienWeapon05Sledgehammer.txt",
+          "file": "files/mods/AbnorsAsIDs/e3b0c44298fc1c14_RienWeapon05Sledgehammer.txt",
+          "size": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "path": "custom_buffs/RienWeapon06Ultragreatsword.txt",
+          "file": "files/mods/AbnorsAsIDs/e3b0c44298fc1c14_RienWeapon06Ultragreatsword.txt",
+          "size": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "path": "custom_buffs/RienWeapon07Lance.txt",
+          "file": "files/mods/AbnorsAsIDs/e3b0c44298fc1c14_RienWeapon07Lance.txt",
+          "size": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "path": "custom_buffs/RienWeapon08Chain.txt",
+          "file": "files/mods/AbnorsAsIDs/e3b0c44298fc1c14_RienWeapon08Chain.txt",
+          "size": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "path": "custom_buffs/RienWeapon09Scythe.txt",
+          "file": "files/mods/AbnorsAsIDs/e3b0c44298fc1c14_RienWeapon09Scythe.txt",
+          "size": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "path": "custom_buffs/StackRienSpecialSkillAlly.txt",
+          "file": "files/mods/AbnorsAsIDs/e3b0c44298fc1c14_StackRienSpecialSkillAlly.txt",
+          "size": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
           "path": "custom_encounters/PVP/encounter.json",
-          "file": "files/mods/83c5c3b29a26270f_encounter.json",
-          "sha256": "83c5c3b29a26270f25cd25cb271bb7e0be15c97d85f557be056344f17cd44503",
-          "size": 885
+          "file": "files/mods/AbnorsAsIDs/d07de8ba8d008e9b_encounter.json",
+          "size": 885,
+          "sha256": "d07de8ba8d008e9b5f7a3513380b0c17320f1de99c9aa47192e363ecfab245ab"
+        },
+        {
+          "path": "custom_encounters/PVP/subchapterui.json",
+          "file": "files/mods/AbnorsAsIDs/75b273d6d52b587b_subchapterui.json",
+          "size": 481,
+          "sha256": "75b273d6d52b587b116c6ba8c52086c01a1955996a8f396ed14686a15888d56b"
+        },
+        {
+          "path": "custom_limbus_data/abnormality-part/AbnorsAsIDs.json",
+          "file": "files/mods/AbnorsAsIDs/f12765f0767e38c9_AbnorsAsIDs.json",
+          "size": 62721,
+          "sha256": "f12765f0767e38c9392f5abcfde25c2184d18ffd8472d92cec148b01a387c7d7"
+        },
+        {
+          "path": "custom_limbus_data/abnormality-part/Future-Part.json",
+          "file": "files/mods/AbnorsAsIDs/4622236cffd856b4_Future-Part.json",
+          "size": 2770,
+          "sha256": "4622236cffd856b489e612fc718d8386aa257be1d7f4aee5232076f57fcd7035"
+        },
+        {
+          "path": "custom_limbus_data/abnormality-unit/AbnorsAsIDs.json",
+          "file": "files/mods/AbnorsAsIDs/bffa62064ab20773_AbnorsAsIDs.json",
+          "size": 229941,
+          "sha256": "bffa62064ab20773ed81809b1e74be37cc0bc56b62c8ad3cb4547e36b749892a"
+        },
+        {
+          "path": "custom_limbus_data/abnormality-unit/Future-Unit.json",
+          "file": "files/mods/AbnorsAsIDs/2d50a3b41607414e_Future-Unit.json",
+          "size": 12436,
+          "sha256": "2d50a3b41607414e395d286f834614cd831d0c9a4df39399ae29f75827129fcb"
+        },
+        {
+          "path": "custom_limbus_data/buff/CustomBuff.json",
+          "file": "files/mods/AbnorsAsIDs/0072453841b52066_CustomBuff.json",
+          "size": 7772,
+          "sha256": "0072453841b52066202a0f8ff4ffae5efff813442f4937f89d0471f480e46430"
+        },
+        {
+          "path": "custom_limbus_data/buff/CustomBuff.json.bak-132948",
+          "file": "files/mods/AbnorsAsIDs/1746e861bdc6a368_CustomBuff.json.bak-132948",
+          "size": 3770,
+          "sha256": "1746e861bdc6a368a91890defd5147fcb29a8c975829b1ade0db6992bd546c08"
+        },
+        {
+          "path": "custom_limbus_data/levelnumber-adjust/AbnorsAsIDs.json",
+          "file": "files/mods/AbnorsAsIDs/6182967d349573bf_AbnorsAsIDs.json",
+          "size": 4044,
+          "sha256": "6182967d349573bfb5bfb5a1c0bc1da20dad89a16dd45ff6719055255c291712"
+        },
+        {
+          "path": "custom_limbus_data/passive/FutureCustomPassives.json",
+          "file": "files/mods/AbnorsAsIDs/9c808460f76769bb_FutureCustomPassives.json",
+          "size": 2604,
+          "sha256": "9c808460f76769bbc24e78f52f1e36515b4185665b89c312ba9a88723d6410a5"
+        },
+        {
+          "path": "custom_limbus_data/passive/RienCustomPassives.json",
+          "file": "files/mods/AbnorsAsIDs/2ed96d8087af3870_RienCustomPassives.json",
+          "size": 8060,
+          "sha256": "2ed96d8087af3870bc5ab2ef81a4c13ae0d48dd32a1843bc72e7c8aabce99bba"
+        },
+        {
+          "path": "custom_limbus_data/passive/RienCustomPassives.json.encbak",
+          "file": "files/mods/AbnorsAsIDs/801d0301edc208b8_RienCustomPassives.json.encbak",
+          "size": 8447,
+          "sha256": "801d0301edc208b8aa718327108583ce76e9ebb274e511bda274720db1857da7"
+        },
+        {
+          "path": "custom_limbus_data/personality-passive/RienPassives.json",
+          "file": "files/mods/AbnorsAsIDs/52bf83331c3897a9_RienPassives.json",
+          "size": 1012,
+          "sha256": "52bf83331c3897a9cb26f1831ca33dfb2ec9795194893da0834a5a3c542e0c48"
+        },
+        {
+          "path": "custom_limbus_data/personality/Rien Pro Max.json",
+          "file": "files/mods/AbnorsAsIDs/3080798b5b34df77_Rien Pro Max.json",
+          "size": 3729,
+          "sha256": "3080798b5b34df77bed951cc4c40031ab0ee1fba02b394354c1861d64b2ab5fd"
+        },
+        {
+          "path": "custom_limbus_data/personality/Rien.json",
+          "file": "files/mods/AbnorsAsIDs/c942d3a2dd3be190_Rien.json",
+          "size": 9634,
+          "sha256": "c942d3a2dd3be190b5bb58255f7beb2875eab02751bb38cbb0639d527e5b6a6e"
+        },
+        {
+          "path": "custom_limbus_data/personality/RienNative.json",
+          "file": "files/mods/AbnorsAsIDs/342f7686a8448461_RienNative.json",
+          "size": 3484,
+          "sha256": "342f7686a84484614fc1b5fa996529abe15d42fed6e0787f92cbd6e6575692b8"
+        },
+        {
+          "path": "custom_limbus_data/restrict-participation/20.json",
+          "file": "files/mods/AbnorsAsIDs/65f4957a53fd8f5d_20.json",
+          "size": 287,
+          "sha256": "65f4957a53fd8f5d93191663d270bc0988911cd0a1442300727de3f5aa472354"
+        },
+        {
+          "path": "custom_limbus_data/skill/Future-Skill.json",
+          "file": "files/mods/AbnorsAsIDs/3f53a49e30d779ea_Future-Skill.json",
+          "size": 28761,
+          "sha256": "3f53a49e30d779ea4a3bdd92fed49a75054822bf642431e0bd7aec04ba2c4b58"
+        },
+        {
+          "path": "custom_limbus_data/skill/RienBossSkills.json.off",
+          "file": "files/mods/AbnorsAsIDs/c5811485ed95ed34_RienBossSkills.json.off",
+          "size": 45416,
+          "sha256": "c5811485ed95ed34cdc6d79a3437f411e70d8c9ca6df5311631418689ed54ddc"
+        },
+        {
+          "path": "custom_limbus_data/skill/RienOwnSkills.json",
+          "file": "files/mods/AbnorsAsIDs/ace389caabb3599a_RienOwnSkills.json",
+          "size": 46021,
+          "sha256": "ace389caabb3599a5c18eb6b56170bda56ad9a46ffa009434fd1ee15deb68a6b"
+        },
+        {
+          "path": "custom_limbus_data/skill/RienSkill.json",
+          "file": "files/mods/AbnorsAsIDs/10ad4101df9f49c6_RienSkill.json",
+          "size": 76949,
+          "sha256": "10ad4101df9f49c60b2679d0c4951547f0ceb153c1cb87ff35f54c9edbbb8b98"
+        },
+        {
+          "path": "custom_limbus_data/skill/RienSkill.json.allS3.bak",
+          "file": "files/mods/AbnorsAsIDs/2a8021600a712f6f_RienSkill.json.allS3.bak",
+          "size": 119157,
+          "sha256": "2a8021600a712f6fca735a415960e7d37e097843551f3d607a5f0081e0debf19"
+        },
+        {
+          "path": "custom_limbus_data/skill/RienSkill.json.arenarien.bak",
+          "file": "files/mods/AbnorsAsIDs/6f14ea4f2c5bb4a4_RienSkill.json.arenarien.bak",
+          "size": 71235,
+          "sha256": "6f14ea4f2c5bb4a4299c1d86e8803df0a18550b61afd63d6037a585b41dd40af"
+        },
+        {
+          "path": "custom_limbus_data/skill/RienSkill.json.luadraw.bak",
+          "file": "files/mods/AbnorsAsIDs/089c79726544029d_RienSkill.json.luadraw.bak",
+          "size": 89866,
+          "sha256": "089c79726544029dc52407ec6219a3a5781f274ec37d218d4bd460cc8b8a7c45"
+        },
+        {
+          "path": "custom_limbus_data/skill/RienSkill.json.montionbak",
+          "file": "files/mods/AbnorsAsIDs/2a8021600a712f6f_RienSkill.json.montionbak",
+          "size": 119157,
+          "sha256": "2a8021600a712f6fca735a415960e7d37e097843551f3d607a5f0081e0debf19"
+        },
+        {
+          "path": "custom_limbus_data/skill/RienSkill.json.motiontest.bak",
+          "file": "files/mods/AbnorsAsIDs/db8001d17cbfc20c_RienSkill.json.motiontest.bak",
+          "size": 85779,
+          "sha256": "db8001d17cbfc20cb5b6c4fe4d8000fa8bad57973806fdec45f4d6b58ccc3abb"
+        },
+        {
+          "path": "custom_limbus_data/skill/RienSkill.json.nomotion.bak",
+          "file": "files/mods/AbnorsAsIDs/e9ae578c40f70932_RienSkill.json.nomotion.bak",
+          "size": 84979,
+          "sha256": "e9ae578c40f709325061c53b0ba3f22fc3439beeb78c5ce280b80fea629f8fac"
+        },
+        {
+          "path": "custom_limbus_data/skill/RienSkill.json.nostatic.bak",
+          "file": "files/mods/AbnorsAsIDs/089c79726544029d_RienSkill.json.nostatic.bak",
+          "size": 89866,
+          "sha256": "089c79726544029dc52407ec6219a3a5781f274ec37d218d4bd460cc8b8a7c45"
+        },
+        {
+          "path": "custom_limbus_data/skill/RienSkill.json.percoin.bak",
+          "file": "files/mods/AbnorsAsIDs/417ceb7b3cedb017_RienSkill.json.percoin.bak",
+          "size": 83715,
+          "sha256": "417ceb7b3cedb0179a2f88fb3cb1ff60563a3fab2daba390710fc1f0ffb443db"
+        },
+        {
+          "path": "custom_limbus_data/skill/RienSkill.json.view134701.bak",
+          "file": "files/mods/AbnorsAsIDs/cc523aae9fdc4e76_RienSkill.json.view134701.bak",
+          "size": 87186,
+          "sha256": "cc523aae9fdc4e768d8844af769fd677567184d6f9aacf34c88aa71ee99c0d4b"
+        },
+        {
+          "path": "custom_limbus_data/skill/RienSkill.json.view134701_test.bak",
+          "file": "files/mods/AbnorsAsIDs/e9ed327890781b1f_RienSkill.json.view134701_test.bak",
+          "size": 88602,
+          "sha256": "e9ed327890781b1f24bc3889c3c1fc9878bfce148aa1f3d3dca319e772211eb6"
+        },
+        {
+          "path": "custom_limbus_data/skill/RienSkill.json.viewer.bak",
+          "file": "files/mods/AbnorsAsIDs/2913fa546f8a36d9_RienSkill.json.viewer.bak",
+          "size": 84931,
+          "sha256": "2913fa546f8a36d972baabdb32bd0163e1f880cb1d17468314673f30e128724a"
+        },
+        {
+          "path": "custom_limbus_data/skill/RienSkill.json.weaponfor.bak",
+          "file": "files/mods/AbnorsAsIDs/417ceb7b3cedb017_RienSkill.json.weaponfor.bak",
+          "size": 83715,
+          "sha256": "417ceb7b3cedb0179a2f88fb3cb1ff60563a3fab2daba390710fc1f0ffb443db"
+        },
+        {
+          "path": "custom_limbus_data/team-position/0.json",
+          "file": "files/mods/AbnorsAsIDs/4be77c9b8c91df50_0.json",
+          "size": 947,
+          "sha256": "4be77c9b8c91df501d38f6e492367df5fcc8a724ed73551704d8e38db42a33ff"
+        },
+        {
+          "path": "custom_limbus_locale/CN/bufList/buflist.json",
+          "file": "files/mods/AbnorsAsIDs/33f970b14fdb1c0d_buflist.json",
+          "size": 5964,
+          "sha256": "33f970b14fdb1c0dcf83a6209a99890c27d51da41cc5e26617de18768d98b734"
+        },
+        {
+          "path": "custom_limbus_locale/CN/bufList/buflist.json.bak-132948",
+          "file": "files/mods/AbnorsAsIDs/a8ce3f2d97a76589_buflist.json.bak-132948",
+          "size": 4157,
+          "sha256": "a8ce3f2d97a76589859273ed8f33884b555ed1e680c16dae8da1a9d2a1185f13"
+        },
+        {
+          "path": "custom_limbus_locale/CN/enemyList/enemylist.json",
+          "file": "files/mods/AbnorsAsIDs/ed417f998d945eda_enemylist.json",
+          "size": 113,
+          "sha256": "ed417f998d945eda0d541282d89f13a9ee10594592579c8d29d9a6b298272497"
+        },
+        {
+          "path": "custom_limbus_locale/CN/keywordList/keywordList.json",
+          "file": "files/mods/AbnorsAsIDs/e278e56e50a75952_keywordList.json",
+          "size": 4369,
+          "sha256": "e278e56e50a759529b1573c7fb47338534f9efc99f8abd055b10fcbb431d2118"
+        },
+        {
+          "path": "custom_limbus_locale/CN/passiveList/passiveList.json",
+          "file": "files/mods/AbnorsAsIDs/6d21c5894431b2a9_passiveList.json",
+          "size": 9149,
+          "sha256": "6d21c5894431b2a938a5f05d82ef93ace41856a79c9615a49fef9f33870c30ed"
+        },
+        {
+          "path": "custom_limbus_locale/CN/personalityList/personalityList.json",
+          "file": "files/mods/AbnorsAsIDs/fe0831fa67ac8009_personalityList.json",
+          "size": 578,
+          "sha256": "fe0831fa67ac80092ddb3da3e5754845eb3b3617da970f55ba281c08a4ec3f47"
+        },
+        {
+          "path": "custom_limbus_locale/CN/skillList/RienSkillList.json",
+          "file": "files/mods/AbnorsAsIDs/2e7a05ee8ed65733_RienSkillList.json",
+          "size": 18026,
+          "sha256": "2e7a05ee8ed65733677f821579214b21f251ed43bd8d2ecca221e991c19ed68a"
+        },
+        {
+          "path": "custom_limbus_locale/CN/skillList/skillList.json",
+          "file": "files/mods/AbnorsAsIDs/71eeb2a9b4a9591a_skillList.json",
+          "size": 16219,
+          "sha256": "71eeb2a9b4a9591a3ab5f9387672ed29faa0aac5a0283a605f4d56566f0cf62a"
+        },
+        {
+          "path": "custom_limbus_locale/CN/skillTagList/skillTagList.json",
+          "file": "files/mods/AbnorsAsIDs/693847941c568dea_skillTagList.json",
+          "size": 1151,
+          "sha256": "693847941c568deaed908527d4cbe4c54bf559eb1c2c1926727048bf9118d154"
+        },
+        {
+          "path": "custom_limbus_locale/CN/stageNodeText/BossNodeText.json",
+          "file": "files/mods/AbnorsAsIDs/c4bdd357d0fd7836_BossNodeText.json",
+          "size": 139,
+          "sha256": "c4bdd357d0fd78368c974ae64398ab2819d660be20f77b0a81213b64c5c5cf14"
+        },
+        {
+          "path": "custom_limbus_locale/CN/stagePart/BossStage.json",
+          "file": "files/mods/AbnorsAsIDs/20398e77b784433a_BossStage.json",
+          "size": 176,
+          "sha256": "20398e77b784433a7c3938a3d6a07be96e82c4ed298d399cd94a2605a635f44a"
+        },
+        {
+          "path": "custom_limbus_locale/EN/bufList/buflist.json",
+          "file": "files/mods/AbnorsAsIDs/e278e56e50a75952_buflist.json",
+          "size": 4369,
+          "sha256": "e278e56e50a759529b1573c7fb47338534f9efc99f8abd055b10fcbb431d2118"
+        },
+        {
+          "path": "custom_limbus_locale/EN/enemyList/enemylist.json",
+          "file": "files/mods/AbnorsAsIDs/ed417f998d945eda_enemylist.json",
+          "size": 113,
+          "sha256": "ed417f998d945eda0d541282d89f13a9ee10594592579c8d29d9a6b298272497"
+        },
+        {
+          "path": "custom_limbus_locale/EN/keywordList/keywordList.json",
+          "file": "files/mods/AbnorsAsIDs/e278e56e50a75952_keywordList.json",
+          "size": 4369,
+          "sha256": "e278e56e50a759529b1573c7fb47338534f9efc99f8abd055b10fcbb431d2118"
+        },
+        {
+          "path": "custom_limbus_locale/EN/passiveList/passiveList.json",
+          "file": "files/mods/AbnorsAsIDs/6d21c5894431b2a9_passiveList.json",
+          "size": 9149,
+          "sha256": "6d21c5894431b2a938a5f05d82ef93ace41856a79c9615a49fef9f33870c30ed"
+        },
+        {
+          "path": "custom_limbus_locale/EN/personalityList/personalityList.json",
+          "file": "files/mods/AbnorsAsIDs/b71c58fdfa8ece79_personalityList.json",
+          "size": 596,
+          "sha256": "b71c58fdfa8ece7910cc10374a9367123e11c44c6439468b28111134c79d74f1"
+        },
+        {
+          "path": "custom_limbus_locale/EN/skillList/RienSkillList.json",
+          "file": "files/mods/AbnorsAsIDs/2e7a05ee8ed65733_RienSkillList.json",
+          "size": 18026,
+          "sha256": "2e7a05ee8ed65733677f821579214b21f251ed43bd8d2ecca221e991c19ed68a"
+        },
+        {
+          "path": "custom_limbus_locale/EN/skillList/skillList.json",
+          "file": "files/mods/AbnorsAsIDs/71eeb2a9b4a9591a_skillList.json",
+          "size": 16219,
+          "sha256": "71eeb2a9b4a9591a3ab5f9387672ed29faa0aac5a0283a605f4d56566f0cf62a"
+        },
+        {
+          "path": "custom_limbus_locale/EN/skillTagList/skillTagList.json",
+          "file": "files/mods/AbnorsAsIDs/693847941c568dea_skillTagList.json",
+          "size": 1151,
+          "sha256": "693847941c568deaed908527d4cbe4c54bf559eb1c2c1926727048bf9118d154"
+        },
+        {
+          "path": "custom_sprites/cg_10137.png",
+          "file": "files/mods/AbnorsAsIDs/f2b48f891bf3fce0_cg_10137.png",
+          "size": 2425958,
+          "sha256": "f2b48f891bf3fce0a4310e499360a396acd96a52e01986f567e1a44fe9218249"
+        },
+        {
+          "path": "custom_sprites/cg_10138.png",
+          "file": "files/mods/AbnorsAsIDs/56ea2176911cba67_cg_10138.png",
+          "size": 1371851,
+          "sha256": "56ea2176911cba67f44a8e7505f13a46affc89866ba462485d60d1631d127560"
+        },
+        {
+          "path": "custom_sprites/profile_10137.png",
+          "file": "files/mods/AbnorsAsIDs/0b146881ae132cbd_profile_10137.png",
+          "size": 449417,
+          "sha256": "0b146881ae132cbd840efe54a8cc78f7f899a878bfe5c5e2c06e3a765a4c28b0"
+        },
+        {
+          "path": "custom_sprites/profile_10138.png",
+          "file": "files/mods/AbnorsAsIDs/cbfacc74305820ae_profile_10138.png",
+          "size": 14338,
+          "sha256": "cbfacc74305820aefa8bcfa74f5aed73e58a29a6b98079af711fbc1521f62149"
+        },
+        {
+          "path": "modular_lua/ArenaRienWeapons.lua",
+          "file": "files/mods/AbnorsAsIDs/c8e0430dc67213d6_ArenaRienWeapons.lua",
+          "size": 1464,
+          "sha256": "c8e0430dc67213d60503220739ff3ec7fa7833405b097426a2601893f2ec9764"
+        },
+        {
+          "path": "modular_lua/Furioso.lua",
+          "file": "files/mods/AbnorsAsIDs/3b881bcf72a6df41_Furioso.lua",
+          "size": 28870,
+          "sha256": "3b881bcf72a6df413f9bd9fa2ffbf1a43cec53d9771f04173be7f1885a25a057"
+        },
+        {
+          "path": "modular_lua/Furioso.lua.off",
+          "file": "files/mods/AbnorsAsIDs/3b881bcf72a6df41_Furioso.lua.off",
+          "size": 28870,
+          "sha256": "3b881bcf72a6df413f9bd9fa2ffbf1a43cec53d9771f04173be7f1885a25a057"
+        },
+        {
+          "path": "modular_lua/RandomSkillSystem.lua",
+          "file": "files/mods/AbnorsAsIDs/2e1826aed0ecefdd_RandomSkillSystem.lua",
+          "size": 922,
+          "sha256": "2e1826aed0ecefddf6c2004240485cc92859e1e9b7a9c19f3f66d8e13328a5b7"
+        },
+        {
+          "path": "modular_lua/RandomSkillSystem.lua.off",
+          "file": "files/mods/AbnorsAsIDs/2e1826aed0ecefdd_RandomSkillSystem.lua.off",
+          "size": 922,
+          "sha256": "2e1826aed0ecefddf6c2004240485cc92859e1e9b7a9c19f3f66d8e13328a5b7"
+        },
+        {
+          "path": "modular_lua/RienWeapons.lua.bak",
+          "file": "files/mods/AbnorsAsIDs/4065f7f8023ce39d_RienWeapons.lua.bak",
+          "size": 15813,
+          "sha256": "4065f7f8023ce39df671afb242e65fe1ed54ef58c799065ac68afc48ec21380c"
+        },
+        {
+          "path": "modular_lua/RienWeapons.lua.off",
+          "file": "files/mods/AbnorsAsIDs/bfea7b0ff4e4661b_RienWeapons.lua.off",
+          "size": 15693,
+          "sha256": "bfea7b0ff4e4661b577b3bb98c0783ae509d882efd68a119ba1aa4b112246365"
+        },
+        {
+          "path": "modular_lua/RienWeapons.lua.pre_wm",
+          "file": "files/mods/AbnorsAsIDs/73ef4484a8249294_RienWeapons.lua.pre_wm",
+          "size": 15699,
+          "sha256": "73ef4484a824929404c57c5dfd1e9723e97496dc291122c7238672c6e01f8ab2"
+        },
+        {
+          "path": "modular_lua/RienWeapons.lua.ret.bak",
+          "file": "files/mods/AbnorsAsIDs/d31c4038b4581c59_RienWeapons.lua.ret.bak",
+          "size": 19370,
+          "sha256": "d31c4038b4581c5974b45d0dad4085071264f80dc8243df4164e18fdcb666556"
+        },
+        {
+          "path": "modular_lua/RienWeapons.lua.wm2.bak",
+          "file": "files/mods/AbnorsAsIDs/4bc9c04364b542a7_RienWeapons.lua.wm2.bak",
+          "size": 18556,
+          "sha256": "4bc9c04364b542a713a5cd26c08b429db0c89633e1874cddcfb6ef4b79977a7f"
         }
       ]
     },
     {
       "name": "NoRestrict",
-      "version": "1",
-      "dest": "BepInEx/plugins/Lethe/mods/NoRestrict",
       "files": [
         {
           "path": "custom_limbus_data/restrict-participation/10.json",
-          "file": "files/mods/87fb867ca4b9ef0b_10.json",
-          "sha256": "87fb867ca4b9ef0b29df187c0d3eae9ef5c874dfaa55eff72558d13e60424f90",
-          "size": 271
+          "file": "files/mods/NoRestrict/87fb867ca4b9ef0b_10.json",
+          "size": 271,
+          "sha256": "87fb867ca4b9ef0b29df187c0d3eae9ef5c874dfaa55eff72558d13e60424f90"
         },
         {
           "path": "custom_limbus_data/restrict-participation/12.json",
-          "file": "files/mods/dd20badbd4abceae_12.json",
-          "sha256": "dd20badbd4abceae67d9d36da4057c19686b4bc80689bb40bcc7731414ec3aee",
-          "size": 595
+          "file": "files/mods/NoRestrict/dd20badbd4abceae_12.json",
+          "size": 595,
+          "sha256": "dd20badbd4abceae67d9d36da4057c19686b4bc80689bb40bcc7731414ec3aee"
         },
         {
           "path": "custom_limbus_data/restrict-participation/14.json",
-          "file": "files/mods/b81b0c9ed1cb9b6c_14.json",
-          "sha256": "b81b0c9ed1cb9b6c840e99375f019272fcd4e2fa62ac1b93f26d3734ded88bc8",
-          "size": 663
+          "file": "files/mods/NoRestrict/b81b0c9ed1cb9b6c_14.json",
+          "size": 663,
+          "sha256": "b81b0c9ed1cb9b6c840e99375f019272fcd4e2fa62ac1b93f26d3734ded88bc8"
         },
         {
           "path": "custom_limbus_data/restrict-participation/16.json",
-          "file": "files/mods/928062071fc56e90_16.json",
-          "sha256": "928062071fc56e9082f7fcfcf8dda50bd9ac8cc146476d8f5d71dc7a0faba855",
-          "size": 541
+          "file": "files/mods/NoRestrict/928062071fc56e90_16.json",
+          "size": 541,
+          "sha256": "928062071fc56e9082f7fcfcf8dda50bd9ac8cc146476d8f5d71dc7a0faba855"
         },
         {
           "path": "custom_limbus_data/restrict-participation/17.json",
-          "file": "files/mods/66680a8bc1165f17_17.json",
-          "sha256": "66680a8bc1165f17cadc6354823fd8083e95514fd5b2c9fc62e74e4a8f08d8c1",
-          "size": 1762
+          "file": "files/mods/NoRestrict/66680a8bc1165f17_17.json",
+          "size": 1762,
+          "sha256": "66680a8bc1165f17cadc6354823fd8083e95514fd5b2c9fc62e74e4a8f08d8c1"
         },
         {
           "path": "custom_limbus_data/restrict-participation/18.json",
-          "file": "files/mods/dd64874b29018740_18.json",
-          "sha256": "dd64874b2901874091b7d8d5fa332cf4dae562923a993103ea325efdbf1e5b05",
-          "size": 416
+          "file": "files/mods/NoRestrict/dd64874b29018740_18.json",
+          "size": 416,
+          "sha256": "dd64874b2901874091b7d8d5fa332cf4dae562923a993103ea325efdbf1e5b05"
         },
         {
           "path": "custom_limbus_data/restrict-participation/19.json",
-          "file": "files/mods/d262e59078c3646b_19.json",
-          "sha256": "d262e59078c3646bc7d35e3bbbe6fa24e58ba48eb3e2177f1c5a3673c194e01d",
-          "size": 683
+          "file": "files/mods/NoRestrict/d262e59078c3646b_19.json",
+          "size": 683,
+          "sha256": "d262e59078c3646bc7d35e3bbbe6fa24e58ba48eb3e2177f1c5a3673c194e01d"
         },
         {
           "path": "custom_limbus_data/restrict-participation/2.json",
-          "file": "files/mods/deb2ceefe4791204_2.json",
-          "sha256": "deb2ceefe4791204fa4c8d5243c8ac1619aa8bc8ca57a37fcf4f50e7f10f715c",
-          "size": 2380
+          "file": "files/mods/NoRestrict/deb2ceefe4791204_2.json",
+          "size": 2380,
+          "sha256": "deb2ceefe4791204fa4c8d5243c8ac1619aa8bc8ca57a37fcf4f50e7f10f715c"
         },
         {
           "path": "custom_limbus_data/restrict-participation/20.json",
-          "file": "files/mods/eb24d51222d176fe_20.json",
-          "sha256": "eb24d51222d176fe7ef2ca39c8e530410ecc9e753445f87d55c9d932c8b63d4e",
-          "size": 1795
+          "file": "files/mods/NoRestrict/eb24d51222d176fe_20.json",
+          "size": 1795,
+          "sha256": "eb24d51222d176fe7ef2ca39c8e530410ecc9e753445f87d55c9d932c8b63d4e"
         },
         {
           "path": "custom_limbus_data/restrict-participation/21.json",
-          "file": "files/mods/42a54599ece70e9f_21.json",
-          "sha256": "42a54599ece70e9feb2c68ba8ddbed29b152cbd9a7dd75fc852d58d969fc354d",
-          "size": 1348
+          "file": "files/mods/NoRestrict/42a54599ece70e9f_21.json",
+          "size": 1348,
+          "sha256": "42a54599ece70e9feb2c68ba8ddbed29b152cbd9a7dd75fc852d58d969fc354d"
         },
         {
           "path": "custom_limbus_data/restrict-participation/22.json",
-          "file": "files/mods/bb953661172b4b3a_22.json",
-          "sha256": "bb953661172b4b3add09062cfceb4ba1058e1b81a21232080e44da3104719943",
-          "size": 1085
+          "file": "files/mods/NoRestrict/bb953661172b4b3a_22.json",
+          "size": 1085,
+          "sha256": "bb953661172b4b3add09062cfceb4ba1058e1b81a21232080e44da3104719943"
         },
         {
           "path": "custom_limbus_data/restrict-participation/23.json",
-          "file": "files/mods/e6675e2382885a44_23.json",
-          "sha256": "e6675e2382885a44e44b49c96c4d7b4e231586885e42e43a84f76de5eaa82e47",
-          "size": 817
+          "file": "files/mods/NoRestrict/e6675e2382885a44_23.json",
+          "size": 817,
+          "sha256": "e6675e2382885a44e44b49c96c4d7b4e231586885e42e43a84f76de5eaa82e47"
         },
         {
           "path": "custom_limbus_data/restrict-participation/24.json",
-          "file": "files/mods/edfa7cf44155378b_24.json",
-          "sha256": "edfa7cf44155378b7bc80e96f602c4733b364978836f64f9317cd8e464ebe071",
-          "size": 271
+          "file": "files/mods/NoRestrict/edfa7cf44155378b_24.json",
+          "size": 271,
+          "sha256": "edfa7cf44155378b7bc80e96f602c4733b364978836f64f9317cd8e464ebe071"
         },
         {
           "path": "custom_limbus_data/restrict-participation/25.json",
-          "file": "files/mods/4dd6f500f7f9445f_25.json",
-          "sha256": "4dd6f500f7f9445f98c50b17dbd23b2c75b13b0b0a979e399dce5a1e54cd4b10",
-          "size": 181
+          "file": "files/mods/NoRestrict/4dd6f500f7f9445f_25.json",
+          "size": 181,
+          "sha256": "4dd6f500f7f9445f98c50b17dbd23b2c75b13b0b0a979e399dce5a1e54cd4b10"
         },
         {
           "path": "custom_limbus_data/restrict-participation/26.json",
-          "file": "files/mods/af39386f1d578371_26.json",
-          "sha256": "af39386f1d5783712947f2ef23faf26d8451b3f0bc5c260068e7ac473f05a98f",
-          "size": 1718
+          "file": "files/mods/NoRestrict/af39386f1d578371_26.json",
+          "size": 1718,
+          "sha256": "af39386f1d5783712947f2ef23faf26d8451b3f0bc5c260068e7ac473f05a98f"
         },
         {
           "path": "custom_limbus_data/restrict-participation/27.json",
-          "file": "files/mods/2e99ff74dba4c208_27.json",
-          "sha256": "2e99ff74dba4c20847e43dc0f9c091b9de9077ab47f5de208e7948e50275b006",
-          "size": 1912
+          "file": "files/mods/NoRestrict/2e99ff74dba4c208_27.json",
+          "size": 1912,
+          "sha256": "2e99ff74dba4c20847e43dc0f9c091b9de9077ab47f5de208e7948e50275b006"
         },
         {
           "path": "custom_limbus_data/restrict-participation/28.json",
-          "file": "files/mods/196e3989ca105b65_28.json",
-          "sha256": "196e3989ca105b6526e57ad18b23ba6795897916e51610422023688ea61dabe3",
-          "size": 286
+          "file": "files/mods/NoRestrict/196e3989ca105b65_28.json",
+          "size": 286,
+          "sha256": "196e3989ca105b6526e57ad18b23ba6795897916e51610422023688ea61dabe3"
         },
         {
           "path": "custom_limbus_data/restrict-participation/7.json",
-          "file": "files/mods/5ca7b66dd8cee1c3_7.json",
-          "sha256": "5ca7b66dd8cee1c3cd70fd864a8b2ed927ca562e7a10f4ef542572576563c35d",
-          "size": 796
+          "file": "files/mods/NoRestrict/5ca7b66dd8cee1c3_7.json",
+          "size": 796,
+          "sha256": "5ca7b66dd8cee1c3cd70fd864a8b2ed927ca562e7a10f4ef542572576563c35d"
         },
         {
           "path": "custom_limbus_data/restrict-participation/8.json",
-          "file": "files/mods/63284cc24f34c24c_8.json",
-          "sha256": "63284cc24f34c24cccb3d148e8e447e1b8b42cdb6c2af5f8b866c231c3c016de",
-          "size": 724
+          "file": "files/mods/NoRestrict/63284cc24f34c24c_8.json",
+          "size": 724,
+          "sha256": "63284cc24f34c24cccb3d148e8e447e1b8b42cdb6c2af5f8b866c231c3c016de"
         }
       ]
     },
     {
       "name": "ReflectrialUnlock",
-      "version": "1",
-      "dest": "BepInEx/plugins/Lethe/mods/ReflectrialUnlock",
       "files": [
         {
           "path": "custom_limbus_data/battle-bossraid/0.json",
-          "file": "files/mods/547b67764e942b2c_0.json",
-          "sha256": "547b67764e942b2c2ad45810b625a810907a6fbd06782d9917d11e9f25b5f0fe",
-          "size": 3913
+          "file": "files/mods/ReflectrialUnlock/547b67764e942b2c_0.json",
+          "size": 3913,
+          "sha256": "547b67764e942b2c2ad45810b625a810907a6fbd06782d9917d11e9f25b5f0fe"
         },
         {
           "path": "custom_limbus_data/battle-bossraid/1.json",
-          "file": "files/mods/3dab925f903a7d88_1.json",
-          "sha256": "3dab925f903a7d886875a43a8e481ca7200a4a13d65807060d23f2c38fcb29e6",
-          "size": 2797
+          "file": "files/mods/ReflectrialUnlock/3dab925f903a7d88_1.json",
+          "size": 2797,
+          "sha256": "3dab925f903a7d886875a43a8e481ca7200a4a13d65807060d23f2c38fcb29e6"
         },
         {
           "path": "custom_limbus_data/battle-bossraid/2.json",
-          "file": "files/mods/409801f633cc94d0_2.json",
-          "sha256": "409801f633cc94d05fb39819b7d50cfa7d9c2da7415aa33e7607541b14a4910c",
-          "size": 3621
+          "file": "files/mods/ReflectrialUnlock/409801f633cc94d0_2.json",
+          "size": 3621,
+          "sha256": "409801f633cc94d05fb39819b7d50cfa7d9c2da7415aa33e7607541b14a4910c"
         },
         {
           "path": "custom_limbus_data/battle-bossraid/3.json",
-          "file": "files/mods/ef1b870b61e2e186_3.json",
-          "sha256": "ef1b870b61e2e186f0e03ffeb18944746bdb0838de752b5607a973b629e4dcad",
-          "size": 2013
+          "file": "files/mods/ReflectrialUnlock/ef1b870b61e2e186_3.json",
+          "size": 2013,
+          "sha256": "ef1b870b61e2e186f0e03ffeb18944746bdb0838de752b5607a973b629e4dcad"
         },
         {
           "path": "custom_limbus_data/battle-mirrordungeon/0.json",
-          "file": "files/mods/3bc05838fb9089c1_0.json",
-          "sha256": "3bc05838fb9089c1fdc4f77753133a7a62522fe9e290c9364635fafe316bdc66",
-          "size": 420429
+          "file": "files/mods/ReflectrialUnlock/3bc05838fb9089c1_0.json",
+          "size": 420429,
+          "sha256": "3bc05838fb9089c1fdc4f77753133a7a62522fe9e290c9364635fafe316bdc66"
         },
         {
           "path": "custom_limbus_data/battle-mirrordungeon/1.json",
-          "file": "files/mods/9e4987c6a0797b64_1.json",
-          "sha256": "9e4987c6a0797b64a27eb23d8d6bc53ced9de9ae420c8cbc67bf4d6ca52c9d73",
-          "size": 263462
+          "file": "files/mods/ReflectrialUnlock/9e4987c6a0797b64_1.json",
+          "size": 263462,
+          "sha256": "9e4987c6a0797b64a27eb23d8d6bc53ced9de9ae420c8cbc67bf4d6ca52c9d73"
         },
         {
           "path": "custom_limbus_data/battle-mirrordungeon/10.json",
-          "file": "files/mods/ed336931bb488f6f_10.json",
-          "sha256": "ed336931bb488f6f6c2ea108e2fbd896a5c5b727d8912ef78453805950230e12",
-          "size": 2608389
+          "file": "files/mods/ReflectrialUnlock/ed336931bb488f6f_10.json",
+          "size": 2608389,
+          "sha256": "ed336931bb488f6f6c2ea108e2fbd896a5c5b727d8912ef78453805950230e12"
         },
         {
           "path": "custom_limbus_data/battle-mirrordungeon/11.json",
-          "file": "files/mods/5d6dedddb2eff36d_11.json",
-          "sha256": "5d6dedddb2eff36d2ad522140a5dbfa5bc7b9185047a4305439df503224a6e61",
-          "size": 859639
+          "file": "files/mods/ReflectrialUnlock/5d6dedddb2eff36d_11.json",
+          "size": 859639,
+          "sha256": "5d6dedddb2eff36d2ad522140a5dbfa5bc7b9185047a4305439df503224a6e61"
         },
         {
           "path": "custom_limbus_data/battle-mirrordungeon/12.json",
-          "file": "files/mods/94e5219cc3c259e0_12.json",
-          "sha256": "94e5219cc3c259e060854bf5027ed93be6fd00c40ecef55a43f4737e53526856",
-          "size": 150299
+          "file": "files/mods/ReflectrialUnlock/94e5219cc3c259e0_12.json",
+          "size": 150299,
+          "sha256": "94e5219cc3c259e060854bf5027ed93be6fd00c40ecef55a43f4737e53526856"
         },
         {
           "path": "custom_limbus_data/battle-mirrordungeon/13.json",
-          "file": "files/mods/19b49cf671715c3f_13.json",
-          "sha256": "19b49cf671715c3fb5346065689dba2530f474ef17163448c19162ef490a3ac2",
-          "size": 78949
+          "file": "files/mods/ReflectrialUnlock/19b49cf671715c3f_13.json",
+          "size": 78949,
+          "sha256": "19b49cf671715c3fb5346065689dba2530f474ef17163448c19162ef490a3ac2"
         },
         {
           "path": "custom_limbus_data/battle-mirrordungeon/14.json",
-          "file": "files/mods/2bb97440b874c0f8_14.json",
-          "sha256": "2bb97440b874c0f8f0d8e0138f3034c02157de99cfc3694e8b235d59c721c1a3",
-          "size": 5773
+          "file": "files/mods/ReflectrialUnlock/2bb97440b874c0f8_14.json",
+          "size": 5773,
+          "sha256": "2bb97440b874c0f8f0d8e0138f3034c02157de99cfc3694e8b235d59c721c1a3"
         },
         {
           "path": "custom_limbus_data/battle-mirrordungeon/15.json",
-          "file": "files/mods/a300dc072d07b9cf_15.json",
-          "sha256": "a300dc072d07b9cf1229d32394c30154ab1085a2275b1a1835f936f1e8321e82",
-          "size": 17120
+          "file": "files/mods/ReflectrialUnlock/a300dc072d07b9cf_15.json",
+          "size": 17120,
+          "sha256": "a300dc072d07b9cf1229d32394c30154ab1085a2275b1a1835f936f1e8321e82"
         },
         {
           "path": "custom_limbus_data/battle-mirrordungeon/16.json",
-          "file": "files/mods/519b5086a458a79e_16.json",
-          "sha256": "519b5086a458a79e62a129af0676970cab439995047dce36e0eebf0cdcab89f8",
-          "size": 6801
+          "file": "files/mods/ReflectrialUnlock/519b5086a458a79e_16.json",
+          "size": 6801,
+          "sha256": "519b5086a458a79e62a129af0676970cab439995047dce36e0eebf0cdcab89f8"
         },
         {
           "path": "custom_limbus_data/battle-mirrordungeon/17.json",
-          "file": "files/mods/543bb4e35ae7686a_17.json",
-          "sha256": "543bb4e35ae7686a03c13ae67e507ea261f6359babb513b87b78a56c28ccc291",
-          "size": 126297
+          "file": "files/mods/ReflectrialUnlock/543bb4e35ae7686a_17.json",
+          "size": 126297,
+          "sha256": "543bb4e35ae7686a03c13ae67e507ea261f6359babb513b87b78a56c28ccc291"
         },
         {
           "path": "custom_limbus_data/battle-mirrordungeon/18.json",
-          "file": "files/mods/ba2b7c0d8fe3f8ca_18.json",
-          "sha256": "ba2b7c0d8fe3f8ca3c4cae6028ef357388572b72fb86dd3c2c411ad873e35d5d",
-          "size": 81303
+          "file": "files/mods/ReflectrialUnlock/ba2b7c0d8fe3f8ca_18.json",
+          "size": 81303,
+          "sha256": "ba2b7c0d8fe3f8ca3c4cae6028ef357388572b72fb86dd3c2c411ad873e35d5d"
         },
         {
           "path": "custom_limbus_data/battle-mirrordungeon/19.json",
-          "file": "files/mods/e2a6ef85f970bd76_19.json",
-          "sha256": "e2a6ef85f970bd761820f4a91e266a85e3afb9eb1a138025d0f8b3781ef46cdc",
-          "size": 4584
+          "file": "files/mods/ReflectrialUnlock/e2a6ef85f970bd76_19.json",
+          "size": 4584,
+          "sha256": "e2a6ef85f970bd761820f4a91e266a85e3afb9eb1a138025d0f8b3781ef46cdc"
         },
         {
           "path": "custom_limbus_data/battle-mirrordungeon/2.json",
-          "file": "files/mods/db501994aac79b53_2.json",
-          "sha256": "db501994aac79b5396d3b1a819cb6af9c23942c05f059600aa0bd14d532fe5c6",
-          "size": 262180
+          "file": "files/mods/ReflectrialUnlock/db501994aac79b53_2.json",
+          "size": 262180,
+          "sha256": "db501994aac79b5396d3b1a819cb6af9c23942c05f059600aa0bd14d532fe5c6"
         },
         {
           "path": "custom_limbus_data/battle-mirrordungeon/20.json",
-          "file": "files/mods/fff4a72212ccc150_20.json",
-          "sha256": "fff4a72212ccc15044dd89649f86e925f4674e4dd257b6e9d0a7e025188ccfa7",
-          "size": 9869
+          "file": "files/mods/ReflectrialUnlock/fff4a72212ccc150_20.json",
+          "size": 9869,
+          "sha256": "fff4a72212ccc15044dd89649f86e925f4674e4dd257b6e9d0a7e025188ccfa7"
         },
         {
           "path": "custom_limbus_data/battle-mirrordungeon/21.json",
-          "file": "files/mods/73d0f0f810082153_21.json",
-          "sha256": "73d0f0f8100821530136ce3ab6fa8a62aeabe3cd70da375ef96022eef85213e2",
-          "size": 4032
+          "file": "files/mods/ReflectrialUnlock/73d0f0f810082153_21.json",
+          "size": 4032,
+          "sha256": "73d0f0f8100821530136ce3ab6fa8a62aeabe3cd70da375ef96022eef85213e2"
         },
         {
           "path": "custom_limbus_data/battle-mirrordungeon/22.json",
-          "file": "files/mods/e5832f05c29bfd97_22.json",
-          "sha256": "e5832f05c29bfd97f3b2fb542cc0d3110cc004443990ae49b9c41544bd21cb41",
-          "size": 96977
+          "file": "files/mods/ReflectrialUnlock/e5832f05c29bfd97_22.json",
+          "size": 96977,
+          "sha256": "e5832f05c29bfd97f3b2fb542cc0d3110cc004443990ae49b9c41544bd21cb41"
         },
         {
           "path": "custom_limbus_data/battle-mirrordungeon/23.json",
-          "file": "files/mods/a7051e46a16781f3_23.json",
-          "sha256": "a7051e46a16781f3512ee7b75ad4e9243f8453bb675f335abec87b4230a6e1e8",
-          "size": 43004
+          "file": "files/mods/ReflectrialUnlock/a7051e46a16781f3_23.json",
+          "size": 43004,
+          "sha256": "a7051e46a16781f3512ee7b75ad4e9243f8453bb675f335abec87b4230a6e1e8"
         },
         {
           "path": "custom_limbus_data/battle-mirrordungeon/3.json",
-          "file": "files/mods/5c2cdbe6cdf27ce7_3.json",
-          "sha256": "5c2cdbe6cdf27ce7cf2d0fec3cf0f3722c1daabb73ab822a8e35ff6cba3abc66",
-          "size": 355167
+          "file": "files/mods/ReflectrialUnlock/5c2cdbe6cdf27ce7_3.json",
+          "size": 355167,
+          "sha256": "5c2cdbe6cdf27ce7cf2d0fec3cf0f3722c1daabb73ab822a8e35ff6cba3abc66"
         },
         {
           "path": "custom_limbus_data/battle-mirrordungeon/4.json",
-          "file": "files/mods/09a8b823189973b9_4.json",
-          "sha256": "09a8b823189973b9904088c681997ac20a6369f960fea83c70f3e2ffb0b9454a",
-          "size": 493470
+          "file": "files/mods/ReflectrialUnlock/09a8b823189973b9_4.json",
+          "size": 493470,
+          "sha256": "09a8b823189973b9904088c681997ac20a6369f960fea83c70f3e2ffb0b9454a"
         },
         {
           "path": "custom_limbus_data/battle-mirrordungeon/5.json",
-          "file": "files/mods/3e00fbf0ee5ad779_5.json",
-          "sha256": "3e00fbf0ee5ad779a7b3866a14c9ef1d46233c71ace0740fcb67a0efc89b8b45",
-          "size": 130152
+          "file": "files/mods/ReflectrialUnlock/3e00fbf0ee5ad779_5.json",
+          "size": 130152,
+          "sha256": "3e00fbf0ee5ad779a7b3866a14c9ef1d46233c71ace0740fcb67a0efc89b8b45"
         },
         {
           "path": "custom_limbus_data/battle-mirrordungeon/6.json",
-          "file": "files/mods/d5f17cb454d8f73a_6.json",
-          "sha256": "d5f17cb454d8f73a3a125ad531c97c0136d6256d20448711f90ae1af1364e984",
-          "size": 123453
+          "file": "files/mods/ReflectrialUnlock/d5f17cb454d8f73a_6.json",
+          "size": 123453,
+          "sha256": "d5f17cb454d8f73a3a125ad531c97c0136d6256d20448711f90ae1af1364e984"
         },
         {
           "path": "custom_limbus_data/battle-mirrordungeon/7.json",
-          "file": "files/mods/fd9442b8343e39f5_7.json",
-          "sha256": "fd9442b8343e39f5cbc47b02d39ac01cc9de5e4e044029c97a5b42380730f883",
-          "size": 132225
+          "file": "files/mods/ReflectrialUnlock/fd9442b8343e39f5_7.json",
+          "size": 132225,
+          "sha256": "fd9442b8343e39f5cbc47b02d39ac01cc9de5e4e044029c97a5b42380730f883"
         },
         {
           "path": "custom_limbus_data/battle-mirrordungeon/8.json",
-          "file": "files/mods/edc6ea27bdca3334_8.json",
-          "sha256": "edc6ea27bdca3334f160ad8ae70d2f4a9dc9a99fcd985f969b72d76d586156d9",
-          "size": 410745
+          "file": "files/mods/ReflectrialUnlock/edc6ea27bdca3334_8.json",
+          "size": 410745,
+          "sha256": "edc6ea27bdca3334f160ad8ae70d2f4a9dc9a99fcd985f969b72d76d586156d9"
         },
         {
           "path": "custom_limbus_data/battle-mirrordungeon/9.json",
-          "file": "files/mods/c28c1d00f6300cb9_9.json",
-          "sha256": "c28c1d00f6300cb9de3afd2ebf2ddbaf81d79eff453fefd115b8c68c3b2b8e4f",
-          "size": 573416
+          "file": "files/mods/ReflectrialUnlock/c28c1d00f6300cb9_9.json",
+          "size": 573416,
+          "sha256": "c28c1d00f6300cb9de3afd2ebf2ddbaf81d79eff453fefd115b8c68c3b2b8e4f"
         },
         {
           "path": "custom_limbus_data/battle-railway-dungeon/0.json",
-          "file": "files/mods/61f346483fe5752e_0.json",
-          "sha256": "61f346483fe5752e64f0531913345b1e27ef7fa88dab13513e195d964f26e2b6",
-          "size": 13332
+          "file": "files/mods/ReflectrialUnlock/61f346483fe5752e_0.json",
+          "size": 13332,
+          "sha256": "61f346483fe5752e64f0531913345b1e27ef7fa88dab13513e195d964f26e2b6"
         },
         {
           "path": "custom_limbus_data/battle-railway-dungeon/2.json",
-          "file": "files/mods/8d73bc68065d80f5_2.json",
-          "sha256": "8d73bc68065d80f57e35d73e45529d8b3377eb1fd52eb291589243de5ea19aba",
-          "size": 11026
+          "file": "files/mods/ReflectrialUnlock/8d73bc68065d80f5_2.json",
+          "size": 11026,
+          "sha256": "8d73bc68065d80f57e35d73e45529d8b3377eb1fd52eb291589243de5ea19aba"
         },
         {
           "path": "custom_limbus_data/battle-railway-dungeon/3.json",
-          "file": "files/mods/a2127af060b892ff_3.json",
-          "sha256": "a2127af060b892ffd80f0243106af95b932b28e41412a92da3e997425780dfbc",
-          "size": 12314
+          "file": "files/mods/ReflectrialUnlock/a2127af060b892ff_3.json",
+          "size": 12314,
+          "sha256": "a2127af060b892ffd80f0243106af95b932b28e41412a92da3e997425780dfbc"
         },
         {
           "path": "custom_limbus_data/battle-railway-dungeon/4.json",
-          "file": "files/mods/31f5117aa2476392_4.json",
-          "sha256": "31f5117aa2476392ad82ac132566466c178bf6ab02f72efda3ba76a8a4f918bc",
-          "size": 11962
+          "file": "files/mods/ReflectrialUnlock/31f5117aa2476392_4.json",
+          "size": 11962,
+          "sha256": "31f5117aa2476392ad82ac132566466c178bf6ab02f72efda3ba76a8a4f918bc"
         },
         {
           "path": "custom_limbus_data/battle-railway-dungeon/5.json",
-          "file": "files/mods/61176af6db3f6f48_5.json",
-          "sha256": "61176af6db3f6f48fdf40a8f4a313e0ea6ead94901bf9947cb8c5f7d0f35ca52",
-          "size": 14453
+          "file": "files/mods/ReflectrialUnlock/61176af6db3f6f48_5.json",
+          "size": 14453,
+          "sha256": "61176af6db3f6f48fdf40a8f4a313e0ea6ead94901bf9947cb8c5f7d0f35ca52"
         },
         {
           "path": "custom_limbus_data/battle-railway-dungeon/6.json",
-          "file": "files/mods/c1f1a843249a8524_6.json",
-          "sha256": "c1f1a843249a8524c7661c1880167589675bc0fa730b3866dd9a9c911c3d15b1",
-          "size": 11653
+          "file": "files/mods/ReflectrialUnlock/c1f1a843249a8524_6.json",
+          "size": 11653,
+          "sha256": "c1f1a843249a8524c7661c1880167589675bc0fa730b3866dd9a9c911c3d15b1"
         },
         {
           "path": "custom_limbus_data/battle-railway-dungeon/7.json",
-          "file": "files/mods/a92ff4b1df4678d1_7.json",
-          "sha256": "a92ff4b1df4678d1ab2f6eadd6a8b0b91dfbc20d08b97f2b5ac812a5665e562a",
-          "size": 14936
+          "file": "files/mods/ReflectrialUnlock/a92ff4b1df4678d1_7.json",
+          "size": 14936,
+          "sha256": "a92ff4b1df4678d1ab2f6eadd6a8b0b91dfbc20d08b97f2b5ac812a5665e562a"
         },
         {
           "path": "custom_limbus_data/battle-story/0.json",
-          "file": "files/mods/a650e7c6a847dbaa_0.json",
-          "sha256": "a650e7c6a847dbaafa6d0e179c6fa3f765e62bdc3ac9a9fd9656bbc6d03c6934",
-          "size": 12065
+          "file": "files/mods/ReflectrialUnlock/a650e7c6a847dbaa_0.json",
+          "size": 12065,
+          "sha256": "a650e7c6a847dbaafa6d0e179c6fa3f765e62bdc3ac9a9fd9656bbc6d03c6934"
         },
         {
           "path": "custom_limbus_data/battle-story/1.json",
-          "file": "files/mods/624dd7b20997dd6c_1.json",
-          "sha256": "624dd7b20997dd6cbb8f83e5b61ef4743c01e216654ea4cb372bb235f04eebda",
-          "size": 19015
+          "file": "files/mods/ReflectrialUnlock/624dd7b20997dd6c_1.json",
+          "size": 19015,
+          "sha256": "624dd7b20997dd6cbb8f83e5b61ef4743c01e216654ea4cb372bb235f04eebda"
         },
         {
           "path": "custom_limbus_data/battle-story/10.json",
-          "file": "files/mods/1bbd17bbca881998_10.json",
-          "sha256": "1bbd17bbca88199877d82b54ee7efead093194979d902393dbd5d3c8da6ce5b4",
-          "size": 15277
+          "file": "files/mods/ReflectrialUnlock/1bbd17bbca881998_10.json",
+          "size": 15277,
+          "sha256": "1bbd17bbca88199877d82b54ee7efead093194979d902393dbd5d3c8da6ce5b4"
         },
         {
           "path": "custom_limbus_data/battle-story/11.json",
-          "file": "files/mods/6331f400b095b0d9_11.json",
-          "sha256": "6331f400b095b0d92102de6d76c509e62708a9b2decc3d299d779b647ac9e923",
-          "size": 25753
+          "file": "files/mods/ReflectrialUnlock/6331f400b095b0d9_11.json",
+          "size": 25753,
+          "sha256": "6331f400b095b0d92102de6d76c509e62708a9b2decc3d299d779b647ac9e923"
         },
         {
           "path": "custom_limbus_data/battle-story/12.json",
-          "file": "files/mods/44f7d7eecc33688e_12.json",
-          "sha256": "44f7d7eecc33688e01453f631884f020ed746a4b0bf46ff521d013fe17f73791",
-          "size": 14358
+          "file": "files/mods/ReflectrialUnlock/44f7d7eecc33688e_12.json",
+          "size": 14358,
+          "sha256": "44f7d7eecc33688e01453f631884f020ed746a4b0bf46ff521d013fe17f73791"
         },
         {
           "path": "custom_limbus_data/battle-story/13.json",
-          "file": "files/mods/c7034d24be734ec1_13.json",
-          "sha256": "c7034d24be734ec17573d1a19e68aade717fd5fa41bd31628d5bf30ad26ceef1",
-          "size": 17582
+          "file": "files/mods/ReflectrialUnlock/c7034d24be734ec1_13.json",
+          "size": 17582,
+          "sha256": "c7034d24be734ec17573d1a19e68aade717fd5fa41bd31628d5bf30ad26ceef1"
         },
         {
           "path": "custom_limbus_data/battle-story/14.json",
-          "file": "files/mods/885cc658b9eb70d3_14.json",
-          "sha256": "885cc658b9eb70d3cccb4fa4ec26716d2179a92d3a9c54d8f5958395f9b7c02b",
-          "size": 17772
+          "file": "files/mods/ReflectrialUnlock/885cc658b9eb70d3_14.json",
+          "size": 17772,
+          "sha256": "885cc658b9eb70d3cccb4fa4ec26716d2179a92d3a9c54d8f5958395f9b7c02b"
         },
         {
           "path": "custom_limbus_data/battle-story/15.json",
-          "file": "files/mods/d88afdb4c4b0ac28_15.json",
-          "sha256": "d88afdb4c4b0ac2810f85da302818b56ca1f3195d96f7964bb8735ef12df8307",
-          "size": 16787
+          "file": "files/mods/ReflectrialUnlock/d88afdb4c4b0ac28_15.json",
+          "size": 16787,
+          "sha256": "d88afdb4c4b0ac2810f85da302818b56ca1f3195d96f7964bb8735ef12df8307"
         },
         {
           "path": "custom_limbus_data/battle-story/16.json",
-          "file": "files/mods/87832990907d8031_16.json",
-          "sha256": "87832990907d803183539789eec72eb6569914cc91a96b72652204d83ee44a49",
-          "size": 3283
+          "file": "files/mods/ReflectrialUnlock/87832990907d8031_16.json",
+          "size": 3283,
+          "sha256": "87832990907d803183539789eec72eb6569914cc91a96b72652204d83ee44a49"
         },
         {
           "path": "custom_limbus_data/battle-story/17.json",
-          "file": "files/mods/f01db2a0a90d2e58_17.json",
-          "sha256": "f01db2a0a90d2e5810cb85faf14fa963342b610f7e2fc057e0e5062112cac193",
-          "size": 7807
+          "file": "files/mods/ReflectrialUnlock/f01db2a0a90d2e58_17.json",
+          "size": 7807,
+          "sha256": "f01db2a0a90d2e5810cb85faf14fa963342b610f7e2fc057e0e5062112cac193"
         },
         {
           "path": "custom_limbus_data/battle-story/18.json",
-          "file": "files/mods/dcf2a74f962db45d_18.json",
-          "sha256": "dcf2a74f962db45d03bdf366968dd4ec069bde7d44d62d1e5a917266ef4ca4b3",
-          "size": 12632
+          "file": "files/mods/ReflectrialUnlock/dcf2a74f962db45d_18.json",
+          "size": 12632,
+          "sha256": "dcf2a74f962db45d03bdf366968dd4ec069bde7d44d62d1e5a917266ef4ca4b3"
         },
         {
           "path": "custom_limbus_data/battle-story/19.json",
-          "file": "files/mods/4ac9d3f9779ac8b3_19.json",
-          "sha256": "4ac9d3f9779ac8b351d675f1df0752ba9e8cbf63ee7c2633239bf4dc482ab3a0",
-          "size": 8273
+          "file": "files/mods/ReflectrialUnlock/4ac9d3f9779ac8b3_19.json",
+          "size": 8273,
+          "sha256": "4ac9d3f9779ac8b351d675f1df0752ba9e8cbf63ee7c2633239bf4dc482ab3a0"
         },
         {
           "path": "custom_limbus_data/battle-story/2.json",
-          "file": "files/mods/54fbf043b79d484d_2.json",
-          "sha256": "54fbf043b79d484d1f93c1fe2f5d033cc6cfbdcc02ec6fc10a79fd213a39500b",
-          "size": 21723
+          "file": "files/mods/ReflectrialUnlock/54fbf043b79d484d_2.json",
+          "size": 21723,
+          "sha256": "54fbf043b79d484d1f93c1fe2f5d033cc6cfbdcc02ec6fc10a79fd213a39500b"
         },
         {
           "path": "custom_limbus_data/battle-story/20.json",
-          "file": "files/mods/147e20bb9a7a087f_20.json",
-          "sha256": "147e20bb9a7a087f65deb4029778c835b4e9d12a9e1e5653b5f7f9bd6415e2b1",
-          "size": 18495
+          "file": "files/mods/ReflectrialUnlock/147e20bb9a7a087f_20.json",
+          "size": 18495,
+          "sha256": "147e20bb9a7a087f65deb4029778c835b4e9d12a9e1e5653b5f7f9bd6415e2b1"
         },
         {
           "path": "custom_limbus_data/battle-story/21.json",
-          "file": "files/mods/938eb7fc6c8d2383_21.json",
-          "sha256": "938eb7fc6c8d2383f6a95a97f9596ffba7951557a756338ad622c175b3e41662",
-          "size": 16493
+          "file": "files/mods/ReflectrialUnlock/938eb7fc6c8d2383_21.json",
+          "size": 16493,
+          "sha256": "938eb7fc6c8d2383f6a95a97f9596ffba7951557a756338ad622c175b3e41662"
         },
         {
           "path": "custom_limbus_data/battle-story/22.json",
-          "file": "files/mods/9959a72a68d66bbc_22.json",
-          "sha256": "9959a72a68d66bbcace7f3f4899c24b653d7ed9763e2f33330ad1345e3cc1c40",
-          "size": 15547
+          "file": "files/mods/ReflectrialUnlock/9959a72a68d66bbc_22.json",
+          "size": 15547,
+          "sha256": "9959a72a68d66bbcace7f3f4899c24b653d7ed9763e2f33330ad1345e3cc1c40"
         },
         {
           "path": "custom_limbus_data/battle-story/23.json",
-          "file": "files/mods/4980a025af4656b7_23.json",
-          "sha256": "4980a025af4656b7f348439d301450503f0896771344dbe2bbedb7f0e638f1a2",
-          "size": 21935
+          "file": "files/mods/ReflectrialUnlock/4980a025af4656b7_23.json",
+          "size": 21935,
+          "sha256": "4980a025af4656b7f348439d301450503f0896771344dbe2bbedb7f0e638f1a2"
         },
         {
           "path": "custom_limbus_data/battle-story/24.json",
-          "file": "files/mods/72e1a2a024786e12_24.json",
-          "sha256": "72e1a2a024786e124920e6bdb53a855f05d6b5c8edacad5b61879fce4ed3f697",
-          "size": 15061
+          "file": "files/mods/ReflectrialUnlock/72e1a2a024786e12_24.json",
+          "size": 15061,
+          "sha256": "72e1a2a024786e124920e6bdb53a855f05d6b5c8edacad5b61879fce4ed3f697"
         },
         {
           "path": "custom_limbus_data/battle-story/25.json",
-          "file": "files/mods/644cb2755b7d8858_25.json",
-          "sha256": "644cb2755b7d885873f6656917dccc0d4527f0e14c7ea1e45e9f5d67d6ea50e5",
-          "size": 14628
+          "file": "files/mods/ReflectrialUnlock/644cb2755b7d8858_25.json",
+          "size": 14628,
+          "sha256": "644cb2755b7d885873f6656917dccc0d4527f0e14c7ea1e45e9f5d67d6ea50e5"
         },
         {
           "path": "custom_limbus_data/battle-story/26.json",
-          "file": "files/mods/497e01270e622bad_26.json",
-          "sha256": "497e01270e622bad97ad18dd0a3766f175faa1ce42f1ddcbaffbd54e834b561c",
-          "size": 13725
+          "file": "files/mods/ReflectrialUnlock/497e01270e622bad_26.json",
+          "size": 13725,
+          "sha256": "497e01270e622bad97ad18dd0a3766f175faa1ce42f1ddcbaffbd54e834b561c"
         },
         {
           "path": "custom_limbus_data/battle-story/27.json",
-          "file": "files/mods/16a10a61a498ce38_27.json",
-          "sha256": "16a10a61a498ce38ed6301d7c0dc8b9c6f3da0adfe56d20ede065c15d34d90ed",
-          "size": 1084
+          "file": "files/mods/ReflectrialUnlock/16a10a61a498ce38_27.json",
+          "size": 1084,
+          "sha256": "16a10a61a498ce38ed6301d7c0dc8b9c6f3da0adfe56d20ede065c15d34d90ed"
         },
         {
           "path": "custom_limbus_data/battle-story/28.json",
-          "file": "files/mods/9aecf4fdab4dd780_28.json",
-          "sha256": "9aecf4fdab4dd7809915ca3e414da8c9ef9c1aa28370067bddeb44d1f40e2297",
-          "size": 17746
+          "file": "files/mods/ReflectrialUnlock/9aecf4fdab4dd780_28.json",
+          "size": 17746,
+          "sha256": "9aecf4fdab4dd7809915ca3e414da8c9ef9c1aa28370067bddeb44d1f40e2297"
         },
         {
           "path": "custom_limbus_data/battle-story/29.json",
-          "file": "files/mods/f6f08879b163355a_29.json",
-          "sha256": "f6f08879b163355a311ed0d8076d6fea034f0ffae34797855d72adf9fd40d10c",
-          "size": 16349
+          "file": "files/mods/ReflectrialUnlock/f6f08879b163355a_29.json",
+          "size": 16349,
+          "sha256": "f6f08879b163355a311ed0d8076d6fea034f0ffae34797855d72adf9fd40d10c"
         },
         {
           "path": "custom_limbus_data/battle-story/3.json",
-          "file": "files/mods/01ecef96902bd895_3.json",
-          "sha256": "01ecef96902bd895cc719c640bd3c7de350750c2925c87bca2ec499c09323ea1",
-          "size": 10687
+          "file": "files/mods/ReflectrialUnlock/01ecef96902bd895_3.json",
+          "size": 10687,
+          "sha256": "01ecef96902bd895cc719c640bd3c7de350750c2925c87bca2ec499c09323ea1"
         },
         {
           "path": "custom_limbus_data/battle-story/30.json",
-          "file": "files/mods/979853e8587b7979_30.json",
-          "sha256": "979853e8587b79793b997b50bc926382ae6670fffb01949cb1382467883b7567",
-          "size": 4839
+          "file": "files/mods/ReflectrialUnlock/979853e8587b7979_30.json",
+          "size": 4839,
+          "sha256": "979853e8587b79793b997b50bc926382ae6670fffb01949cb1382467883b7567"
         },
         {
           "path": "custom_limbus_data/battle-story/31.json",
-          "file": "files/mods/52921a7147053e95_31.json",
-          "sha256": "52921a7147053e957a983bfb8871304ae4a93c892e2e3df3f48e1de35406e8d6",
-          "size": 7865
+          "file": "files/mods/ReflectrialUnlock/52921a7147053e95_31.json",
+          "size": 7865,
+          "sha256": "52921a7147053e957a983bfb8871304ae4a93c892e2e3df3f48e1de35406e8d6"
         },
         {
           "path": "custom_limbus_data/battle-story/32.json",
-          "file": "files/mods/9213f91cd79a7c0d_32.json",
-          "sha256": "9213f91cd79a7c0d16610c33d8514689c0390d451e2a96c0339517833b50a926",
-          "size": 13240
+          "file": "files/mods/ReflectrialUnlock/9213f91cd79a7c0d_32.json",
+          "size": 13240,
+          "sha256": "9213f91cd79a7c0d16610c33d8514689c0390d451e2a96c0339517833b50a926"
         },
         {
           "path": "custom_limbus_data/battle-story/33.json",
-          "file": "files/mods/598ce1d3c4acc343_33.json",
-          "sha256": "598ce1d3c4acc34338e5f531258b433ee69ddf9655a5c3fe5ff4854adf920a12",
-          "size": 17635
+          "file": "files/mods/ReflectrialUnlock/598ce1d3c4acc343_33.json",
+          "size": 17635,
+          "sha256": "598ce1d3c4acc34338e5f531258b433ee69ddf9655a5c3fe5ff4854adf920a12"
         },
         {
           "path": "custom_limbus_data/battle-story/34.json",
-          "file": "files/mods/8b3d1d8f280aa42d_34.json",
-          "sha256": "8b3d1d8f280aa42df98a24e7cdc2137c664db1cec0c774f01e8fff2879c26df8",
-          "size": 17635
+          "file": "files/mods/ReflectrialUnlock/8b3d1d8f280aa42d_34.json",
+          "size": 17635,
+          "sha256": "8b3d1d8f280aa42df98a24e7cdc2137c664db1cec0c774f01e8fff2879c26df8"
         },
         {
           "path": "custom_limbus_data/battle-story/35.json",
-          "file": "files/mods/aa005bba8324ad37_35.json",
-          "sha256": "aa005bba8324ad374c3406d229d7900df5928672e00e3e987ecc09ce6ae1b326",
-          "size": 12632
+          "file": "files/mods/ReflectrialUnlock/aa005bba8324ad37_35.json",
+          "size": 12632,
+          "sha256": "aa005bba8324ad374c3406d229d7900df5928672e00e3e987ecc09ce6ae1b326"
         },
         {
           "path": "custom_limbus_data/battle-story/36.json",
-          "file": "files/mods/ae8f97a86031cd87_36.json",
-          "sha256": "ae8f97a86031cd87e69e044714d06a32ea601559fb302522b25be797cf8cead7",
-          "size": 18927
+          "file": "files/mods/ReflectrialUnlock/ae8f97a86031cd87_36.json",
+          "size": 18927,
+          "sha256": "ae8f97a86031cd87e69e044714d06a32ea601559fb302522b25be797cf8cead7"
         },
         {
           "path": "custom_limbus_data/battle-story/37.json",
-          "file": "files/mods/9c35baa5e446d440_37.json",
-          "sha256": "9c35baa5e446d4402c5934fc0fde5807583312173cbfb8085a566d25b7d19f32",
-          "size": 13117
+          "file": "files/mods/ReflectrialUnlock/9c35baa5e446d440_37.json",
+          "size": 13117,
+          "sha256": "9c35baa5e446d4402c5934fc0fde5807583312173cbfb8085a566d25b7d19f32"
         },
         {
           "path": "custom_limbus_data/battle-story/38.json",
-          "file": "files/mods/63705116629f1574_38.json",
-          "sha256": "63705116629f1574005bd0ab25346aebd60b9036ca5185932d9f79443384a376",
-          "size": 15832
+          "file": "files/mods/ReflectrialUnlock/63705116629f1574_38.json",
+          "size": 15832,
+          "sha256": "63705116629f1574005bd0ab25346aebd60b9036ca5185932d9f79443384a376"
         },
         {
           "path": "custom_limbus_data/battle-story/39.json",
-          "file": "files/mods/5a4664b6f82bd31d_39.json",
-          "sha256": "5a4664b6f82bd31d8e42bf521bed4e57f4032e533f3f1fd5edaeeed43085f8f2",
-          "size": 12844
+          "file": "files/mods/ReflectrialUnlock/5a4664b6f82bd31d_39.json",
+          "size": 12844,
+          "sha256": "5a4664b6f82bd31d8e42bf521bed4e57f4032e533f3f1fd5edaeeed43085f8f2"
         },
         {
           "path": "custom_limbus_data/battle-story/4.json",
-          "file": "files/mods/9722a71add0d23b1_4.json",
-          "sha256": "9722a71add0d23b18d9e33c9e16c92e7230324d7655710ef80d8f95bc957f707",
-          "size": 12658
+          "file": "files/mods/ReflectrialUnlock/9722a71add0d23b1_4.json",
+          "size": 12658,
+          "sha256": "9722a71add0d23b18d9e33c9e16c92e7230324d7655710ef80d8f95bc957f707"
         },
         {
           "path": "custom_limbus_data/battle-story/40.json",
-          "file": "files/mods/70fc2f488d67c480_40.json",
-          "sha256": "70fc2f488d67c4802a6be072f12565c34bb9f6230cce552b70ee42b120f58ef7",
-          "size": 15089
+          "file": "files/mods/ReflectrialUnlock/70fc2f488d67c480_40.json",
+          "size": 15089,
+          "sha256": "70fc2f488d67c4802a6be072f12565c34bb9f6230cce552b70ee42b120f58ef7"
         },
         {
           "path": "custom_limbus_data/battle-story/41.json",
-          "file": "files/mods/245f7eed0ab83ff9_41.json",
-          "sha256": "245f7eed0ab83ff97686d494de81420dce3ec6edfdd7e6f1551c98f9eba01d97",
-          "size": 2373
+          "file": "files/mods/ReflectrialUnlock/245f7eed0ab83ff9_41.json",
+          "size": 2373,
+          "sha256": "245f7eed0ab83ff97686d494de81420dce3ec6edfdd7e6f1551c98f9eba01d97"
         },
         {
           "path": "custom_limbus_data/battle-story/42.json",
-          "file": "files/mods/603c925452b6f80c_42.json",
-          "sha256": "603c925452b6f80c83e8c914947b2a92907c0d8c006f6db09d77957de34a247b",
-          "size": 14258
+          "file": "files/mods/ReflectrialUnlock/603c925452b6f80c_42.json",
+          "size": 14258,
+          "sha256": "603c925452b6f80c83e8c914947b2a92907c0d8c006f6db09d77957de34a247b"
         },
         {
           "path": "custom_limbus_data/battle-story/43.json",
-          "file": "files/mods/494f72990ad25c77_43.json",
-          "sha256": "494f72990ad25c7723c03745e028aeb23709b8dbe9c915be6ef1ecad6bbe92a8",
-          "size": 13783
+          "file": "files/mods/ReflectrialUnlock/494f72990ad25c77_43.json",
+          "size": 13783,
+          "sha256": "494f72990ad25c7723c03745e028aeb23709b8dbe9c915be6ef1ecad6bbe92a8"
         },
         {
           "path": "custom_limbus_data/battle-story/44.json",
-          "file": "files/mods/97c4c586c3116516_44.json",
-          "sha256": "97c4c586c311651676de349219cdb66e8ee1b55689c4e420553becffd110c698",
-          "size": 9583
+          "file": "files/mods/ReflectrialUnlock/97c4c586c3116516_44.json",
+          "size": 9583,
+          "sha256": "97c4c586c311651676de349219cdb66e8ee1b55689c4e420553becffd110c698"
         },
         {
           "path": "custom_limbus_data/battle-story/45.json",
-          "file": "files/mods/1df5c7b072fe638e_45.json",
-          "sha256": "1df5c7b072fe638ea7494d9edaafc00bbd6b84780dd98903e34491e4bfb963a4",
-          "size": 28435
+          "file": "files/mods/ReflectrialUnlock/1df5c7b072fe638e_45.json",
+          "size": 28435,
+          "sha256": "1df5c7b072fe638ea7494d9edaafc00bbd6b84780dd98903e34491e4bfb963a4"
         },
         {
           "path": "custom_limbus_data/battle-story/46.json",
-          "file": "files/mods/2c014a8825afc282_46.json",
-          "sha256": "2c014a8825afc282721e24a5f4d1cb21d5032fd67248597d8790120da88597ab",
-          "size": 32365
+          "file": "files/mods/ReflectrialUnlock/2c014a8825afc282_46.json",
+          "size": 32365,
+          "sha256": "2c014a8825afc282721e24a5f4d1cb21d5032fd67248597d8790120da88597ab"
         },
         {
           "path": "custom_limbus_data/battle-story/47.json",
-          "file": "files/mods/2b96fa9437075602_47.json",
-          "sha256": "2b96fa9437075602cbba6bb2215ea6cc69fd212080385f1b986d4d25e0ec7a8b",
-          "size": 5772
+          "file": "files/mods/ReflectrialUnlock/2b96fa9437075602_47.json",
+          "size": 5772,
+          "sha256": "2b96fa9437075602cbba6bb2215ea6cc69fd212080385f1b986d4d25e0ec7a8b"
         },
         {
           "path": "custom_limbus_data/battle-story/48.json",
-          "file": "files/mods/99bc30ee66a7c752_48.json",
-          "sha256": "99bc30ee66a7c7528714ed6e3fb74cdeb69a92f89e54f079aabe3e2391eb84b3",
-          "size": 10888
+          "file": "files/mods/ReflectrialUnlock/99bc30ee66a7c752_48.json",
+          "size": 10888,
+          "sha256": "99bc30ee66a7c7528714ed6e3fb74cdeb69a92f89e54f079aabe3e2391eb84b3"
         },
         {
           "path": "custom_limbus_data/battle-story/5.json",
-          "file": "files/mods/4c1d82e6f8e8bfe2_5.json",
-          "sha256": "4c1d82e6f8e8bfe22676652f18eb7b720b0c046bd1bf9ea8274300a7d4028352",
-          "size": 45783
+          "file": "files/mods/ReflectrialUnlock/4c1d82e6f8e8bfe2_5.json",
+          "size": 45783,
+          "sha256": "4c1d82e6f8e8bfe22676652f18eb7b720b0c046bd1bf9ea8274300a7d4028352"
         },
         {
           "path": "custom_limbus_data/battle-story/6.json",
-          "file": "files/mods/dc5460548745f04f_6.json",
-          "sha256": "dc5460548745f04f1c6e4c05fac040e304faa2554b991d0ea6f3f19d3ac59d70",
-          "size": 4176
+          "file": "files/mods/ReflectrialUnlock/dc5460548745f04f_6.json",
+          "size": 4176,
+          "sha256": "dc5460548745f04f1c6e4c05fac040e304faa2554b991d0ea6f3f19d3ac59d70"
         },
         {
           "path": "custom_limbus_data/battle-story/7.json",
-          "file": "files/mods/1132381d2c257052_7.json",
-          "sha256": "1132381d2c2570526059bb0952de7695bb97bc9c5740192f189a4d236aa35790",
-          "size": 20884
+          "file": "files/mods/ReflectrialUnlock/1132381d2c257052_7.json",
+          "size": 20884,
+          "sha256": "1132381d2c2570526059bb0952de7695bb97bc9c5740192f189a4d236aa35790"
         },
         {
           "path": "custom_limbus_data/battle-story/8.json",
-          "file": "files/mods/297c37e2d09e7390_8.json",
-          "sha256": "297c37e2d09e739052fac864a3872ac5dbddcb9af1885ffca7952ec3e1d0afd7",
-          "size": 17218
+          "file": "files/mods/ReflectrialUnlock/297c37e2d09e7390_8.json",
+          "size": 17218,
+          "sha256": "297c37e2d09e739052fac864a3872ac5dbddcb9af1885ffca7952ec3e1d0afd7"
         }
       ]
     }
-  ],
-  "delete": []
+  ]
 }

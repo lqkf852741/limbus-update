@@ -1,0 +1,103 @@
+{
+  "list": [
+    {
+      "id": 10137001,
+      "importanceLevel": 0,
+      "attributeStockCondition": [],
+      "requireIDList": [
+        "Modular/TIMING:EncounterStart/buff(Self,IndexPrescriptRienAlly_0,1,0,0)",
+        "Modular/TIMING:StartBattle/VALUE_0:getunitstate(Self)/VALUE_1:getsp(Self)/setdata(Self,10137012,VALUE_0):setdata(Self,10137013,VALUE_1)",
+        "Modular/TIMING:RoundStart/LOOP:ReversedeployAllyExceptSelf99/VALUE_0:haskey(Target,AND,INDEX_FINGER)/setdata(Self,10137011,VALUE_0)",
+        "Modular/TIMING:RoundStart/VALUE_0:getdata(Self,10137011)/VALUE_1:getbuff(Self,UnlockBuffAlly_3,stack)/IF(VALUE_0=0):buff(RandomEnemyNoCores,IndexPrescriptTargetToEnemy,1,0,0)/IF(VALUE_1=1):buff(Self,Shin_Rien,1,0,0)",
+        "Modular/TIMING:StartBattle/buff(Self,IndexPrescriptRienAlly_0,1,0,0)",
+        "Modular/TIMING:RoundStart/buff(Self,IndexPrescriptRienAlly_0,1,0,0)",
+        "Modular/TIMING:RoundStart/buff(Self,Breath,1,0,0)"
+      ]
+    },
+    {
+      "id": 10137002,
+      "importanceLevel": 0,
+      "attributeStockCondition": [],
+      "requireIDList": [
+        "Modular/TIMING:EncounterStart/LUA:Furioso/LUAMAIN:FuriosoCountCheckNEW(EncounterStart)",
+        "Modular/TIMING:RoundStart/LUA:Furioso/LUAMAIN:FuriosoCountCheckNEW(RoundStart)",
+        "Modular/TIMING:RoundStart/destroybuff(Self,KarmaOfIndexAlly,0,100,true)",
+        "Modular/TIMING:AfterSlots/LUA:Furioso/LUAMAIN:StackRienSpecialSkillCount",
+        "Modular/TIMING:AfterSlots/LUA:RandomSkillSystem/LUAMAIN:GiveRandomSkill",
+        "Modular/TIMING:OnCoinToss/LUA:Furioso/LUAMAIN:FuriosoCountCheckNEW(OCT)",
+        "Modular/TIMING:AfterSlots/LUA:Furioso/LUAMAIN:FuriosoCountCheckNEW(AfterSlots)",
+        "Modular/TIMING:RoundStart/breakrecover(self,force) "
+      ]
+    },
+    {
+      "id": 10137003,
+      "importanceLevel": 0,
+      "attributeStockCondition": [],
+      "requireIDList": [
+        "Modular/TIMING:EndBattle/VALUE_0:getbuff(Self,BlessingOfIndexPrescriptAlly,stack)/VALUE_1:getdata(Self,10137031)/IF(AND,VALUE_0>2,VALUE_0<6,VALUE_1=0):destroybuff(Self,IndexPrescriptRienAlly_0,0):buff(Self,IndexPrescriptRienAlly_1,1,0,0):buff(Self,UnlockBuffAlly_1,1,0,0):setdata(Self,10137031,1)/IF(AND,VALUE_0>5,VALUE_0<9,VALUE_1=1):destroybuff(Self,UnlockBuffAlly_1,0):destroybuff(Self,IndexPrescriptRienAlly_1,0):buff(Self,IndexPrescriptRienAlly_2,1,0,0):buff(Self,UnlockBuffAlly_2,1,0,0):setdata(Self,10137031,2)/IF(AND,VALUE_0=9,VALUE_1=2):destroybuff(Self,UnlockBuffAlly_2,0):destroybuff(Self,IndexPrescriptRienAlly_2,0):buff(Self,IndexPrescriptRienAlly_3,1,0,0):buff(Self,UnlockBuffAlly_3,1,0,0):setdata(Self,10137031,3)"
+      ]
+    },
+    {
+      "id": 10137004,
+      "importanceLevel": 0,
+      "attributeStockCondition": [],
+      "requireIDList": [
+        "Modular/TIMING:OSA/VALUE_0:getbuff(Self,BlessingOfIndexPrescriptAlly,stack)/VALUE_1:getbuff(Target,IndexPrescriptTargetToEnemy,stack)/VALUE_2:getdata(Self,10137042)/IF(AND,VALUE_0<3,VALUE_1=0,VALUE_2=0):setdata(Self,10137041,1)/IF(AND,VALUE_0<3,VALUE_1=1):setdata(Self,10137041,2):setdata(Self,10137042,1)",
+        "Modular/TIMING:OSA/VALUE_0:getbuff(Self,BlessingOfIndexPrescriptAlly,stack)/VALUE_1:getbuff(Target,IndexPrescriptTargetToEnemy,stack)/IF(AND,VALUE_0>2,VALUE_0<6,VALUE_1=1):setdata(Self,10137041,2)",
+        "Modular/TIMING:OnGainBuff(StackRienSpecialSkillAlly)/VALUE_0:getbuff(Self,BlessingOfIndexPrescriptAlly,stack)/VALUE_1:getdata(Self,10137042)/VALUE_2:getbuff(Self,StackRienSpecialSkillAlly,stack)/IF(AND,VALUE_0>5,VALUE_0<9,VALUE_1=0,VALUE_2<9):setdata(Self,10137041,3)/IF(AND,VALUE_0>5,VALUE_0<9,VALUE_1=0,VALUE_2=9):setdata(Self,10137041,2):setdata(Self,10137042,1)",
+        "Modular/TIMING:EndBattle/VALUE_0:getdata(Self,10137041)/VALUE_1:getbuff(Self,BlessingOfIndexPrescriptAlly,stack)/VALUE_3:getbuff(Self,UnlockBuffAlly_3,stack)/VALUE_4:getdata(Self,10137012)/VALUE_5:getdata(Self,10137013)/VALUE_6:getdata(Self,10137021)/CONTINUEIF(VALUE_4<2)/CONTINUEIF(VALUE_5>-45)/IF(VALUE_1<3):VALUE_2:3/IF(AND,VALUE_1>2,VALUE_1<6):VALUE_2:6/IF(AND,VALUE_1>5,VALUE_1<9):VALUE_2:9/IF(VALUE_0=0,VALUE_3=0):buff(Self,KarmaOfIndexAlly,5,0,0)/CONTINUEIF(VALUE_6=0)/IF(VALUE_0=1):healsp(Self,4):buff(Self,BlessingOfIndexPrescriptAlly,1,0,0)/IF(VALUE_0=2):healsp(Self,8):buff(Self,BlessingOfIndexPrescriptAlly,mVALUE_2-VALUE_1,0,0)/setdata(Self,10137041,0):setdata(Self,10137042,0)/IF(VALUE_0=3):healsp(Self,4)",
+        "Modular/TIMING:EndBattle/LUA:Furioso/LUAMAIN:FuriosoCountCheckCounterNEW(EndBattle)",
+        "Modular/TIMING:EndBattle/VALUE_0:getbuff(Self,BlessingOfIndexPrescriptAlly,stack)/VALUE_1:getdata(Self,10137031)/IF(AND,VALUE_0>2,VALUE_0<6,VALUE_1=0):destroybuff(Self,IndexPrescriptRienAlly_0,0):buff(Self,IndexPrescriptRienAlly_1,1,0,0):buff(Self,UnlockBuffAlly_1,1,0,0):setdata(Self,10137031,1)/IF(AND,VALUE_0>5,VALUE_0<9,VALUE_1=1):destroybuff(Self,UnlockBuffAlly_1,0):destroybuff(Self,IndexPrescriptRienAlly_1,0):buff(Self,IndexPrescriptRienAlly_2,1,0,0):buff(Self,UnlockBuffAlly_2,1,0,0):setdata(Self,10137031,2)/IF(AND,VALUE_0=9,VALUE_1=2):destroybuff(Self,UnlockBuffAlly_2,0):destroybuff(Self,IndexPrescriptRienAlly_2,0):buff(Self,IndexPrescriptRienAlly_3,1,0,0):buff(Self,UnlockBuffAlly_3,1,0,0):setdata(Self,10137031,3)"
+      ]
+    },
+    {
+      "id": 10137005,
+      "importanceLevel": 0,
+      "attributeStockCondition": [],
+      "requireIDList": [
+        "Modular/TIMING:StartBattle/VALUE_0:getbuff(Self,BlessingOfIndexPrescriptAlly,stack)/IF(VALUE_0<9):dmgmult(mVALUE_0*2!16)/IF(VALUE_0=9):dmgmult(30)",
+        "Modular/TIMING:OSA/VALUE_0:getbuff(Target,IndexPrescriptTargetToEnemy,stack)/VALUE_1:getdata(Self,10137051)/VALUE_2:getskillegotype(Self)/IF(AND,VALUE_0=1,VALUE_1=0,VALUE_2=0):buff(Self,Breath,0,2,0):buff(Target,Sinking,0,2,0):setdata(Self,10137051,1)",
+        "Modular/TIMING:WhenUse/VALUE_0:getbuff(Target,IndexPrescriptTargetToEnemy,stack)/IF(VALUE_0=1):makeunbreakable(all)",
+        "Modular/TIMING:EndBattle/setdata(Self,10137051,0)"
+      ]
+    },
+    {
+      "id": 10137006,
+      "importanceLevel": 0,
+      "attributeStockCondition": [],
+      "requireIDList": [
+        "Modular/TIMING:EnemyEndSkill/VALUE_0:getbreakcount(Target)/VALUE_1:getcharacterid(Target)/VALUE_3:getdata(Target,10137062)/IF(AND,VALUE_0=0,VALUE_1=1,VALUE_3=0,VALUE_2=0):setdata(Target,10137061,1):VALUE_2:1",
+        "Modular/TIMING:OnGainBuff(BurningWoundRienAlly):destroybuff(Self,BurningWoundRien_MaskAlly,0):buff(Self,BurningWoundRienAlly,1,0,1)",
+        "Modular/TIMING:OnGainBuff(BurningWoundRienAlly)/appearance(Self,1348_Index_father_Phase2Appearance)/appearancelocaleuler(0,0,0)",
+        "Modular/TIMING:RoundStart/appearancelocaleuler(0,0,0)"
+      ]
+    },
+    {
+      "id": 10137099,
+      "importanceLevel": 3,
+      "attributeStockCondition": [],
+      "requireIDList": [
+        "Modular/TIMING:EncounterStart/skillslotgive(Self):skillslotgive(Self):skillslotgive(Self):skillslotgive(Self):skillslotgive(Self)",
+        "Modular/TIMING:AfterSlots/skillslotreplace(0,1013711,1013731):skillslotreplace(1,1013711,1013731):skillslotreplace(2,1013711,1013721):skillslotreplace(3,1013711,1013721):skillslotreplace(5,1013711,101375)"
+      ]
+    },
+    {
+      "id": 10137099,
+      "importanceLevel": 3,
+      "attributeStockCondition": [],
+      "requireIDList": [
+        "Modular/TIMING:EncounterStart/skillslotgive(Self):skillslotgive(Self):skillslotgive(Self):skillslotgive(Self):skillslotgive(Self)",
+        "Modular/TIMING:AfterSlots/skillslotreplace(0,1013711,1013731):skillslotreplace(1,1013711,1013731):skillslotreplace(2,1013711,1013721):skillslotreplace(3,1013711,1013721):skillslotreplace(5,1013711,101375)"
+      ]
+    },
+    {
+      "id": 3134950555,
+      "importanceLevel": 3,
+      "attributeStockCondition": [],
+      "requireIDList": [
+        "Modular/TIMING:EncounterStart/buf(Self,BurningWoundRienAlly,1,0,0)",
+        "Modular/TIMING:EncounterStart/buf(Self,BlackNightmareRienAlly,1,0,0)"
+      ]
+    }
+  ]
+}

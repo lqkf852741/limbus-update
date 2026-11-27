@@ -1,0 +1,376 @@
+--Timeing:OnCoinToss for S1-S3
+function GiveRandomWeapon(Timeing,AtkType)
+    local RemoveWeapon = getldata("Self", "Rien_RemoveWeapon") or 0
+    local ChangeWeapon = getldata("Self", "Rien_ChangeWeapon") or 0
+
+if Timeing == "OCT" then
+    local GiveWeapon
+    local Weapon
+    local Weapons
+    local RandomWeapon
+    local AttackCount = getldata("Self", "Rien_AttackCount") or 0
+
+    if AtkType == "Blunt" then
+
+        if (getbuff("Self","BurningWoundRienAlly","stack")) == 0 then
+         Weapons = {
+        "RienWeapon01Hatchet","RienWeapon01Hatchet","RienWeapon01Hatchet","RienWeapon05Sledgehammer","RienWeapon05Sledgehammer","RienWeapon05Sledgehammer",
+        "RienWeapon08Chain","RienWeapon08Chain","RienWeapon08Chain","RienWeapon09Scythe","RienWeapon09Scythe","RienWeapon09Scythe",
+        "RienWeapon09Scythe","RienWeapon06Ultragreatsword","RienWeapon07Lance","RienWeapon04Rapier","RienWeapon02Stiletto","RienWeapon03Greatsword"
+    }
+        else
+            Weapons = {
+        "RienWeapon01Hatchet2phase","RienWeapon01Hatchet2phase","RienWeapon01Hatchet2phase","RienWeapon05Sledgehammer2phase","RienWeapon05Sledgehammer2phase","RienWeapon05Sledgehammer2phase",
+        "RienWeapon08Chain2phase","RienWeapon08Chain2phase","RienWeapon08Chain2phase","RienWeapon09Scythe2phase","RienWeapon09Scythe2phase","RienWeapon09Scythe2phase",
+        "RienWeapon09Scythe2phase","RienWeapon06Ultragreatsword2phase","RienWeapon07Lance2phase","RienWeapon04Rapier2phase","RienWeapon02Stiletto2phase","RienWeapon03Greatsword2phase"
+    }
+        end
+         RandomWeapon = random(1, 18)
+
+    elseif AtkType == "Slash" then
+        if (getbuff("Self","BurningWoundRienAlly","stack")) == 0 then
+         Weapons = {
+        "RienWeapon03Greatsword","RienWeapon03Greatsword","RienWeapon03Greatsword","RienWeapon06Ultragreatsword","RienWeapon06Ultragreatsword","RienWeapon06Ultragreatsword",
+        "RienWeapon09Scythe","RienWeapon09Scythe","RienWeapon09Scythe","RienWeapon09Scythe","RienWeapon09Scythe","RienWeapon09Scythe",
+        "RienWeapon05Sledgehammer","RienWeapon07Lance","RienWeapon04Rapier","RienWeapon08Chain","RienWeapon02Stiletto","RienWeapon01Hatchet"
+    }
+        else
+         Weapons = {
+        "RienWeapon03Greatsword2phase","RienWeapon03Greatsword2phase","RienWeapon03Greatsword2phase","RienWeapon06Ultragreatsword2phase","RienWeapon06Ultragreatsword2phase","RienWeapon06Ultragreatsword2phase",
+        "RienWeapon09Scythe2phase","RienWeapon09Scythe2phase","RienWeapon09Scythe2phase","RienWeapon09Scythe2phase","RienWeapon09Scythe2phase","RienWeapon09Scythe2phase",
+        "RienWeapon05Sledgehammer2phase","RienWeapon07Lance2phase","RienWeapon04Rapier2phase","RienWeapon08Chain2phase","RienWeapon02Stiletto2phase","RienWeapon01Hatchet2phase"
+    }
+        end
+         RandomWeapon = random(1, 18)
+
+    elseif AtkType == "Pierce" then
+        if (getbuff("Self","BurningWoundRienAlly","stack")) == 0 then
+         Weapons = {
+        "RienWeapon04Rapier","RienWeapon04Rapier","RienWeapon04Rapier","RienWeapon07Lance","RienWeapon07Lance","RienWeapon07Lance",
+        "RienWeapon02Stiletto","RienWeapon02Stiletto","RienWeapon02Stiletto","RienWeapon09Scythe","RienWeapon09Scythe","RienWeapon09Scythe",
+        "RienWeapon09Scythe","RienWeapon05Sledgehammer","RienWeapon03Greatsword","RienWeapon08Chain","RienWeapon06Ultragreatsword","RienWeapon01Hatchet"
+    }
+        else
+         Weapons = {
+        "RienWeapon04Rapier2phase","RienWeapon04Rapier2phase","RienWeapon04Rapier2phase","RienWeapon07Lance2phase","RienWeapon07Lance2phase","RienWeapon07Lance2phase",
+        "RienWeapon02Stiletto2phase","RienWeapon02Stiletto2phase","RienWeapon02Stiletto2phase","RienWeapon09Scythe2phase","RienWeapon09Scythe2phase","RienWeapon09Scythe2phase",
+        "RienWeapon09Scythe2phase","RienWeapon05Sledgehammer2phase","RienWeapon03Greatsword2phase","RienWeapon08Chain2phase","RienWeapon06Ultragreatsword2phase","RienWeapon01Hatchet2phase"
+    }
+        end
+         RandomWeapon = random(1, 18)
+    else
+        if (getbuff("Self","BurningWoundRienAlly","stack")) == 0 then    
+        Weapons = {"RienWeapon01Hatchet","RienWeapon02Stiletto","RienWeapon03Greatsword","RienWeapon04Rapier","RienWeapon05Sledgehammer",
+                   "RienWeapon06Ultragreatsword","RienWeapon07Lance","RienWeapon08Chain","RienWeapon09Scythe"}
+        else
+        Weapons = {"RienWeapon01Hatchet2phase","RienWeapon02Stiletto2phase","RienWeapon03Greatsword2phase","RienWeapon04Rapier2phase","RienWeapon05Sledgehammer2phase",
+                   "RienWeapon06Ultragreatsword2phase","RienWeapon07Lance2phase","RienWeapon08Chain2phase","RienWeapon09Scythe2phase"}    
+        end
+        RandomWeapon = random(1, 9) 
+    end
+
+    
+
+    setldata("Self", "Rien_AttackCount"..AttackCount, RandomWeapon)
+
+    log(RandomWeapon.." Number Weapon")
+
+    Weapon = Weapons[RandomWeapon]
+
+    print(RemoveWeapon)
+    print(ChangeWeapon)
+
+    if ChangeWeapon == 1 then
+        print('DestroyBuff is doing good')
+        destroybuff("Self", RemoveWeapon, 0)
+    end
+
+    GiveWeapon = Weapon --  for some stupid reason if i didn't do this this entire code will fucking explode
+
+    print(GiveWeapon)
+
+    buff("Self", GiveWeapon, 1, 0, 0)
+
+    AttackCount = AttackCount + 1
+
+    setldata("Self", "Rien_ChangeWeapon", 1)
+    setldata("Self", "Rien_AttackCount", AttackCount)
+    setldata("Self", "Rien_RemoveWeapon", GiveWeapon)
+
+elseif Timeing == "RoundStart" then
+        setldata("Self", "Rien_AttackCount", 0)
+        setldata("Self", "Rien_AttackCountMotion", 0)
+        setldata("Self", "Rien_Coin", 0)
+elseif Timeing == "EndSkill" then
+        print('DestroyBuff is doing good again')
+        destroybuff("Self", RemoveWeapon, 0)
+end
+
+end
+--Timeing:ChangeMotion
+function GiveRandomWeaponMotion(Timeing,AtkType)
+    local RemoveWeapon = getldata("Self", "Rien_RemoveWeapon") or 0
+    local AttackCount = getldata("Self", "Rien_AttackCountMotion") or 0
+
+    local AttackCountMotion = getldata("Self", "Rien_AttackCount"..AttackCount)
+
+    if Timeing == "Motion" then
+    local GiveWeaponMotion
+    local Weapon
+    local Weapons
+
+    if AtkType == "Blunt" then
+        print("Use Blunt Motion...")
+         Weapons = {
+        "RienWeapon01Hatchet","RienWeapon01Hatchet","RienWeapon01Hatchet","RienWeapon05Sledgehammer","RienWeapon05Sledgehammer","RienWeapon05Sledgehammer",
+        "RienWeapon08Chain","RienWeapon08Chain","RienWeapon08Chain","RienWeapon09Scythe","RienWeapon09Scythe","RienWeapon09Scythe",
+        "RienWeapon09Scythe","RienWeapon06Ultragreatsword","RienWeapon07Lance","RienWeapon04Rapier","RienWeapon02Stiletto","RienWeapon03Greatsword"
+    }
+    elseif AtkType == "Slash" then
+         Weapons = {
+        "RienWeapon03Greatsword","RienWeapon03Greatsword","RienWeapon03Greatsword","RienWeapon06Ultragreatsword","RienWeapon06Ultragreatsword","RienWeapon06Ultragreatsword",
+        "RienWeapon09Scythe","RienWeapon09Scythe","RienWeapon09Scythe","RienWeapon09Scythe","RienWeapon09Scythe","RienWeapon09Scythe",
+        "RienWeapon05Sledgehammer","RienWeapon07Lance","RienWeapon04Rapier","RienWeapon08Chain","RienWeapon02Stiletto","RienWeapon01Hatchet"
+    }
+    elseif AtkType == "Pierce" then
+         Weapons = {
+        "RienWeapon04Rapier","RienWeapon04Rapier","RienWeapon04Rapier","RienWeapon07Lance","RienWeapon07Lance","RienWeapon07Lance",
+        "RienWeapon02Stiletto","RienWeapon02Stiletto","RienWeapon02Stiletto","RienWeapon09Scythe","RienWeapon09Scythe","RienWeapon09Scythe",
+        "RienWeapon09Scythe","RienWeapon05Sledgehammer","RienWeapon03Greatsword","RienWeapon08Chain","RienWeapon06Ultragreatsword","RienWeapon01Hatchet"
+    }
+    else    
+         Weapons = {"RienWeapon01Hatchet","RienWeapon02Stiletto","RienWeapon03Greatsword","RienWeapon04Rapier","RienWeapon05Sledgehammer",
+                    "RienWeapon06Ultragreatsword","RienWeapon07Lance","RienWeapon08Chain","RienWeapon09Scythe"} 
+    end
+
+    Weapon = Weapons[AttackCountMotion]
+
+    GiveWeaponMotion = Weapon --  for some stupid reason if i didn't do this this entire code will fucking explode
+
+    AttackCount = AttackCount + 1
+
+    setldata("Self", "Rien_AttackCountMotion", AttackCount)
+
+    setldata("Self", "Rien_RemoveWeaponMotion", GiveWeaponMotion)
+end
+
+end
+--Timeing:ChangeMotion
+function ChangeMotionBasedOnWeapon(Timeing,Index,OnCoin)
+
+if Timeing == "Motion" then
+
+    local IndexCount
+    local CheckWeapon = getldata("Self", "Rien_RemoveWeaponMotion") or "RienWeapon03Greatsword"
+    local Motion
+
+    if Index == "Random0_2" then
+       IndexCount = random(0,2)
+    elseif Index == "Random1_2" then
+       IndexCount = random(1,2)
+    elseif Index == "Random0_1" then
+       IndexCount = random(0,1)
+    else
+        IndexCount = Index
+    end
+
+    if CheckWeapon == "RienWeapon01Hatchet" then
+        Motion = "S2"
+        if OnCoin == 2 or OnCoin == 3 then
+           IndexCount = 1 
+        end
+    elseif CheckWeapon == "RienWeapon04Rapier" then
+        Motion = "S4"
+    elseif CheckWeapon == "RienWeapon09Scythe" then
+        Motion = "S3"
+    elseif CheckWeapon == "RienWeapon02Stiletto" then
+        Motion = "S5"
+    elseif CheckWeapon == "RienWeapon07Lance" then
+        Motion = "S6"
+    elseif CheckWeapon == "RienWeapon05Sledgehammer" then
+        Motion = "S7"
+    elseif CheckWeapon == "RienWeapon06Ultragreatsword" then
+        Motion = "S8"
+        if OnCoin == 2 or OnCoin == 3 then
+           IndexCount = 1 
+        end
+    elseif CheckWeapon == "RienWeapon08Chain" then
+        Motion = "S9"
+    elseif CheckWeapon == "RienWeapon03Greatsword" then
+        Motion = "S1"
+        if OnCoin == 2 or OnCoin == 3 then
+           IndexCount = 1 
+        end
+    end
+
+
+
+    print(IndexCount)
+    print(Skill)
+    print(CheckWeapon)
+
+    changemotion(Motion, IndexCount)
+
+    setldata("Self", "Rien_Coin", IndexCount)
+    setldata("Self", "Rien_Motion", Motion)
+
+end
+
+end
+--Timeing:OnCoinToss for Furioso
+function GiveRandomFuriosoWeapon(Timeing)
+    local RemoveWeapon = getldata("Self", "Rien_RemoveFuriosoWeapon") or 0
+    local ChangeWeapon = getldata("Self", "Rien_ChangeFuriosoWeapon") or 0
+
+if Timeing == "OCT" then
+    local GiveWeapon
+    local Weapon
+    local ScytheFinisher = {8,17,26,35,44,53,62} -- failsafe for if this unit can use multiple Furioso in the same turn for some reason...
+    local Weapons = {"RienWeapon01Hatchet","RienWeapon02Stiletto","RienWeapon03Greatsword","RienWeapon04Rapier","RienWeapon05Sledgehammer",
+    "RienWeapon06Ultragreatsword","RienWeapon07Lance","RienWeapon08Chain","RienWeapon09Scythe"}
+    local RandomWeapon = random(1, 9)
+    local AttackCount = getldata("Self", "Rien_FuriosoAttackCount") or 0
+
+    if (getbuff("Self","BurningWoundRienAlly","stack")) == 1 then    
+        Weapons = {"RienWeapon01Hatchet2phase","RienWeapon02Stiletto2phase","RienWeapon03Greatsword2phase","RienWeapon04Rapier2phase","RienWeapon05Sledgehammer2phase",
+                   "RienWeapon06Ultragreatsword2phase","RienWeapon07Lance2phase","RienWeapon08Chain2phase","RienWeapon09Scythe2phase"}    
+    end
+    
+    -- This is where i will use ScytheFinisher... IF I CAN FUCKING USE IT
+    if AttackCount == 8 or AttackCount == 17 or AttackCount == 26 or AttackCount == 35 or AttackCount == 44 or AttackCount == 53 or AttackCount == 62 then
+        print("Change Weapon to Scythe...")
+        setldata("Self", "Rien_FuriosoAttackCount"..AttackCount, 9)
+        Weapon = Weapons[9]
+    else
+        setldata("Self", "Rien_FuriosoAttackCount"..AttackCount, RandomWeapon)
+        Weapon = Weapons[RandomWeapon]
+    end
+
+    log(RandomWeapon.." Number Weapon")
+
+    print(AttackCount)
+    print(RemoveWeapon)
+    print(ChangeWeapon)
+
+    if ChangeWeapon == 1 then
+        print('DestroyBuff is doing good')
+        destroybuff("Self", RemoveWeapon, 0)
+    end
+
+    GiveWeapon = Weapon --  for some stupid reason if i didn't do this this entire code will fucking explode
+
+    print(GiveWeapon)
+
+    buff("Self", GiveWeapon, 1, 0, 0)
+
+    AttackCount = AttackCount + 1
+
+    setldata("Self", "Rien_ChangeFuriosoWeapon", 1)
+    setldata("Self", "Rien_FuriosoAttackCount", AttackCount)
+    setldata("Self", "Rien_RemoveFuriosoWeapon", GiveWeapon)
+
+elseif Timeing == "RoundStart" then
+        setldata("Self", "Rien_FuriosoAttackCount", 0)
+        setldata("Self", "Rien_FuriosoAttackCountMotion", 0)
+        setldata("Self", "Rien_FuriosoCoin", 0)
+elseif Timeing == "EndSkill" then
+        print('DestroyBuff is doing good again')
+        destroybuff("Self", RemoveWeapon, 0)
+end
+
+end
+--Timeing:ChangeMotion
+function GiveRandomWeaponFuriosoMotion(Timeing)
+    local RemoveWeapon = getldata("Self", "Rien_RemoveFuriosoWeapon") or 0
+    local AttackCount = getldata("Self", "Rien_FuriosoAttackCountMotion") or 0
+
+    local AttackCountMotion = getldata("Self", "Rien_FuriosoAttackCount"..AttackCount)
+
+    if Timeing == "Motion" then
+    local GiveWeaponMotion
+    local Weapon
+    local Weapons = {"RienWeapon01Hatchet","RienWeapon02Stiletto","RienWeapon03Greatsword","RienWeapon04Rapier","RienWeapon05Sledgehammer",
+    "RienWeapon06Ultragreatsword","RienWeapon07Lance","RienWeapon08Chain","RienWeapon09Scythe"}
+
+    Weapon = Weapons[AttackCountMotion]
+
+    GiveWeaponMotion = Weapon --  for some stupid reason if i didn't do this this entire code will fucking explode
+
+    AttackCount = AttackCount + 1
+
+    setldata("Self", "Rien_FuriosoAttackCountMotion", AttackCount)
+
+    setldata("Self", "Rien_RemoveFuriosoWeaponMotion", GiveWeaponMotion)
+end
+
+end
+--Timeing:ChangeMotion
+function FuriosoMotionBasedOnWeapon(Timeing,Skill,Boss)
+
+if Timeing == "Motion" then
+
+    local CoinCount = getldata("Self", "Rien_FuriosoCoin") or 0
+    local CheckWeapon = getldata("Self", "Rien_RemoveFuriosoWeaponMotion") or "RienWeapon03Greatsword"
+    local Motion
+    local RandomWeaponIndex
+
+    if Boss ~= true then
+        if CheckWeapon == "RienWeapon09Scythe" then
+            RandomWeaponIndex = random(0, 1)
+        else
+            RandomWeaponIndex = random(0, 2)
+        end
+    else
+        if CoinCount == 1 or CoinCount == 4 or CoinCount == 7 then
+            RandomWeaponIndex = 1
+        elseif CoinCount == 2 or CoinCount == 5 then
+            RandomWeaponIndex = 3
+        else
+            RandomWeaponIndex = 0
+        end
+    end
+
+    if CheckWeapon == "RienWeapon01Hatchet" then
+        Motion = "S2"
+    elseif CheckWeapon == "RienWeapon04Rapier" then
+        Motion = "S4"
+    elseif CheckWeapon == "RienWeapon09Scythe" then
+        Motion = "S3"
+    elseif CheckWeapon == "RienWeapon02Stiletto" then
+        Motion = "S5"
+    elseif CheckWeapon == "RienWeapon07Lance" then
+        Motion = "S6"
+    elseif CheckWeapon == "RienWeapon05Sledgehammer" then
+        Motion = "S7"
+    elseif CheckWeapon == "RienWeapon06Ultragreatsword" then
+        Motion = "S8"
+    elseif CheckWeapon == "RienWeapon08Chain" then
+        Motion = "S9"
+    elseif CheckWeapon == "RienWeapon03Greatsword" then
+        Motion = "S1"
+    end
+
+
+    print(CoinCount)
+    print(Skill)
+    print(CheckWeapon)
+
+    if Skill == "S10" then
+        if CoinCount >= 9 then
+            CoinCount = 0
+        end
+    end
+
+    if CoinCount < 8 then
+        changemotion(Motion, RandomWeaponIndex)
+    else
+        changemotion("S10", 2)
+    end
+
+    CoinCount = CoinCount + 1
+    setldata("Self", "Rien_FuriosoCoin", CoinCount)
+end
+
+end
+
+

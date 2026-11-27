@@ -1,0 +1,572 @@
+{
+  "1013801": {
+    "id": "1013801",
+    "levelList": [
+      {
+        "level": 1,
+        "desc": "[StartBattle] Gain 8 [Breath]\n- If the Skill Slot using this Skill is a main target of an Attack Skill, gain 4 fewer [Breath] Potency from this effect\n\n[OnSucceedEvade] Gain 1 [Breath]",
+        "name": "Swerve [回]",
+        "rawDesc": "",
+        "abName": "",
+        "coinlist": [
+          {
+            "coindescs": [
+              {
+                "desc": "",
+                "summary": ""
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "1013802": {
+    "id": "1013802",
+    "levelList": [
+      {
+        "level": 1,
+        "desc": "[CanDuelGuard]\n[StartBattle] Gain +2 [Breath] Count (once per turn)\n[StartBattle] Gain 1 [Protection] (once per turn)\n[WinDuel] Gain +1 [Breath] Count",
+        "name": "Defend [守]",
+        "rawDesc": "",
+        "abName": "",
+        "coinlist": [
+          {
+            "coindescs": [
+              {
+                "desc": "[SuperCoin]",
+                "summary": ""
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "1013803": {
+    "id": "1013803",
+    "levelList": [
+      {
+        "level": 1,
+        "desc": "[DuelCounter]\n[DefeatDuel] Lose 1 [Breath] Count",
+        "name": "Reflect [反]",
+        "rawDesc": "",
+        "abName": "",
+        "coinlist": [
+          {
+            "coindescs": [
+              {
+                "desc": "[OnSucceedAttack] Gain +2 [Breath] Count",
+                "summary": ""
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "1013804": {
+    "id": "1013804",
+    "levelList": [
+      {
+        "level": 1,
+        "desc": "Deal +1% damage for every [DLittleFingerAllyINFO] on self (max 30%)\n[BeforeUse] At 60+ ([Breath] + [DLittleFingerAllyINFO]) on self, activate 'Fallstar Slayer' instead\n- The above effect only activate on the leftmost Slot\n[WhenUse] Coin Power +1 for every 5 [Breath] on self (max 2)\n[WhenUse] Gain 5 [Breath]\n[WinDuel] Gain +2 [Breath] Count",
+        "name": "Unnamed Cut [無名閃]",
+        "rawDesc": "",
+        "abName": "",
+        "coinlist": [
+          {
+            "coindescs": [
+              {
+                "desc": "",
+                "summary": ""
+              }
+            ]
+          },
+          {
+            "coindescs": [
+              {
+                "desc": "[OnSucceedAttack] Gain 2 [Breath]",
+                "summary": ""
+              },
+              {
+                "desc": "[CriticalOnSucceedAttack] Gain +1 [Breath] Count",
+                "summary": ""
+              }
+            ]
+          },
+          {
+            "coindescs": [
+              {
+                "desc": "[SuperCoin]",
+                "summary": ""
+              },
+              {
+                "desc": "Deal +50% Damage on Critical Hit",
+                "summary": ""
+              },
+              {
+                "desc": "[OnStartCoin] Coin Power +1 for every 20 [DLittleFingerAllyINFO] on self",
+                "summary": ""
+              },
+              {
+                "desc": "[OnSucceedAttack] Inflict 1 [SlashTakeDamageUp] next turn",
+                "summary": ""
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "1013805": {
+    "id": "1013805",
+    "levelList": [
+      {
+        "level": 1,
+        "desc": "",
+        "name": "Chainslash [連鎖斬]",
+        "rawDesc": "",
+        "abName": "",
+        "coinlist": [
+          {
+            "coindescs": [
+              {
+                "desc": "[OnSucceedAttack] Inflict 1 [SlashTakeDamageUp] next turn",
+                "summary": ""
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "1013807": {
+    "id": "1013807",
+    "levelList": [
+      {
+        "level": 1,
+        "desc": "Deal +1% damage for every [DLittleFingerAllyINFO] on self (max 50%)\n[WhenUse] Coin Power +1 for every 5 [Breath] on self (max 2)\n[WhenUse] Gain +6 [Breath] Count\n[EndSkill] Consume half of [DLittleFingerAllyINFO] on self",
+        "name": "Fallstar Slayer [落星一殺]",
+        "rawDesc": "",
+        "abName": "",
+        "coinlist": [
+          {
+            "coindescs": [
+              {
+                "desc": "",
+                "summary": ""
+              }
+            ]
+          },
+          {
+            "coindescs": [
+              {
+                "desc": "[OnSucceedAttack] Gain 3 [Breath]",
+                "summary": ""
+              },
+              {
+                "desc": "[CriticalOnSucceedAttack] Gain +2 [Breath] Count",
+                "summary": ""
+              }
+            ]
+          },
+          {
+            "coindescs": [
+              {
+                "desc": "[SuperCoin]",
+                "summary": ""
+              },
+              {
+                "desc": "Deal +80% Damage on Critical Hit",
+                "summary": ""
+              },
+              {
+                "desc": "[OnStartCoin] Coin Power +1 for every 10 [DLittleFingerAllyINFO] on self",
+                "summary": ""
+              },
+              {
+                "desc": "[OnSucceedAttack] Inflict 2 [SlashTakeDamageUp] next turn",
+                "summary": ""
+              },
+              {
+                "desc": "[UnBrokenCoinOnSucceedAttack] Deal Slash damage equal to this Coin's final damage",
+                "summary": ""
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "1013808": {
+    "id": "1013808",
+    "levelList": [
+      {
+        "level": 1,
+        "desc": "[StartBattle] Gain 10 x ([DLittleFingerAllyINFO] Count on self) Shield HP",
+        "name": "Retreat Form [收勢]",
+        "rawDesc": "",
+        "abName": "",
+        "coinlist": [
+          {
+            "coindescs": [
+              {
+                "desc": "",
+                "summary": ""
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "1013809": {
+    "id": "1013809",
+    "levelList": [
+      {
+        "level": 1,
+        "desc": "Deal +1% damage for every [DLittleFingerAllyINFO] on self (max 20%)\n[WhenUse] Coin Power +1 for every 4 [Breath] on self (max 2)\n[WhenUse] Gain 3 [Breath]\n[WinDuel] Gain +1 [Breath] Count",
+        "name": "Twinstrike [二擊]",
+        "rawDesc": "",
+        "abName": "",
+        "coinlist": [
+          {
+            "coindescs": [
+              {
+                "desc": "[OnSucceedAttack] Gain +1 [Breath] Count",
+                "summary": ""
+              }
+            ]
+          },
+          {
+            "coindescs": [
+              {
+                "desc": "[OnSucceedAttack] Gain 2 [Breath]",
+                "summary": ""
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "1013810": {
+    "id": "1013810",
+    "levelList": [
+      {
+        "level": 1,
+        "desc": "Deal +1% damage for every [DLittleFingerAllyINFO] on self (max 20%)\n[WhenUse] At 5+ [Breath] on self, Coin Power +1\n[WhenUse] Gain 2 [Breath]\n[WinDuel] Gain +2 [Breath] Count",
+        "name": "Triplestrike [三擊]",
+        "rawDesc": "",
+        "abName": "",
+        "coinlist": [
+          {
+            "coindescs": [
+              {
+                "desc": "[OnSucceedAttack] Gain +1 [Breath] Count",
+                "summary": ""
+              }
+            ]
+          },
+          {
+            "coindescs": [
+              {
+                "desc": "[OnSucceedAttack] Gain 2 [Breath]",
+                "summary": ""
+              }
+            ]
+          },
+          {
+            "coindescs": [
+              {
+                "desc": "Deal +30% Damage on Critical Hit",
+                "summary": ""
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "102391": {
+    "id": "102391",
+    "levelList": [
+      {
+        "level": 1,
+        "desc": "[WhenUse] If target has 6+ [Laceration], Coin Power +1",
+        "name": "Butcher - Ribs",
+        "rawDesc": "",
+        "abName": "",
+        "coinlist": [
+          {
+            "coindescs": [
+              {
+                "desc": "[OnSucceedAttack] Inflict 4 [Laceration]",
+                "summary": ""
+              }
+            ]
+          },
+          {
+            "coindescs": [
+              {
+                "desc": "[OnSucceedAttack] Inflict 1 [Vulnerable] next turn",
+                "summary": ""
+              },
+              {
+                "desc": "[OnSucceedAttack] Gain 1 [Protection] next turn",
+                "summary": ""
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "102392": {
+    "id": "102392",
+    "levelList": [
+      {
+        "level": 1,
+        "desc": "[WhenUse] If target has 6+ [Laceration], Coin Power +1",
+        "name": "Rotator Crush",
+        "rawDesc": "",
+        "abName": "",
+        "coinlist": [
+          {
+            "coindescs": [
+              {
+                "desc": "[OnSucceedAttack] Inflict +2 [Laceration] Count",
+                "summary": ""
+              }
+            ]
+          },
+          {
+            "coindescs": [
+              {
+                "desc": "[OnSucceedAttack] Inflict 1 [Binding] next turn",
+                "summary": ""
+              },
+              {
+                "desc": "[OnSucceedAttack] Gain 1 [Agility] next turn",
+                "summary": ""
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "102393": {
+    "id": "102393",
+    "levelList": [
+      {
+        "level": 1,
+        "desc": "[WhenUse] Coin Power +1 for every 4 [Laceration] on target (max 2)",
+        "name": "Tendon Tear",
+        "rawDesc": "",
+        "abName": "",
+        "coinlist": [
+          {
+            "coindescs": [
+              {
+                "desc": "[OnSucceedAttack] Inflict 6 [Laceration]",
+                "summary": ""
+              }
+            ]
+          },
+          {
+            "coindescs": [
+              {
+                "desc": "[OnSucceedAttack] Inflict +1 [Laceration] Count",
+                "summary": ""
+              }
+            ]
+          },
+          {
+            "coindescs": [
+              {
+                "desc": "[OnSucceedAttack] Inflict 1 [ResultReduction] next turn",
+                "summary": ""
+              },
+              {
+                "desc": "[OnSucceedAttack] Gain 1 [ResultEnhancement] next turn",
+                "summary": ""
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "102394": {
+    "id": "102394",
+    "levelList": [
+      {
+        "level": 1,
+        "desc": "[DefeatDuel] Deal -80% damage and damage dealt by this Skill cannot Stagger the target",
+        "name": "Fascia Hungers",
+        "rawDesc": "",
+        "abName": "",
+        "coinlist": [
+          {
+            "coindescs": [
+              {
+                "desc": "[SuperCoin]",
+                "summary": ""
+              },
+              {
+                "desc": "[UnBrokenCoinOnSucceedAttack] Inflict 10 [Laceration]",
+                "summary": ""
+              }
+            ]
+          },
+          {
+            "coindescs": [
+              {
+                "desc": "[SuperCoin]",
+                "summary": ""
+              },
+              {
+                "desc": "[UnBrokenCoinOnSucceedAttack] Inflict +2 [Laceration] Count",
+                "summary": ""
+              }
+            ]
+          },
+          {
+            "coindescs": [
+              {
+                "desc": "[SuperCoin]",
+                "summary": ""
+              },
+              {
+                "desc": "[UnBrokenCoinOnSucceedAttack] Deal 5 SP damage",
+                "summary": ""
+              },
+              {
+                "desc": "[OnSucceedAttack] Heal 5 SP on self",
+                "summary": ""
+              },
+              {
+                "desc": "[OnSucceedAttack] Gain 1 [HumanFleshTheRings]",
+                "summary": ""
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "102395": {
+    "id": "102395",
+    "levelList": [
+      {
+        "level": 1,
+        "desc": "During the turn this unit has this Skill equipped, gain the following effects:\n- <color=#ff6000><mark=#ff000040><b><u>When hit by Attack Skills</u></b></mark></color> before using this Skill, gain 1 [UnsteadyTheRings] (once per enemy Skill; including E.G.O Skills)\n- Does not trigger the effects of \"Iron Maiden[TabExplain] - Spikes\" Passive\n- This unit cannot be Staggered before using this Skill\n\nOn Kill with this Skill: heal 15 SP\n[WhenUse] Coin Power +1 for every 4 [Laceration] on target (max 4)\n[WhenUse] Deal +10% damage for every 2 [Laceration] on target (max 100%)\n[DefeatDuel] Damage dealt by this Skill cannot Stagger the target\n[EndSkill] Lose [BoneBladeTheRings]",
+        "name": "Repressed Flesh",
+        "rawDesc": "",
+        "abName": "",
+        "coinlist": [
+          {
+            "coindescs": [
+              {
+                "desc": "[SuperCoin]",
+                "summary": ""
+              },
+              {
+                "desc": "[UnBrokenCoinOnSucceedAttack] Deal 5 SP damage",
+                "summary": ""
+              },
+              {
+                "desc": "[OnSucceedAttack] Heal 5 SP on self",
+                "summary": ""
+              }
+            ]
+          },
+          {
+            "coindescs": [
+              {
+                "desc": "[SuperCoin]",
+                "summary": ""
+              },
+              {
+                "desc": "[UnBrokenCoinOnSucceedAttack] Inflict 1 [Vulnerable] next turn",
+                "summary": ""
+              },
+              {
+                "desc": "[OnSucceedAttack] Gain 1 [Protection] next turn",
+                "summary": ""
+              }
+            ]
+          },
+          {
+            "coindescs": [
+              {
+                "desc": "[SuperCoin]",
+                "summary": ""
+              },
+              {
+                "desc": "[UnBrokenCoinOnSucceedAttack] Inflict 1 [AttackDmgDown] next turn",
+                "summary": ""
+              },
+              {
+                "desc": "[OnSucceedAttack] Gain 1 [AttackDmgUp] next turn",
+                "summary": ""
+              }
+            ]
+          },
+          {
+            "coindescs": [
+              {
+                "desc": "[SuperCoin]",
+                "summary": ""
+              },
+              {
+                "desc": "[UnBrokenCoinOnSucceedAttack] Inflict 1 [Binding] next turn",
+                "summary": ""
+              },
+              {
+                "desc": "[OnSucceedAttack] Gain 1 [Agility] next turn",
+                "summary": ""
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "102396": {
+    "id": "102396",
+    "levelList": [
+      {
+        "level": 1,
+        "desc": "[StartBattle] When hit by Attack Skills, inflict +1 [Laceration] Count on the attacker (including E.G.O Skills)",
+        "name": "Exhibition Arrangements",
+        "rawDesc": "",
+        "abName": "",
+        "coinlist": [
+          {
+            "coindescs": []
+          }
+        ]
+      }
+    ]
+  },
+  "102397": {
+    "id": "102397",
+    "levelList": [
+      {
+        "level": 1,
+        "desc": "<color=#ff6000><mark=#ff000040><b><u>Multiply the damage from the \"Iron Maiden[TabExplain] - Spikes\" Passive by 20</u></b></mark></color> (this effect cannot be disabled by Offsetting this Skill)\n[StartBattle] When hit by Attack Skills, inflict +1 [Laceration] Count against the attacker (including E.G.O Skills)",
+        "name": "Iron Curtain",
+        "rawDesc": "",
+        "abName": "",
+        "coinlist": [
+          {
+            "coindescs": []
+          }
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,75 @@
+{
+ "list": [
+  {
+   "stageType": "EVENT_WALPU8",
+   "restrictList": [
+    {
+     "id": 10570,
+     "abstainIds": [],
+     "minPersonalityLevel": 60,
+     "minPersonalityGacksung": 3,
+     "minEgoGacksung": 3,
+     "fixedAnnouncerIds": [
+      44
+     ],
+     "uiConfig": {
+      "cardUpperDeco": [
+       {
+        "characterId": 12,
+        "prefabAddress": "FormationUnitRustDeco"
+       }
+      ]
+     }
+    },
+    {
+     "id": 10571,
+     "abstainIds": [],
+     "fixedAnnouncerIds": [
+      44
+     ],
+     "uiConfig": {
+      "cardUpperDeco": [
+       {
+        "characterId": 12,
+        "prefabAddress": "FormationUnitRustDeco"
+       }
+      ]
+     }
+    },
+    {
+     "id": 10572,
+     "abstainIds": [],
+     "minPersonalityLevel": 60,
+     "minPersonalityGacksung": 3,
+     "minEgoGacksung": 3,
+     "fixedAnnouncerIds": [
+      44
+     ],
+     "uiConfig": {
+      "cardUpperDeco": [
+       {
+        "characterId": 12,
+        "prefabAddress": "FormationUnitRustDeco"
+       }
+      ]
+     }
+    },
+    {
+     "id": 10573,
+     "abstainIds": [],
+     "fixedAnnouncerIds": [
+      44
+     ],
+     "uiConfig": {
+      "cardUpperDeco": [
+       {
+        "characterId": 12,
+        "prefabAddress": "FormationUnitRustDeco"
+       }
+      ]
+     }
+    }
+   ]
+  }
+ ]
+}

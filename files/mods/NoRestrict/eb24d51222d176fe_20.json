@@ -1,0 +1,96 @@
+{
+ "list": [
+  {
+   "stageType": "NORMAL_BATTLE",
+   "restrictList": [
+    {
+     "id": 10937,
+     "mustParticipateIds": [],
+     "abstainIds": [],
+     "fixedAnnouncerIds": [
+      90003
+     ],
+     "excludeAllAnnouncer": true
+    },
+    {
+     "id": 10938,
+     "mustParticipateIds": [],
+     "abstainIds": [],
+     "fixedAnnouncerIds": [
+      90004
+     ],
+     "excludeAllAnnouncer": true
+    },
+    {
+     "id": 10941,
+     "mustParticipateIds": [],
+     "abstainIds": []
+    },
+    {
+     "id": 10942,
+     "mustParticipateIds": [],
+     "abstainIds": [],
+     "excludeAllAnnouncer": true
+    },
+    {
+     "id": 10943,
+     "mustParticipateIds": [],
+     "abstainIds": [],
+     "fixedAnnouncerIds": [
+      90003
+     ],
+     "excludeAllAnnouncer": true
+    },
+    {
+     "id": 10944,
+     "mustParticipateIds": [],
+     "abstainIds": [],
+     "fixedAnnouncerIds": [
+      90004
+     ],
+     "excludeAllAnnouncer": true
+    },
+    {
+     "id": 10945,
+     "mustParticipateIds": [],
+     "abstainIds": [],
+     "excludeAllAnnouncer": true
+    },
+    {
+     "id": 10948,
+     "mustParticipateIds": [],
+     "abstainIds": [],
+     "excludeAllAnnouncer": true
+    },
+    {
+     "id": 10949,
+     "mustParticipateIds": [],
+     "abstainIds": [],
+     "excludeAnnouncerIds": [
+      42
+     ],
+     "uiConfig": {
+      "backCardUICharacterIds": [
+       4
+      ]
+     },
+     "excludeAllAnnouncer": true
+    },
+    {
+     "id": 10950,
+     "mustParticipateIds": [],
+     "abstainIds": [],
+     "uiConfig": {
+      "cardUpperDeco": [
+       {
+        "characterId": 12,
+        "prefabAddress": "FormationUnitRustDeco"
+       }
+      ]
+     },
+     "excludeAllAnnouncer": true
+    }
+   ]
+  }
+ ]
+}

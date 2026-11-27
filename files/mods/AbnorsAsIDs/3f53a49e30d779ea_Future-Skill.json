@@ -1,0 +1,674 @@
+{
+    "list": [
+        {
+            "id": 4001301,
+            "skillTier": 1,
+            "skillType": "SKILL",
+            "textID": 40001301,
+            "skillData": [
+                {
+                    "iconID": 40001301,
+                    "skillTargetType": "RANDOM",
+                    "canTeamKill": false,
+                    "canDuel": true,
+                    "canChangeTarget": true,
+                    "attributeType": "INDIGO",
+                    "atkType": "SLASH",
+                    "defType": "ATTACK",
+                    "skillMotion": "S1",
+                    "viewType": "BATTLE",
+                    "parryingCloseType": "NEAR",
+                    "range": 30,
+                    "targetNum": 1,
+                    "defaultValue": 6,
+                    "skillLevelCorrection": 2,
+                    "abilityScriptList": [
+                        {
+                            "scriptName": "AttackDmgUpByRatioIfSelfSpeedNotLessThan_20_6"
+                        },
+                        {
+                            "scriptName": "GiveBuffOnUse",
+                            "buffData": {
+                                "buffKeyword": "Breath",
+                                "target": "Self",
+                                "stack": 4,
+                                "turn": 2,
+                                "activeRound": 0
+                            }
+                        },
+                        {
+                            "scriptName": "EmptyBody"
+                        },
+                        {
+                            "scriptName": "Modular/TIMING:WhenUse/VALUE_0:getdata(Self,4001381)/IF(VALUE_0=2):makeunbreakable(all)"
+                        }
+                    ],
+                    "coinList": [
+                        {
+                            "operatorType": "ADD",
+                            "scale": 4,
+                            "abilityScriptList": [
+                                {
+                                    "scriptName": "GiveBuffOnSucceedAttack",
+                                    "buffData": {
+                                        "buffKeyword": "Burst",
+                                        "target": "Target",
+                                        "stack": 0,
+                                        "turn": 1,
+                                        "activeRound": 0
+                                    }
+                                }
+                            ]
+                        },
+                        {
+                            "operatorType": "ADD",
+                            "scale": 4,
+                            "abilityScriptList": [
+                                {
+                                    "scriptName": "GiveBuffOnSucceedAttack",
+                                    "buffData": {
+                                        "buffKeyword": "Burst",
+                                        "target": "Target",
+                                        "stack": 8,
+                                        "turn": 0,
+                                        "activeRound": 0
+                                    }
+                                },
+                                {
+                                    "scriptName": "GiveBuffOnSucceedAttack",
+                                    "buffData": {
+                                        "buffKeyword": "Laceration",
+                                        "target": "Target",
+                                        "stack": 5,
+                                        "turn": 0,
+                                        "activeRound": 0
+                                    }
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id": 4001302,
+            "skillTier": 2,
+            "skillType": "SKILL",
+            "textID": 40001302,
+            "skillData": [
+                {
+                    "iconID": 40001302,
+                    "skillTargetType": "RANDOM",
+                    "canTeamKill": false,
+                    "canDuel": true,
+                    "canChangeTarget": true,
+                    "attributeType": "CRIMSON",
+                    "atkType": "SLASH",
+                    "defType": "ATTACK",
+                    "range": 30,
+                    "skillMotion": "S2",
+                    "viewType": "BATTLE",
+                    "parryingCloseType": "NEAR",
+                    "targetNum": 1,
+                    "defaultValue": 8,
+                    "skillLevelCorrection": 3,
+                    "abilityScriptList": [
+                        {
+                            "scriptName": "AttackDmgUpByRatioIfSelfSpeedNotLessThan_30_6"
+                        },
+                        {
+                            "scriptName": "GiveBuffOnUse",
+                            "buffData": {
+                                "buffKeyword": "Breath",
+                                "target": "Self",
+                                "stack": 1,
+                                "turn": 3,
+                                "activeRound": 0
+                            }
+                        },
+                        {
+                            "scriptName": "AttackDmgUpOnlyWinDuelByRatio30"
+                        },
+                        {
+                            "scriptName": "EmptyBody"
+                        },
+                        {
+                            "scriptName": "Modular/TIMING:WhenUse/VALUE_0:getdata(Self,4001381)/IF(VALUE_0=2):makeunbreakable(all)"
+                        }
+                    ],
+                    "coinList": [
+                        {
+                            "operatorType": "ADD",
+                            "scale": 5,
+                            "abilityScriptList": [
+                                {
+                                    "scriptName": "GiveBuffOnSucceedAttack",
+                                    "buffData": {
+                                        "buffKeyword": "Burst",
+                                        "target": "Target",
+                                        "stack": 0,
+                                        "turn": 2,
+                                        "activeRound": 0
+                                    }
+                                }
+                            ]
+                        },
+                        {
+                            "operatorType": "ADD",
+                            "scale": 5,
+                            "abilityScriptList": [
+                                {
+                                    "scriptName": "GiveBuffOnSucceedAttack",
+                                    "buffData": {
+                                        "buffKeyword": "Burst",
+                                        "target": "Target",
+                                        "stack": 5,
+                                        "turn": 0,
+                                        "activeRound": 0
+                                    }
+                                },
+                                {
+                                    "scriptName": "GiveBuffOnSucceedAttack",
+                                    "buffData": {
+                                        "buffKeyword": "Laceration",
+                                        "target": "Target",
+                                        "stack": 6,
+                                        "turn": 0,
+                                        "activeRound": 0
+                                    }
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id": 4001303,
+            "skillTier": 3,
+            "skillType": "SKILL",
+            "textID": 40001303,
+            "skillData": [
+                {
+                    "iconID": 40001303,
+                    "skillTargetType": "RANDOM",
+                    "canTeamKill": false,
+                    "canDuel": true,
+                    "canChangeTarget": true,
+                    "attributeType": "VIOLET",
+                    "atkType": "SLASH",
+                    "defType": "ATTACK",
+                    "range": 30,
+                    "importanceLevel": 2,
+                    "skillMotion": "S3",
+                    "viewType": "ENCOUNTER",
+                    "parryingCloseType": "NEAR",
+                    "targetNum": 1,
+                    "defaultValue": 5,
+                    "skillLevelCorrection": 4,
+                    "abilityScriptList": [
+                        {
+                            "scriptName": "AttackDmgUpByRatioIfSelfSpeedNotLessThan_40_7"
+                        },
+                        {
+                            "scriptName": "GiveBuffOnUse",
+                            "buffData": {
+                                "buffKeyword": "Breath",
+                                "target": "Self",
+                                "stack": 0,
+                                "turn": 4,
+                                "activeRound": 0
+                            }
+                        },
+                        {
+                            "scriptName": "GiveBuffOnWinDuel",
+                            "buffData": {
+                                "buffKeyword": "Enhancement",
+                                "target": "Self",
+                                "buffOwner": "",
+                                "stack": 1,
+                                "turn": 0,
+                                "activeRound": 0
+                            }
+                        },
+                        {
+                            "scriptName": "ExecutionDiscipleWithHpCondition"
+                        },
+                        {
+                            "scriptName": "EmptyBody"
+                        },
+                        {
+                            "scriptName": "Modular/TIMING:WhenUse/VALUE_0:getdata(Self,4001381)/IF(VALUE_0=2):makeunbreakable(all)"
+                        }
+                    ],
+                    "coinList": [
+                        {
+                            "operatorType": "ADD",
+                            "scale": 6,
+                            "abilityScriptList": [
+                                {
+                                    "scriptName": "GiveBuffOnSucceedAttack",
+                                    "buffData": {
+                                        "buffKeyword": "Burst",
+                                        "target": "Target",
+                                        "stack": 6,
+                                        "turn": 0,
+                                        "activeRound": 0
+                                    }
+                                }
+                            ]
+                        },
+                        {
+                            "operatorType": "ADD",
+                            "scale": 6,
+                            "abilityScriptList": [
+                                {
+                                    "scriptName": "GiveBuffOnSucceedAttack",
+                                    "buffData": {
+                                        "buffKeyword": "Burst",
+                                        "target": "Target",
+                                        "stack": 0,
+                                        "turn": 2,
+                                        "activeRound": 0
+                                    }
+                                }
+                            ]
+                        },
+                        {
+                            "operatorType": "ADD",
+                            "scale": 6,
+                            "abilityScriptList": [
+                                {
+                                    "scriptName": "GiveBuffOnSucceedAttack",
+                                    "buffData": {
+                                        "buffKeyword": "Laceration",
+                                        "target": "Target",
+                                        "stack": 0,
+                                        "turn": 2,
+                                        "activeRound": 0
+                                    }
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id": 4001304,
+            "skillTier": 3,
+            "skillType": "SKILL",
+            "useUnlock": true,
+            "textID": 40001304,
+            "skillData": [
+                {
+                    "iconID": 40001304,
+                    "attributeType": "SHAMROCK",
+                    "atkType": "SLASH",
+                    "defType": "ATTACK",
+                    "targetNum": 1,
+                    "skillTargetType": "RANDOM",
+                    "canTeamKill": false,
+                    "range": 30,
+                    "canDuel": true,
+                    "canChangeTarget": true,
+                    "skillLevelCorrection": 5,
+                    "importanceLevel": 3,
+                    "defaultValue": 8,
+                    "skillMotion": "S4",
+                    "viewType": "ENCOUNTER",
+                    "parryingCloseType": "NEAR",
+                    "abilityScriptList": [
+                        {
+                            "scriptName": "SetCoinResultToHeadBySkill"
+                        },
+                        {
+                            "scriptName": "CanDuelRegardlessSpeedCanNotBreakUntilEndTurn"
+                        },
+                        {
+                            "scriptName": "SlashResistAdderOnBAUntilEA",
+                            "buffData": {
+                                "buffKeyword": "WillAwakenSinclair",
+                                "buffOwner": "Self",
+                                "target": "Target",
+                                "stack": 1,
+                                "turn": 0
+                            },
+                            "value": 1
+                        },
+                        {
+                            "scriptName": "SkillPowerAdderOnUseViaBuffCheckDevideByStackWithLimit8",
+                            "buffData": {
+                                "buffKeyword": "Breath",
+                                "buffOwner": "Self",
+                                "stack": 5,
+                                "turn": 0,
+                                "value": 2
+                            }
+                        },
+                        {
+                            "scriptName": "CreateMangWithSkillPowerAdderOnUse_5_1",
+                            "value": 3
+                        },
+                        {
+                            "scriptName": "UseMpSelfIfCreateMang",
+                            "value": 5
+                        },
+                        {
+                            "scriptName": "EmptyBody"
+                        }
+                    ],
+                    "coinList": [
+                        {
+                            "operatorType": "ADD",
+                            "scale": 14,
+                            "grade": 99,
+                            "color": "GREEN",
+                            "abilityScriptList": [
+                                {
+                                    "scriptName": "ExtractCoin"
+                                },
+                                {
+                                    "scriptName": "AtkDmgViaBuffStackTurnDivideWithLimit",
+                                    "buffData": {
+                                        "buffKeyword": "Burst",
+                                        "buffOwner": "Target",
+                                        "value": 0.01,
+                                        "limit": 100
+                                    }
+                                },
+                                {
+                                    "scriptName": "GiveIndigoDmgOSAViaBuffDiv",
+                                    "buffData": {
+                                        "buffKeyword": "Breath",
+                                        "buffOwner": "Self",
+                                        "stack": 1,
+                                        "turn": 0,
+                                        "value": 4,
+                                        "limit": 80
+                                    }
+                                },
+                                {
+                                    "scriptName": "CriticalDmgUpByRatio150"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id": 4001305,
+            "skillTier": 3,
+            "skillType": "SKILL",
+            "useUnlock": true,
+            "textID": 40001305,
+            "skillData": [
+                {
+                    "iconID": 40001305,
+                    "attributeType": "SHAMROCK",
+                    "atkType": "SLASH",
+                    "defType": "ATTACK",
+                    "targetNum": 1,
+                    "range": 30,
+                    "importanceLevel": 3,
+                    "skillTargetType": "RANDOM",
+                    "canTeamKill": false,
+                    "canDuel": true,
+                    "canChangeTarget": true,
+                    "skillLevelCorrection": 6,
+                    "defaultValue": 9,
+                    "skillMotion": "S5",
+                    "viewType": "ENCOUNTER",
+                    "parryingCloseType": "NEAR",
+                    "abilityScriptList": [
+                        {
+                            "scriptName": "SetCoinResultToHeadBySkill"
+                        },
+                        {
+                            "scriptName": "SlashResistAdderOnBAUntilEA",
+                            "buffData": {
+                                "buffKeyword": "WillAwakenSinclair",
+                                "buffOwner": "Self",
+                                "target": "Target",
+                                "stack": 1,
+                                "turn": 0
+                            },
+                            "value": 1
+                        },
+                        {
+                            "scriptName": "CanChangeTargetIgnoreSpeed"
+                        },
+                        {
+                            "scriptName": "SkillPowerAdderOnUseViaBuffCheckDevideByStackWithLimit2",
+                            "buffData": {
+                                "buffKeyword": "Burst",
+                                "buffOwner": "Self",
+                                "stack": 3,
+                                "turn": 0,
+                                "value": 1
+                            }
+                        },
+                        {
+                            "scriptName": "SkillPowerAdderOnUsePerNegativeBuffCount",
+                            "value": 2,
+                            "buffData": {
+                                "value": 1,
+                                "limit": 4
+                            }
+                        },
+                        {
+                            "scriptName": "GiveBuffOnUse",
+                            "buffData": {
+                                "buffKeyword": "Agility",
+                                "target": "Self",
+                                "stack": 5,
+                                "turn": 0,
+                                "activeRound": 1
+                            }
+                        },
+                        {
+                            "scriptName": "GiveBuffOnUse",
+                            "buffData": {
+                                "buffKeyword": "Breath",
+                                "target": "Self",
+                                "stack": 10,
+                                "turn": 2,
+                                "activeRound": 0
+                            }
+                        },
+                        {
+                            "scriptName": "CreateMangWithSkillPowerAdderOnUse_10_2",
+                            "value": 6
+                        },
+                        {
+                            "scriptName": "UseMpSelfIfCreateMang",
+                            "value": 10
+                        },
+                        {
+                            "scriptName": "EmptyBody"
+                        }
+                    ],
+                    "coinList": [
+                        {
+                            "operatorType": "ADD",
+                            "scale": 12,
+                            "grade": 99,
+                            "color": "GREEN",
+                            "abilityScriptList": [
+                                {
+                                    "scriptName": "ExtractCoin"
+                                },
+                                {
+                                    "scriptName": "GiveBuffOnSucceedAttack",
+                                    "buffData": {
+                                        "buffKeyword": "Laceration",
+                                        "target": "Target",
+                                        "stack": 7,
+                                        "turn": 2,
+                                        "activeRound": 0
+                                    }
+                                },
+                                {
+                                    "scriptName": "GiveBuffOnSucceedAttack",
+                                    "buffData": {
+                                        "buffKeyword": "Vulnerable",
+                                        "target": "Target",
+                                        "stack": 2,
+                                        "turn": 0,
+                                        "activeRound": 1
+                                    }
+                                },
+                                {
+                                    "scriptName": "CriticalDmgUpByRatio400"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id": 4001306,
+            "skillTier": 2,
+            "skillType": "SKILL",
+            "textID": 40001306,
+            "skillData": [
+                {
+                    "iconID": 40001306,
+                    "attributeType": "CRIMSON",
+                    "atkType": "HIT",
+                    "defType": "ATTACK",
+                    "targetNum": 4,
+                    "skillTargetType": "RANDOM",
+                    "canTeamKill": false,
+                    "canDuel": false,
+                    "importanceLevel": 2,
+                    "canChangeTarget": true,
+                    "skillLevelCorrection": 2,
+                    "defaultValue": 7,
+                    "skillMotion": "S6",
+                    "viewType": "ENCOUNTER",
+                    "parryingCloseType": "NEAR",
+                    "abilityScriptList": [
+                        {
+                            "scriptName": "SetCoinResultToHeadBySkill"
+                        },
+                        {
+                            "scriptName": "GetImmortalOnlyOnUsingThisSkill"
+                        },
+                        {
+                            "scriptName": "IgnoreDefenseSkill"
+                        },
+                        {
+                            "scriptName": "PrimeTarget40001306"
+                        },
+                        {
+                            "scriptName": "TargetNumAdderViaEnemySlot"
+                        },
+                        {
+                            "scriptName": "AttackDmgUpByRatioIfSelfSpeedNotLessThan_50_4"
+                        },
+                        {
+                            "scriptName": "ChangeAllTargetOnCompleteCommand"
+                        },
+                        {
+                            "scriptName": "EmptyBody"
+                        }
+                    ],
+                    "coinList": [
+                        {
+                            "operatorType": "ADD",
+                            "scale": 8,
+                            "abilityScriptList": [
+                                {
+                                    "scriptName": "GiveAdditionalSlashDmgOnFrontSATargetByRatio",
+                                    "value": 0.4
+                                },
+                                {
+                                    "scriptName": "DoNotEndGameUntilReturnFromLivingSpecimen"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id": 4001307,
+            "skillTier": 1,
+            "skillType": "SKILL",
+            "textID": 40001307,
+            "skillData": [
+                {
+                    "iconID": 40001307,
+                    "attributeType": "INDIGO",
+                    "atkType": "SLASH",
+                    "defType": "COUNTER",
+                    "targetNum": 1,
+                    "skillTargetType": "RANDOM",
+                    "canTeamKill": false,
+                    "canDuel": false,
+                    "canChangeTarget": true,
+                    "skillLevelCorrection": 2,
+                    "defaultValue": 6,
+                    "skillMotion": "S1",
+                    "viewType": "BATTLE",
+                    "parryingCloseType": "NEAR",
+                    "abilityScriptList": [
+                        {
+                            "scriptName": "GiveBuffOnUse",
+                            "buffData": {
+                                "buffKeyword": "Breath",
+                                "target": "Self",
+                                "stack": 5,
+                                "turn": 2,
+                                "activeRound": 0
+                            }
+                        },
+                        {
+                            "scriptName": "ReuseSkillOnTakeHpDamage"
+                        },
+                        {
+                            "scriptName": "EmptyBody"
+                        }
+                    ],
+                    "coinList": [
+                        {
+                            "operatorType": "ADD",
+                            "scale": 6,
+                            "abilityScriptList": [
+                                {
+                                    "scriptName": "GiveBuffOnSucceedAttack",
+                                    "buffData": {
+                                        "buffKeyword": "Burst",
+                                        "target": "Target",
+                                        "stack": 4,
+                                        "turn": 2,
+                                        "activeRound": 0
+                                    }
+                                }
+                            ]
+                        },
+                        {
+                            "operatorType": "ADD",
+                            "scale": 6,
+                            "abilityScriptList": [
+                                {
+                                    "scriptName": "GiveBuffOnSucceedAttack",
+                                    "buffData": {
+                                        "buffKeyword": "Laceration",
+                                        "target": "Target",
+                                        "stack": 3,
+                                        "turn": 2,
+                                        "activeRound": 0
+                                    }
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,52 @@
+{
+    "list": [
+        {
+            "id": 4001309,
+            "importanceLevel": 3,
+            "attributeStockCondition": [],
+            "requireIDList": [
+                "Modular/TIMING:RoundStart/IF(VALUE_0=0):passivereveal(Self,4001309):skillreveal(Self,4001306):VALUE_0:1",
+                "Modular/TIMING:WinDuel/passiveadd(Target,40013092)",
+                "Modular/TIMING:DefeatDuel/passiveadd(Target,40013091):setdata(Self,4013091,1)",
+                "Modular/TIMING:WhenHit/VALUE_0:getdata(Target,4013091)/CONTINUEIF(VALUE_0=0)/VALUE_1:getdata(Target,4013092)/setdata(Target,4013092,mVALUE_1+1)/CONTINUEIF(VALUE_1>5)/skillsend(Target,Self,4001306):setdata(Target,4013092,0)",
+                "Modular/TIMING:EndBattle/setdata(Self,4013092,0)"
+            ]
+        },
+        {
+            "id": 40013091,
+            "importanceLevel": 0,
+            "attributeStockCondition": [],
+            "requireIDList": [
+                "Modular/TIMING:EndSkill/setdata(Target,4013091,0):passiveremove(Self,40013091)"
+            ]
+        },
+        {
+            "id": 40013092,
+            "importanceLevel": 0,
+            "attributeStockCondition": [],
+            "requireIDList": [
+                "Modular/TIMING:OnCoinToss/VALUE_0:coinisbroken()/IF(VALUE_0=1):setdata(Target,4013091,1)",
+                "Modular/TIMING:EndSkill/setdata(Target,4013091,0):passiveremove(Self,40013092)"
+            ]
+        },
+        {
+            "id": 4001306,
+            "importanceLevel": 1,
+            "attributeStockCondition": [],
+            "requireIDList": [
+                "Modular/TIMING:RoundStart/IF(VALUE_0=0):passivereveal(Self,4001306):VALUE_0:1",
+                "Modular/TIMING:EndBattle/VALUE_0:hpcheck(Self,%)/IF(VALUE_0<61):IF(VALUE_1=0):buf(AllyNoCores,WillAwakenSinclair,1,0,1):VALUE_1:1"
+            ]
+        },
+        {
+            "id": 4001308,
+            "importanceLevel": 3,
+            "attributeStockCondition": [],
+            "requireIDList": [
+                "Modular/TIMING:RoundStart/IF(VALUE_0=0):passivereveal(Self,4001308):VALUE_0:1",
+                "Modular/TIMING:Immortal/VALUE_0:getdata(Self,4001382)/CONTINUEIF(VALUE_0=0)/setimmortal(1):setdata(Self,4001381,1)",
+                "Modular/TIMING:EndBattle/VALUE_0:getdata(Self,4001381)/CONTINUEIF(VALUE_0=1)/IF(VALUE_1=0):setimmortal(0):healhp(Self,100%):mpdmg(Self,90):buf(AllyNoCores,SignAwakenSinclair,1,0,1):buf(AllyNoCores,LimitedAwakenSinclair,1,0,1):setdata(Self,4001382,1):setdata(Self,4001381,2):VALUE_1:1"
+            ]
+        }
+    ]
+}

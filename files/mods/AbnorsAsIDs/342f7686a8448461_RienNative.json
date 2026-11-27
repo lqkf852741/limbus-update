@@ -1,0 +1,172 @@
+{
+  "list": [
+    {
+      "id": 10139,
+      "updatedDate": 20260219,
+      "appearance": "1347_Index_fatherAppearance",
+      "unitKeywordList": [
+        "FINGER",
+        "SMALL",
+        "TRUST_AGENT"
+      ],
+      "associationList": [
+        "INDEX_FINGER",
+        "SPIDER_HOUSE"
+      ],
+      "skillKeywordList": [
+        "Sinking",
+        "Breath"
+      ],
+      "characterId": 1,
+      "panicType": 9999,
+      "season": 7,
+      "unitScriptID": "1347",
+      "defenseSkillIDList": [
+        101374
+      ],
+      "panicSkillOnErosion": 1000104,
+      "slotWeightConditionList": [
+        "Default1"
+      ],
+      "rank": 3,
+      "hp": {
+        "defaultStat": 635,
+        "incrementByLevel": 44
+      },
+      "initBuffList": [
+        {
+          "level": 1,
+          "list": [
+            {
+              "buff": "BlessingOfIndexPrescriptAlly",
+              "stack": 0
+            }
+          ]
+        }
+      ],
+      "defCorrection": 2,
+      "minSpeedList": [
+        3,
+        3,
+        3,
+        3
+      ],
+      "maxSpeedList": [
+        6,
+        7,
+        8,
+        8
+      ],
+      "uniqueAttribute": "SHAMROCK",
+      "mentalConditionInfo": {
+        "add": [
+          {
+            "level": 1,
+            "conditionIDList": [
+              {
+                "conditionID": "OnWinDuelAsParryingCountMultiply10AndPlus20Percent"
+              },
+              {
+                "conditionID": "OnKillEnemyMp10"
+              },
+              {
+                "conditionID": "OnKillEnemyByOtherAlly5"
+              }
+            ]
+          }
+        ],
+        "min": [
+          {
+            "level": 1,
+            "conditionIDList": [
+              {
+                "conditionID": "OnDieAllyAsLevelRatio10"
+              }
+            ]
+          }
+        ]
+      },
+      "breakSection": {
+        "sectionList": []
+      },
+      "resistInfo": {
+        "atkResistList": [
+          {
+            "type": "SLASH",
+            "value": 1.2
+          },
+          {
+            "type": "PENETRATE",
+            "value": 0.9
+          },
+          {
+            "type": "HIT",
+            "value": 0.9
+          }
+        ]
+      },
+      "attributeList": [
+        {
+          "skillId": 1013711,
+          "number": 0
+        },
+        {
+          "skillId": 1013721,
+          "number": 0
+        },
+        {
+          "skillId": 1013731,
+          "number": 0
+        },
+        {
+          "skillId": 1013712,
+          "number": 0
+        },
+        {
+          "skillId": 1013722,
+          "number": 0
+        },
+        {
+          "skillId": 1013732,
+          "number": 0
+        },
+        {
+          "skillId": 1013713,
+          "number": 0
+        },
+        {
+          "skillId": 1013723,
+          "number": 0
+        },
+        {
+          "skillId": 1013733,
+          "number": 0
+        },
+        {
+          "skillId": 101375,
+          "number": 0
+        },
+        {
+          "skillId": 101376,
+          "number": 0
+        },
+        {
+          "skillId": 1013710,
+          "number": 1
+        },
+        {
+          "skillId": 1013720,
+          "number": 1
+        },
+        {
+          "skillId": 1013730,
+          "number": 1
+        },
+        {
+          "skillId": 101377,
+          "number": 0
+        }
+      ]
+    }
+  ]
+}

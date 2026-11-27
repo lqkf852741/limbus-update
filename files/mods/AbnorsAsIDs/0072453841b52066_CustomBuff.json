@@ -1,0 +1,296 @@
+{
+  "list": [
+    {
+      "id": "IndexPrescriptRienAlly_0",
+      "subIdList": [
+        "IndexPrescriptRien_0"
+      ],
+      "iconId": "IndexPrescript_Base_2nd",
+      "buffClass": "NonvolatileBuff",
+      "buffType": "Neutral",
+      "canBeDespelled": false,
+      "destroyableOnDie": true,
+      "destroyableOnRetreat": true,
+      "maxStack": 1,
+      "list": []
+    },
+    {
+      "id": "IndexPrescriptRienAlly_1",
+      "iconId": "IndexPrescript_Base_2nd",
+      "subIdList": [
+        "IndexPrescriptRienAlly_0"
+      ],
+      "buffClass": "NonvolatileBuff",
+      "buffType": "Neutral",
+      "canBeDespelled": false,
+      "destroyableOnDie": true,
+      "destroyableOnRetreat": true,
+      "maxStack": 1,
+      "list": []
+    },
+    {
+      "id": "IndexPrescriptRienAlly_2",
+      "iconId": "IndexPrescript_Base_2nd",
+      "subIdList": [
+        "IndexPrescriptRienAlly_0"
+      ],
+      "buffClass": "NonvolatileBuff",
+      "buffType": "Neutral",
+      "canBeDespelled": false,
+      "destroyableOnDie": true,
+      "destroyableOnRetreat": true,
+      "maxStack": 1,
+      "list": []
+    },
+    {
+      "id": "IndexPrescriptRienAlly_3",
+      "iconId": "IndexPrescript_Base_2nd",
+      "subIdList": [
+        "IndexPrescriptRienAlly_0"
+      ],
+      "buffClass": "NonvolatileBuff",
+      "buffType": "Neutral",
+      "canBeDespelled": false,
+      "destroyableOnDie": true,
+      "destroyableOnRetreat": true,
+      "maxStack": 1,
+      "list": []
+    },
+    {
+      "id": "BurningWoundRien_MaskAlly",
+      "iconId": "BurningWoundRien_Mask",
+      "buffClass": "NonvolatileBuff",
+      "buffType": "Positive",
+      "canBeDespelled": false,
+      "destroyableOnDie": true,
+      "destroyableOnRetreat": true,
+      "maxStack": 1,
+      "list": [
+        {
+          "ability": "AtkAdder",
+          "value": 2
+        },
+        {
+          "ability": "DefAdder",
+          "value": 2
+        },
+        {
+          "ability": "TakeDmgMultiplierIfOneSideAttack",
+          "value": -0.1
+        }
+      ]
+    },
+    {
+      "id": "BurningWoundRienAlly",
+      "iconId": "BurningWoundRien",
+      "buffClass": "NonvolatileBuff",
+      "buffType": "Positive",
+      "canBeDespelled": false,
+      "destroyableOnDie": true,
+      "destroyableOnRetreat": true,
+      "maxStack": 1,
+      "list": [
+        {
+          "ability": "AtkAdder",
+          "value": 4
+        },
+        {
+          "ability": "DefAdder",
+          "value": 4
+        },
+        {
+          "ability": "TakeDmgMultiplierIfOneSideAttack",
+          "value": -0.25
+        }
+      ]
+    },
+    {
+      "id": "BlackNightmareRienAlly",
+      "iconId": "BlackNightmare",
+      "subIdList": [
+        "BlackNightmare"
+      ],
+      "buffClass": "VolatileBuff",
+      "buffType": "Positive",
+      "canBeDespelled": false,
+      "destroyableOnDie": true,
+      "destroyableOnRetreat": true,
+      "maxStack": 1,
+      "list": [
+        {
+          "ability": "MinSpeedAdder",
+          "value": 4
+        },
+        {
+          "ability": "MaxSpeedAdderIncludeFirstTurn",
+          "value": 4
+        },
+        {
+          "ability": "AtkAdder",
+          "value": 4
+        },
+        {
+          "ability": "DefAdder",
+          "value": 4
+        }
+      ]
+    },
+    {
+      "id": "StackRienSpecialSkillAlly",
+      "iconId": "StackRienSpecialSkill",
+      "subIdList": [
+        "StackRienSpecialSkill"
+      ],
+      "buffClass": "NonvolatileBuff",
+      "buffType": "Neutral",
+      "canBeDespelled": false,
+      "destroyableOnDie": false,
+      "destroyableOnRetreat": false,
+      "maxStack": 9,
+      "list": []
+    },
+    {
+      "id": "RienWeapon01Hatchet",
+      "iconId": "IndexPrescript_Base_2nd",
+      "buffClass": "NonvolatileBuff",
+      "buffType": "Positive",
+      "canBeDespelled": false,
+      "destroyableOnDie": true,
+      "destroyableOnRetreat": true,
+      "maxStack": 1,
+      "list": []
+    },
+    {
+      "id": "RienWeapon02Stiletto",
+      "iconId": "IndexPrescript_Base_2nd",
+      "buffClass": "NonvolatileBuff",
+      "buffType": "Positive",
+      "canBeDespelled": false,
+      "destroyableOnDie": true,
+      "destroyableOnRetreat": true,
+      "maxStack": 1,
+      "list": []
+    },
+    {
+      "id": "RienWeapon03Greatsword",
+      "iconId": "IndexPrescript_Base_2nd",
+      "buffClass": "NonvolatileBuff",
+      "buffType": "Positive",
+      "canBeDespelled": false,
+      "destroyableOnDie": true,
+      "destroyableOnRetreat": true,
+      "maxStack": 1,
+      "list": []
+    },
+    {
+      "id": "RienWeapon04Rapier",
+      "iconId": "IndexPrescript_Base_2nd",
+      "buffClass": "NonvolatileBuff",
+      "buffType": "Positive",
+      "canBeDespelled": false,
+      "destroyableOnDie": true,
+      "destroyableOnRetreat": true,
+      "maxStack": 1,
+      "list": []
+    },
+    {
+      "id": "RienWeapon05Sledgehammer",
+      "iconId": "IndexPrescript_Base_2nd",
+      "buffClass": "NonvolatileBuff",
+      "buffType": "Positive",
+      "canBeDespelled": false,
+      "destroyableOnDie": true,
+      "destroyableOnRetreat": true,
+      "maxStack": 1,
+      "list": []
+    },
+    {
+      "id": "RienWeapon06Ultragreatsword",
+      "iconId": "IndexPrescript_Base_2nd",
+      "buffClass": "NonvolatileBuff",
+      "buffType": "Positive",
+      "canBeDespelled": false,
+      "destroyableOnDie": true,
+      "destroyableOnRetreat": true,
+      "maxStack": 1,
+      "list": []
+    },
+    {
+      "id": "RienWeapon07Lance",
+      "iconId": "IndexPrescript_Base_2nd",
+      "buffClass": "NonvolatileBuff",
+      "buffType": "Positive",
+      "canBeDespelled": false,
+      "destroyableOnDie": true,
+      "destroyableOnRetreat": true,
+      "maxStack": 1,
+      "list": []
+    },
+    {
+      "id": "RienWeapon08Chain",
+      "iconId": "IndexPrescript_Base_2nd",
+      "buffClass": "NonvolatileBuff",
+      "buffType": "Positive",
+      "canBeDespelled": false,
+      "destroyableOnDie": true,
+      "destroyableOnRetreat": true,
+      "maxStack": 1,
+      "list": []
+    },
+    {
+      "id": "RienWeapon09Scythe",
+      "iconId": "IndexPrescript_Base_2nd",
+      "buffClass": "NonvolatileBuff",
+      "buffType": "Positive",
+      "canBeDespelled": false,
+      "destroyableOnDie": true,
+      "destroyableOnRetreat": true,
+      "maxStack": 1,
+      "list": []
+    },
+    {
+      "id": "IndexPrescriptRien_0",
+      "iconId": "IndexPrescript_Base_2nd",
+      "buffClass": "NonvolatileBuff",
+      "buffType": "Neutral",
+      "canBeDespelled": false,
+      "destroyableOnDie": true,
+      "destroyableOnRetreat": true,
+      "maxStack": 1,
+      "list": []
+    },
+    {
+      "id": "IndexPrescriptRien_1",
+      "iconId": "IndexPrescript_Base_2nd",
+      "buffClass": "NonvolatileBuff",
+      "buffType": "Neutral",
+      "canBeDespelled": false,
+      "destroyableOnDie": true,
+      "destroyableOnRetreat": true,
+      "maxStack": 1,
+      "list": []
+    },
+    {
+      "id": "IndexPrescriptRien_2",
+      "iconId": "IndexPrescript_Base_2nd",
+      "buffClass": "NonvolatileBuff",
+      "buffType": "Neutral",
+      "canBeDespelled": false,
+      "destroyableOnDie": true,
+      "destroyableOnRetreat": true,
+      "maxStack": 1,
+      "list": []
+    },
+    {
+      "id": "IndexPrescriptRien_3",
+      "iconId": "IndexPrescript_Base_2nd",
+      "buffClass": "NonvolatileBuff",
+      "buffType": "Neutral",
+      "canBeDespelled": false,
+      "destroyableOnDie": true,
+      "destroyableOnRetreat": true,
+      "maxStack": 1,
+      "list": []
+    }
+  ]
+}

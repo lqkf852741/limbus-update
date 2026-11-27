@@ -1,0 +1,502 @@
+{
+  "1013711": {
+    "id": "1013711",
+    "levelList": [
+      {
+        "level": 1,
+        "desc": "Final Power +1 for every [UnlockBuff_Base] stage (max 2)\nThe following effects activate depending on the weapon's Attack Type\n- Blunt weapons deal +20% damage\n- Non-Blunt weapons deal -10% damage\n[WhenUse] At 6+ ([Breath] on self + [Sinking] on target), Coin Power +1\n[WhenUse] Gain +2 [Breath] Count",
+        "name": "Slam Down with Weight, Topple the Body",
+        "flavor": "",
+        "rawDesc": "",
+        "abName": "",
+        "coinlist": [
+          {
+            "coindescs": [
+              {
+                "desc": "[OnSucceedAttack] Inflict 3 [Sinking]",
+                "summary": ""
+              }
+            ]
+          },
+          {
+            "coindescs": [
+              {
+                "desc": "[OnSucceedAttack] Gain 2 [Breath]",
+                "summary": ""
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "1013712": {
+    "id": "1013712",
+    "levelList": [
+      {
+        "level": 1,
+        "desc": "Final Power +1 for every [UnlockBuff_Base] stage (max 2)\nThe following effects activate depending on the weapon's Attack Type\n- Pierce weapons deal +20% damage\n- Non-Pierce weapons deal -10% damage\n[WhenUse] At 6+ ([Breath] on self + [Sinking] on target), Coin Power +1\n[WhenUse] Gain +2 [Breath] Count",
+        "name": "Lay Vertical The End, Insert Up to the Wick",
+        "flavor": "",
+        "rawDesc": "",
+        "abName": "",
+        "coinlist": [
+          {
+            "coindescs": [
+              {
+                "desc": "[OnSucceedAttack] Gain 1 [Breath]",
+                "summary": ""
+              },
+              {
+                "desc": "[OnSucceedAttack] Inflict 1 [Sinking]",
+                "summary": ""
+              }
+            ]
+          },
+          {
+            "coindescs": [
+              {
+                "desc": "[OnSucceedAttack] Gain 1 [Breath]",
+                "summary": ""
+              },
+              {
+                "desc": "[CriticalOnSucceedAttack] Inflict 2 [Sinking]",
+                "summary": ""
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "1013713": {
+    "id": "1013713",
+    "levelList": [
+      {
+        "level": 1,
+        "desc": "Final Power +1 for every [UnlockBuff_Base] stage (max 2)\nThe following effects activate depending on the weapon's Attack Type\n- Slash weapons deal +20% damage\n- Non-Slash weapons deal -10% damage\n[WhenUse] At 6+ ([Breath] on self + [Sinking] on target), Coin Power +1\n[WhenUse] Gain +2 [Breath] Count",
+        "name": "Lay the Blade on its Side, Slice Like a Severed Breath",
+        "flavor": "",
+        "rawDesc": "",
+        "abName": "",
+        "coinlist": [
+          {
+            "coindescs": [
+              {
+                "desc": "[OnSucceedAttack] Gain 2 [Breath]",
+                "summary": ""
+              },
+              {
+                "desc": "[OnSucceedAttack] Inflict 2 [Sinking]",
+                "summary": ""
+              }
+            ]
+          },
+          {
+            "coindescs": [
+              {
+                "desc": "[OnSucceedAttack] Inflict +1 [Sinking] Count",
+                "summary": ""
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "1013721": {
+    "id": "1013721",
+    "levelList": [
+      {
+        "level": 1,
+        "desc": "Final Power +1 for every [UnlockBuff_Base] stage (max 3)\nThe following effects activate depending on the weapon's Attack Type\n- Blunt weapons deal +30% damage\n- Non-Blunt weapons deal -15% damage\n[StartBattle] Gain the following effects (effects are cumulative)\n- At [UnlockBuffAlly_2], convert the final Coin to [SuperCoin]\n- At [UnlockBuffAlly_3], on Clash Win with this Skill, lower user's Stagger Threshold by 10\n[WhenUse] At 6+ ([Breath] on self + [Sinking] on target), Coin Power +1\n[WhenUse] Gain 2 [Breath]",
+        "name": "Swing to Fell, Have it Meet the Ground",
+        "flavor": "",
+        "rawDesc": "",
+        "abName": "",
+        "coinlist": [
+          {
+            "coindescs": [
+              {
+                "desc": "[OnSucceedAttack] Inflict 2 [Sinking]",
+                "summary": ""
+              }
+            ]
+          },
+          {
+            "coindescs": [
+              {
+                "desc": "[OnSucceedAttack] Inflict 2 [Sinking]",
+                "summary": ""
+              }
+            ]
+          },
+          {
+            "coindescs": [
+              {
+                "desc": "[OnSucceedAttack] Gain +1 [Breath] Count",
+                "summary": ""
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "1013722": {
+    "id": "1013722",
+    "levelList": [
+      {
+        "level": 1,
+        "desc": "Final Power +1 for every [UnlockBuff_Base] stage (max 3)\nThe following effects activate depending on the weapon's Attack Type\n- Pierce weapons deal +30% damage\n- Non-Pierce weapons deal -15% damage\n[StartBattle] Gain the following effects (effects are cumulative)\n- At [UnlockBuffAlly_2], convert the final Coin to [SuperCoin]\n- At [UnlockBuffAlly_3], on Clash Win with this Skill, inflict 1 [ResultReduction] next turn\n[WhenUse] At 6+ ([Breath] on self + [Sinking] on target), Coin Power +1\n[WhenUse] Gain 2 [Breath]",
+        "name": "Aim Toward a Point, Let it Echo Within",
+        "flavor": "",
+        "rawDesc": "",
+        "abName": "",
+        "coinlist": [
+          {
+            "coindescs": [
+              {
+                "desc": "[OnSucceedAttack] Inflict 2 [Sinking]",
+                "summary": ""
+              }
+            ]
+          },
+          {
+            "coindescs": [
+              {
+                "desc": "[OnSucceedAttack] Inflict +1 [Sinking] Count",
+                "summary": ""
+              }
+            ]
+          },
+          {
+            "coindescs": [
+              {
+                "desc": "[OnSucceedAttack] Gain +1 [Breath] Count",
+                "summary": ""
+              },
+              {
+                "desc": "[CriticalOnSucceedAttack] Inflict +2 [Sinking] Count",
+                "summary": ""
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "1013723": {
+    "id": "1013723",
+    "levelList": [
+      {
+        "level": 1,
+        "desc": "Final Power +1 for every [UnlockBuff_Base] stage (max 3)\nThe following effects activate depending on the weapon's Attack Type\n- Slash weapons deal +30% damage\n- Non-Slash weapons deal -15% damage\n[StartBattle] Gain the following effects (effects are cumulative)\n- At [UnlockBuffAlly_2], convert the final Coin to [SuperCoin]\n- At [UnlockBuffAlly_3], on Clash Win with this Skill, gain 1 [ResultEnhancement] next turn\n[WhenUse] At 6+ ([Breath] on self + [Sinking] on target), Coin Power +1\n[WhenUse] Gain 2 [Breath]",
+        "name": "Carve at a Low Slant, Peel What Remains",
+        "flavor": "",
+        "rawDesc": "",
+        "abName": "",
+        "coinlist": [
+          {
+            "coindescs": [
+              {
+                "desc": "[OnSucceedAttack] Inflict 1 [Sinking]",
+                "summary": ""
+              }
+            ]
+          },
+          {
+            "coindescs": [
+              {
+                "desc": "[OnSucceedAttack] Inflict 2 [Sinking]",
+                "summary": ""
+              }
+            ]
+          },
+          {
+            "coindescs": [
+              {
+                "desc": "[OnSucceedAttack] Gain +1 [Breath] Count",
+                "summary": ""
+              },
+              {
+                "desc": "[OnSucceedAttack] Inflict +1 [Sinking] Count",
+                "summary": ""
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "1013731": {
+    "id": "1013731",
+    "levelList": [
+      {
+        "level": 1,
+        "desc": "Final Power +1 for every [UnlockBuff_Base] stage (max 3)\nThe following effects activate depending on the weapon's Attack Type\n- Blunt weapons deal +50% damage\n- Non-Blunt weapons deal -25% damage\n[StartBattle] Gain the following effects (effects are cumulative)\n- At [UnlockBuffAlly_2], convert the 3rd and 4th Coins to [SuperCoin]s\n- At [UnlockBuffAlly_3], on Clash Win with this Skill, raise target's Stagger Threshold by 15\n[WhenUse] At 6+ ([Breath] on self + [Sinking] on target), Coin Power +1\n[WhenUse] Gain +3 [Breath] Count\n- Gain [Breath] equal to current [UnlockBuff_Base] stage",
+        "name": "Destroy the Sound, Crush Flat the Thought",
+        "flavor": "",
+        "rawDesc": "",
+        "abName": "",
+        "coinlist": [
+          {
+            "coindescs": [
+              {
+                "desc": "[OnSucceedAttack] Inflict 3 [Sinking]",
+                "summary": ""
+              }
+            ]
+          },
+          {
+            "coindescs": [
+              {
+                "desc": "[OnSucceedAttack] Inflict 2 [Sinking]",
+                "summary": ""
+              }
+            ]
+          },
+          {
+            "coindescs": [
+              {
+                "desc": "[OnSucceedAttack] Gain 2 [Breath]",
+                "summary": ""
+              }
+            ]
+          },
+          {
+            "coindescs": [
+              {
+                "desc": "[OnSucceedAttack] Gain +2 [Breath] Count",
+                "summary": ""
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "1013732": {
+    "id": "1013732",
+    "levelList": [
+      {
+        "level": 1,
+        "desc": "Final Power +1 for every [UnlockBuff_Base] stage (max 3)\nThe following effects activate depending on the weapon's Attack Type\n- Pierce weapons deal +50% damage\n- Non-Pierce weapons deal -25% damage\n[StartBattle] Gain the following effects (effects are cumulative)\n- At [UnlockBuffAlly_2], convert the 3rd and 4th Coins to [SuperCoin]s\n- At [UnlockBuffAlly_3], on Clash Win with this Skill, gain 1 [AttackDmgUp] next turn\n[WhenUse] At 6+ ([Breath] on self + [Sinking] on target), Coin Power +1\n[WhenUse] Gain +3 [Breath] Count\n- Gain [Breath] equal to current [UnlockBuff_Base] stage",
+        "name": "Stab the Silence's Heart, Penetrate the Memory",
+        "flavor": "",
+        "rawDesc": "",
+        "abName": "",
+        "coinlist": [
+          {
+            "coindescs": [
+              {
+                "desc": "[OnSucceedAttack] Inflict 1 [Sinking]",
+                "summary": ""
+              },
+              {
+                "desc": "[OnSucceedAttack] Gain 1 [Breath]",
+                "summary": ""
+              }
+            ]
+          },
+          {
+            "coindescs": [
+              {
+                "desc": "[OnSucceedAttack] Inflict 1 [Sinking]",
+                "summary": ""
+              },
+              {
+                "desc": "[OnSucceedAttack] Gain 1 [Breath]",
+                "summary": ""
+              }
+            ]
+          },
+          {
+            "coindescs": [
+              {
+                "desc": "[OnSucceedAttack] Gain +1 [Breath] Count",
+                "summary": ""
+              }
+            ]
+          },
+          {
+            "coindescs": [
+              {
+                "desc": "[OnSucceedAttack] Gain +1 [Breath] Count",
+                "summary": ""
+              },
+              {
+                "desc": "[CriticalOnSucceedAttack] Inflict +4 [Sinking] Count",
+                "summary": ""
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "1013733": {
+    "id": "1013733",
+    "levelList": [
+      {
+        "level": 1,
+        "desc": "Final Power +1 for every [UnlockBuff_Base] stage (max 3)\nThe following effects activate depending on the weapon's Attack Type\n- Slash weapons deal +50% damage\n- Non-Slash weapons deal -25% damage\n[StartBattle] Gain the following effects (effects are cumulative)\n- At [UnlockBuffAlly_2], convert the final Coin to [SuperCoin]\n- At [UnlockBuffAlly_3], on Clash Win with this Skill, Final Power +2\n[WhenUse] At 6+ ([Breath] on self + [Sinking] on target), Coin Power +1\n[WhenUse] Gain +3 [Breath] Count\n- Gain [Breath] equal to current [UnlockBuff_Base] stage",
+        "name": "With Tempered Secret, Cut the Form",
+        "flavor": "",
+        "rawDesc": "",
+        "abName": "",
+        "coinlist": [
+          {
+            "coindescs": [
+              {
+                "desc": "[OnSucceedAttack] Gain 2 [Breath]",
+                "summary": ""
+              }
+            ]
+          },
+          {
+            "coindescs": [
+              {
+                "desc": "[OnSucceedAttack] Gain +2 [Breath] Count",
+                "summary": ""
+              }
+            ]
+          },
+          {
+            "coindescs": [
+              {
+                "desc": "[OnSucceedAttack] Inflict 2 [Sinking]",
+                "summary": ""
+              }
+            ]
+          },
+          {
+            "coindescs": [
+              {
+                "desc": "[OnSucceedAttack] Inflict +2 [Sinking] Count",
+                "summary": ""
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "101374": {
+    "id": "101374",
+    "levelList": [
+      {
+        "level": 1,
+        "desc": "[DuelCounter]\nFinal Power +1 for every [UnlockBuff_Base] stage (max 3)\n[WhenUse]\n- Gain 1 [StackRienSpecialSkillAlly] from one of the 9 Weapons that haven't been used yet (once per turn)\n- Gain 3 [Breath]\n[EndBattle] At lower than stage 3 [UnlockBuff_Base], activate the following (once per turn):\n- If this unit does not have [UnlockBuff_Base], gain [UnlockBuffAlly_1]\n- If this unit has [UnlockBuff_Base], increase it by 1 stage\n- At less than 3/6/9 [BlessingOfIndexPrescriptAlly], change its Stack to 3/6/9\n- Gain 5 [KarmaOfIndexAlly] at next Turn Start for every [BlessingOfIndexPrescriptAlly] gained",
+        "name": "Fill Three Times What is Wanting",
+        "flavor": "",
+        "rawDesc": "",
+        "abName": "",
+        "coinlist": [
+          {
+            "coindescs": [
+              {
+                "desc": "[OnSucceedAttack] Inflict 1 [Sinking]",
+                "summary": ""
+              }
+            ]
+          },
+          {
+            "coindescs": [
+              {
+                "desc": "[OnSucceedAttack] Inflict 1 [Sinking]",
+                "summary": ""
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "101375": {
+    "id": "101375",
+    "levelList": [
+      {
+        "level": 1,
+        "desc": "[WideAreaRampage]\nThis Skill does not trigger the target's Defense Skills\n[StartBattle] Does not gain [StackRienSpecialSkillAlly] for this turn\n[WhenUse]\n- Gain 3 [Breath] and +3 [Breath] Count\n- Clash Power +20 (Clash Power gained is reduced by 1 for every 5 [KarmaOfIndexAlly] on self, down to 0)\n- Consume all [StackRienSpecialSkillAlly]\n[WhenUse] At 0+ SP, generate 1 Mang\n- Deal +40% damage; Final Power +4\n[WinDuel]\n- Gain 3 [Breath] and +3 [Breath] Count\n[EndSkill]\n- Inflict 3 [Laceration], 1 [Binding], and 1 [Vulnerable] next turn to all targets this unit hit\n- If this Skill generated Mang, lose 20 SP",
+        "name": "Furioso-Replica",
+        "flavor": "",
+        "rawDesc": "",
+        "abName": "",
+        "coinlist": [
+          {
+            "coindescs": [
+              {
+                "desc": "[SuperCoin]",
+                "summary": ""
+              }
+            ]
+          },
+          {
+            "coindescs": [
+              {
+                "desc": "[SuperCoin]",
+                "summary": ""
+              },
+              {
+                "desc": "[OnSucceedAttack] Reuse this Coin (7 times max)",
+                "summary": ""
+              },
+              {
+                "desc": "[OnSucceedAttack] Inflict 1 [Sinking]",
+                "summary": ""
+              },
+              {
+                "desc": "[CriticalOnSucceedAttack] Inflict +1 [Sinking] Count",
+                "summary": ""
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "101376": {
+    "id": "101376",
+    "levelList": [
+      {
+        "level": 1,
+        "desc": "[WideAreaRampage]\nThis Skill does not trigger the target's Defense Skills\n[StartBattle] Does not gain [StackRienSpecialSkillAlly] for this turn\n[WhenUse]\n- Gain 3 [Breath] and +3 [Breath] Count\n- Clash Power +15 (Clash Power gained is reduced by 1 for every 5 [KarmaOfIndexAlly] on self, down to 0)\n- Consume all [StackRienSpecialSkillAlly]\n[WhenUse] At 0+ SP, generate 2 Mang\n- Deal +70% damage; Final Power +8\n[EndSkill]\n- Inflict 5 [Laceration], 3 [Binding], and 3 [Vulnerable] next turn to all targets this unit hit\n- If this Skill generated Mang, lose 25 SP",
+        "name": "Furioso [Crescendo]",
+        "flavor": "",
+        "rawDesc": "",
+        "abName": "",
+        "coinlist": [
+          {
+            "coindescs": [
+              {
+                "desc": "[SuperCoin]",
+                "summary": ""
+              }
+            ]
+          },
+          {
+            "coindescs": [
+              {
+                "desc": "[SuperCoin]",
+                "summary": ""
+              },
+              {
+                "desc": "[OnSucceedAttack] Reuse this Coin (7 times max)",
+                "summary": ""
+              },
+              {
+                "desc": "[OnSucceedAttack] Inflict 1 [Sinking]",
+                "summary": ""
+              },
+              {
+                "desc": "[CriticalOnSucceedAttack] Inflict +1 [Sinking] Count",
+                "summary": ""
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}
