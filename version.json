@@ -1,7 +1,7 @@
 {
-  "version": "1.0.4",
-  "note": "ArenaRedirect 修复：结算路径改为按游戏根目录解析；战斗结束即回传（OnEndBattle）",
-  "time": "2026-11-23 20:40:00",
+  "version": "1.0.5",
+  "note": "pvp 0.2：补全 ArenaApp 依赖的 arena-data 与立绘（319 MB）",
+  "time": "2026-11-27 23:55:00",
   "repo": "lqkf852741/limbus-update",
   "files": [
     {
@@ -15,25 +15,29 @@
       "path": "ArenaApp/ArenaApp.exe",
       "file": "ArenaApp.exe",
       "sha256": "47d1d138d46275d695540bf27a2a70335eee0845b4fbc215ab9a92c037612ad3",
-      "size": 372224
+      "size": 372224,
+      "remote": "files/pvp/47d1d138d46275d6_ArenaApp.exe"
     },
     {
       "path": "ArenaApp/ArenaApp.dll",
       "file": "ArenaApp.dll",
       "sha256": "53ee6a372ad08d17db8ce346b4f25da65839c5c9dff62519eca76c3568ec5260",
-      "size": 270336
+      "size": 270336,
+      "remote": "files/pvp/53ee6a372ad08d17_ArenaApp.dll"
     },
     {
       "path": "ArenaApp/ArenaApp.runtimeconfig.json",
       "file": "ArenaApp.runtimeconfig.json",
       "sha256": "0927ab269d96809b2ebc2eb7142fb4bb91433ec3bc6e46f34e48f0c67d86edae",
-      "size": 497
+      "size": 497,
+      "remote": "files/pvp/0927ab269d96809b_ArenaApp.runtimeconfig.json"
     },
     {
       "path": "ArenaApp/ArenaApp.deps.json",
       "file": "ArenaApp.deps.json",
       "sha256": "b01cc7d61cf07007bb68dfa4a9fde7c9f8e235341cb594829456c2cd33704eb2",
-      "size": 394
+      "size": 394,
+      "remote": "files/pvp/b01cc7d61cf07007_ArenaApp.deps.json"
     }
   ]
 }

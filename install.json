@@ -95,15 +95,15 @@
     },
     {
       "path": "index.json",
-      "file": "files/client/883c99bddf4dc14d_index.json",
-      "sha256": "883c99bddf4dc14d348864cf326e69a929f9db6b30bd83994dfcb76fe40a3337",
-      "size": 3885
+      "file": "files/client/3a86f9552cd01214_index.json",
+      "sha256": "3a86f9552cd012147bf0a50e47a79b260feadc274d202f988470a4ee4102f75d",
+      "size": 54754
     },
     {
       "path": "version.json",
-      "file": "files/client/7becdf076cd14e5b_version.json",
-      "sha256": "7becdf076cd14e5b3feba65ab73d73b0b087bdb7e344c3b418207676e14fe5e4",
-      "size": 1305
+      "file": "files/client/ef3dac3fa57a81a4_version.json",
+      "sha256": "ef3dac3fa57a81a4ee5d4440ee733fea329019852f42cfbaf93f02f7cd11dec0",
+      "size": 1524
     }
   ]
 }
