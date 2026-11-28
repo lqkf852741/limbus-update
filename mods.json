@@ -533,7 +533,8 @@
           "size": 18556,
           "sha256": "4bc9c04364b542a713a5cd26c08b429db0c89633e1874cddcfb6ef4b79977a7f"
         }
-      ]
+      ],
+      "dest": "BepInEx/plugins/Lethe/mods/AbnorsAsIDs"
     },
     {
       "name": "NoRestrict",
@@ -652,7 +653,8 @@
           "size": 724,
           "sha256": "63284cc24f34c24cccb3d148e8e447e1b8b42cdb6c2af5f8b866c231c3c016de"
         }
-      ]
+      ],
+      "dest": "BepInEx/plugins/Lethe/mods/NoRestrict"
     },
     {
       "name": "ReflectrialUnlock",
@@ -1155,7 +1157,8 @@
           "size": 17218,
           "sha256": "297c37e2d09e739052fac864a3872ac5dbddcb9af1885ffca7952ec3e1d0afd7"
         }
-      ]
+      ],
+      "dest": "BepInEx/plugins/Lethe/mods/ReflectrialUnlock"
     }
   ]
 }
